@@ -1,0 +1,57 @@
+@import '../shared';
+
+$component: 'cmp-f-button';
+
+@include cmp-base($component, block) {
+    &__wrapper {
+        margin-top: 15px;
+        transition: opacity 0.2s;
+        cursor: pointer;
+    }
+
+    &__button {
+        height: 40px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &--primary &__button {
+        background: rgba($color-primary, 0.6);
+        color: $color-white1;
+        transition: background 0.2s;
+
+        &:hover {
+            background: $color-primary;
+        }
+    }
+
+    &--secondary &__button {
+        background: $color-white2;
+        color: $color-primary;
+    }
+
+    &--disabled &__wrapper {
+        opacity: 0.6;
+        user-select: none;
+        cursor: not-allowed;
+    }
+
+    &--disabled &__button {
+        pointer-events: none;
+    }
+
+    &--small &__button {
+        min-width: 100px;
+        height: 28px;
+        line-height: 21px;
+        padding: 4px 20px;
+    }
+
+    &--no-margin &__button {
+        margin-top: 0;
+    }
+}

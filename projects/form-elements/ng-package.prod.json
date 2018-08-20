@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/form-elements",
+  "whitelistedNonPeerDependencies": [
+    "flatpickr",
+    "fuzzysearch"
+  ],
+  "lib": {
+    "entryFile": "src/exports.ts"
+  }
+}

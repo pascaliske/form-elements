@@ -1,0 +1,70 @@
+@import 'f-button/f-button.component';
+@import 'f-checkbox/f-checkbox.component';
+@import 'f-column/f-column.component';
+@import 'f-date/f-date.component';
+@import 'f-email/f-email.component';
+@import 'f-error/f-error.component';
+@import 'f-explanation/f-explanation.component';
+@import 'f-icon/f-icon.component';
+@import 'f-input/f-input.component';
+@import 'f-password/f-password.component';
+@import 'f-phone/f-phone.component';
+@import 'f-radiobutton/f-radiobutton.component';
+@import 'f-row/f-row.component';
+@import 'f-select/f-select.component';
+@import 'f-text-area/f-text-area.component';
+
+button,
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+.flatpickr {
+    &-calendar {
+        &.arrowTop {
+            margin-top: 15px;
+        }
+
+        &.arrowBottom {
+            margin-top: -35px;
+        }
+    }
+
+    &-months,
+    &-months &-month,
+    &-months &-prev-month,
+    &-months &-next-month,
+    &-current-month {
+        height: 40px;
+    }
+
+    &-months &-prev-month,
+    &-months &-next-month {
+        line-height: 30px;
+    }
+
+    &-current-month {
+        padding-top: 9px;
+    }
+
+    &-weekwrapper &-weekday,
+    &-rContainer &-weekdays {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    &-day {
+        margin-bottom: 5px;
+        padding-right: 1px;
+        line-height: 38px;
+
+        &.selected,
+        &.selected:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+}

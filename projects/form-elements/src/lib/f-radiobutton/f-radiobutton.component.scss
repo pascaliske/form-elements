@@ -1,0 +1,53 @@
+@import '../shared';
+
+$component: 'cmp-f-radiobutton';
+
+@include cmp-base($component, block) {
+    @include cmp-form-element();
+
+    &__control {
+        height: 35px;
+        line-height: 35px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__symbol {
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        border: 3px $color-primary solid;
+        border-radius: 100%;
+        opacity: 0.5;
+        transition: background-color 0.4s, opacity 0.4s;
+    }
+
+    &__circle {
+        r: 0;
+        transition: r 0.2s;
+        transition-delay: 0.1s;
+    }
+
+    &__label {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 50px;
+        opacity: 0.5;
+    }
+
+    &__control--checked &__symbol {
+        opacity: 1;
+        background-color: $color-primary;
+    }
+
+    &__control--checked &__circle {
+        r: 9;
+    }
+}

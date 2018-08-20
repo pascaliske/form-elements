@@ -1,0 +1,80 @@
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core'
+import { BehaviorSubject } from 'rxjs'
+import fuzzysearch from 'fuzzysearch'
+import { FInputComponent } from '../f-input/f-input.component'
+import { ModuleOptions } from '../typings'
+
+@Component({
+    selector: 'cmp-f-email',
+    templateUrl: './f-email.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class FEmailComponent extends FInputComponent {
+    public static readonly cmpName: string = 'FEmailComponent'
+
+    public suggestions$: BehaviorSubject<Array<string>> = new BehaviorSubject([])
+
+    private providers: Array<string> = [
+        'aol.com',
+        'arcor.de',
+        'freenet.de',
+        'gmail.com',
+        'gmx.at',
+        'gmx.com',
+        'gmx.de',
+        'gmx.net',
+        'googlemail.com',
+        'hotmail.com',
+        'hotmail.de',
+        'icloud.com',
+        'live.com',
+        'live.de',
+        'mac.com',
+        'me.com',
+        'msn.com',
+        'online.de',
+        'outlook.com',
+        't-online.de',
+        'web.de',
+        'yahoo.com',
+        'yahoo.de',
+    ]
+
+    public constructor(@Inject('options') private options: ModuleOptions) {
+        super()
+    }
+
+    public suggest(event: KeyboardEvent): void {
+        if (!this.options.email.suggestions) {
+            console.log('==> suggest() aborted as suggestions should be disabled')
+            return
+        }
+
+        const value = (event.target as HTMLInputElement).value.match(/(.*)@(.*)/)
+
+        if (value && value.length > 2 && value[2] && value[2].length > 0) {
+            this.suggestions$.next(this.providers.filter(item => fuzzysearch(value[2], item)))
+        } else {
+            this.suggestions$.next([])
+        }
+    }
+
+    public use(event: Event): void {
+        if (!this.options.email.suggestions) {
+            console.log('==> use() aborted as suggestions should be disabled')
+            return
+        }
+
+        const parts = this.fc.value.split('@')
+        const input = parts.slice(0, parts.length - 1).join('@')
+        const suggestion = (event.target as HTMLElement).innerText
+
+        this.suggestions$.next([])
+        this.fc.setValue(`${input}@${suggestion}`)
+    }
+
+    public focusOut(): void {
+        super.focusOut()
+        setTimeout(() => this.suggestions$.next([]))
+    }
+}
