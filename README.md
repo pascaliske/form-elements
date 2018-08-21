@@ -1,6 +1,6 @@
 # `@pascaliske/form-elements`
 
-[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements)
+[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/form-elements.svg)](https://greenkeeper.io/)
 
 ## Installation
 
