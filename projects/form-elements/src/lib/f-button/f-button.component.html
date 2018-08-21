@@ -1,5 +1,5 @@
 <div [class]="classes">
-    <button class="cmp-f-button__button" [type]="type" [disabled]="disabled" (click)="cbClick.emit($event)">
+    <button class="cmp-f-button__button" [type]="type" [disabled]="disabled" (click)="clicked.emit($event)">
         <cmp-f-icon class="cmp-f-button__icon" [name]="icon" *ngIf="icon"></cmp-f-icon>
         <span class="cmp-f-button__text" *ngIf="text">{{text}}</span>
     </button>

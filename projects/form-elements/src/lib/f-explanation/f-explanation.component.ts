@@ -4,7 +4,6 @@ import { AbstractControl } from '@angular/forms'
 @Component({
     selector: 'cmp-f-explanation',
     templateUrl: './f-explanation.component.html',
-
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FExplanationComponent {

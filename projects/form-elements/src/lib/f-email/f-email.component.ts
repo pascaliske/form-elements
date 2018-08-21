@@ -1,4 +1,4 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core'
+import { Component, Inject } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
@@ -7,7 +7,6 @@ import { ModuleOptions } from '../typings'
 @Component({
     selector: 'cmp-f-email',
     templateUrl: './f-email.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FEmailComponent extends FInputComponent {
     public static readonly cmpName: string = 'FEmailComponent'
@@ -46,14 +45,18 @@ export class FEmailComponent extends FInputComponent {
 
     public suggest(event: KeyboardEvent): void {
         if (!this.options.email.suggestions) {
-            console.log('==> suggest() aborted as suggestions should be disabled')
             return
         }
 
+        const suggestions = this.options.email.suggestions
         const value = (event.target as HTMLInputElement).value.match(/(.*)@(.*)/)
 
         if (value && value.length > 2 && value[2] && value[2].length > 0) {
-            this.suggestions$.next(this.providers.filter(item => fuzzysearch(value[2], item)))
+            if (typeof suggestions === 'object' && suggestions.length > 0) {
+                this.suggestions$.next(suggestions.filter(item => fuzzysearch(value[2], item)))
+            } else {
+                this.suggestions$.next(this.providers.filter(item => fuzzysearch(value[2], item)))
+            }
         } else {
             this.suggestions$.next([])
         }
@@ -61,7 +64,6 @@ export class FEmailComponent extends FInputComponent {
 
     public use(event: Event): void {
         if (!this.options.email.suggestions) {
-            console.log('==> use() aborted as suggestions should be disabled')
             return
         }
 

@@ -3,7 +3,6 @@
     "default": {
       "packages": [
         "package.json",
-        "projects/form-elements/ng-package.json",
         "projects/form-elements/package.json"
       ]
     }

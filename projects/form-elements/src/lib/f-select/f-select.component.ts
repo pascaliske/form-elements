@@ -1,4 +1,4 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { FInputComponent } from '../f-input/f-input.component'
 import { FSelectPlaceholder, FSelectOption } from '../typings'
@@ -6,8 +6,6 @@ import { FSelectPlaceholder, FSelectOption } from '../typings'
 @Component({
     selector: 'cmp-f-select',
     templateUrl: './f-select.component.html',
-
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FSelectComponent extends FInputComponent {
     public static readonly cmpName: string = 'FSelectComponent'
