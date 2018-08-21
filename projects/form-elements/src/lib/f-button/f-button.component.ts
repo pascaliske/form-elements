@@ -26,7 +26,7 @@ export class FButtonComponent {
     public disabled = false
 
     @Output()
-    public cbClick: EventEmitter<Event> = new EventEmitter()
+    public clicked: EventEmitter<Event> = new EventEmitter()
 
     public constructor() {}
 
