@@ -1,9 +1,14 @@
+import flatpickr from 'flatpickr'
+
 /**
  * GENERAL
  */
 export interface ModuleOptions {
     email: {
         suggestions: Array<string> | boolean
+    }
+    date: {
+        picker: flatpickr.Options.Options | boolean
     }
 }
 
@@ -71,5 +76,3 @@ export interface FValidation {
     value?: string | number
     message: string
 }
-
-export interface FDateOptions {}
