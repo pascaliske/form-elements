@@ -37,7 +37,6 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
             locale: locale.de,
             weekNumbers: true,
             onChange: value => {
-                console.log('==>', value)
                 this.selected = value[0]
             },
         }
@@ -45,7 +44,6 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         this.destroyFlatpickr()
 
         this.instance = flatpickr(this.inputRef.nativeElement, options) as flatpickr.Instance
-        console.log('==>', this.instance)
     }
 
     private destroyFlatpickr(): void {

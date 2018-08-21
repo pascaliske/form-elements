@@ -3,7 +3,7 @@
  */
 export interface ModuleOptions {
     email: {
-        suggestions: boolean
+        suggestions: Array<string> | boolean
     }
 }
 
