@@ -1,12 +1,4 @@
-import {
-    Component,
-    AfterViewInit,
-    OnDestroy,
-    Input,
-    ViewChild,
-    ElementRef,
-    ChangeDetectionStrategy,
-} from '@angular/core'
+import { Component, AfterViewInit, OnDestroy, Input, ViewChild, ElementRef } from '@angular/core'
 import flatpickr from 'flatpickr'
 import locale from 'flatpickr/dist/l10n'
 import { FInputComponent } from '../f-input/f-input.component'
@@ -15,7 +7,6 @@ import { FDateOptions } from '../typings'
 @Component({
     selector: 'cmp-f-date',
     templateUrl: './f-date.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FDateComponent extends FInputComponent implements AfterViewInit, OnDestroy {
     public static readonly cmpName: string = 'FDateComponent'

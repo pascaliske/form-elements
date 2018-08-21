@@ -5,7 +5,6 @@ import { FRowLayouts } from '../typings'
 @Component({
     selector: 'cmp-f-row',
     templateUrl: './f-row.component.html',
-
     encapsulation: ViewEncapsulation.None,
 })
 export class FRowComponent {

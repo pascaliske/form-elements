@@ -1,4 +1,4 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core'
+import { Component, Inject } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
@@ -7,7 +7,6 @@ import { ModuleOptions } from '../typings'
 @Component({
     selector: 'cmp-f-email',
     templateUrl: './f-email.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FEmailComponent extends FInputComponent {
     public static readonly cmpName: string = 'FEmailComponent'
