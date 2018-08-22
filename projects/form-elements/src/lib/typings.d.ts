@@ -12,6 +12,20 @@ export interface ModuleOptions {
     }
 }
 
+export interface FValidation {
+    type:
+        | 'min'
+        | 'max'
+        | 'required'
+        | 'requiredTrue'
+        | 'email'
+        | 'minLength'
+        | 'maxLength'
+        | 'pattern'
+    value?: string | number
+    message: string
+}
+
 export interface FValidationConfig {
     [key: string]: Array<FValidation>
 }
@@ -57,22 +71,3 @@ export interface FRadiobuttonOption {
  * F-Button
  */
 export type FButtonType = 'button' | 'submit'
-
-/**
- * PRIVATE
- */
-export const FORM_ELEMENTS = 'form-elements'
-
-export interface FValidation {
-    type:
-        | 'min'
-        | 'max'
-        | 'required'
-        | 'requiredTrue'
-        | 'email'
-        | 'minLength'
-        | 'maxLength'
-        | 'pattern'
-    value?: string | number
-    message: string
-}
