@@ -11,6 +11,7 @@ import { AppComponent } from './app.component'
         CommonModule,
         BrowserModule,
         FormElementsModule.forRoot({
+            datepicker: true,
             email: {
                 suggestions: true,
             },

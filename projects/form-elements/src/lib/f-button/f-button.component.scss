@@ -2,24 +2,16 @@
 
 $component: 'cmp-f-button';
 
-@include cmp-base($component, block) {
-    &__wrapper {
-        margin-top: 15px;
-        transition: opacity 0.2s;
-        cursor: pointer;
-    }
-
-    &__button {
-        height: 40px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
+@include cmp-base($component) {
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
 
     &__icon {
         margin-right: 10px;
     }
 
-    &--primary &__button {
+    &--primary {
         background: rgba($color-primary, 0.6);
         color: $color-white1;
         transition: background 0.2s;
@@ -29,7 +21,7 @@ $component: 'cmp-f-button';
         }
     }
 
-    &--secondary &__button {
+    &--secondary {
         background: $color-white2;
         color: $color-primary;
     }
@@ -40,18 +32,19 @@ $component: 'cmp-f-button';
         cursor: not-allowed;
     }
 
-    &--disabled &__button {
+    &--disabled {
         pointer-events: none;
+        cursor: not-allowed;
     }
 
-    &--small &__button {
+    &--small {
         min-width: 100px;
         height: 28px;
         line-height: 21px;
         padding: 4px 20px;
     }
 
-    &--no-margin &__button {
+    &--no-margin {
         margin-top: 0;
     }
 }

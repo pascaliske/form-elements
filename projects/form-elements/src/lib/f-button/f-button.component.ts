@@ -1,4 +1,11 @@
-import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core'
+import {
+    Component,
+    Input,
+    Output,
+    EventEmitter,
+    ChangeDetectionStrategy,
+    HostBinding,
+} from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { FButtonType } from '../typings'
 
@@ -14,6 +21,11 @@ export class FButtonComponent {
     public type: FButtonType = 'button'
 
     @Input()
+    @HostBinding('attr.id')
+    public id: string
+
+    @Input()
+    @HostBinding('attr.aria-label')
     public text: string
 
     @Input()

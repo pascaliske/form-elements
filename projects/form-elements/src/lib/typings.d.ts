@@ -4,12 +4,24 @@ import flatpickr from 'flatpickr'
  * GENERAL
  */
 export interface ModuleOptions {
+    datepicker: flatpickr.Options.Options | boolean
     email: {
         suggestions: Array<string> | boolean
     }
-    date: {
-        picker: flatpickr.Options.Options | boolean
-    }
+}
+
+export interface FValidation {
+    type:
+        | 'min'
+        | 'max'
+        | 'required'
+        | 'requiredTrue'
+        | 'email'
+        | 'minLength'
+        | 'maxLength'
+        | 'pattern'
+    value?: string | number
+    message: string
 }
 
 export interface FValidationConfig {
@@ -57,22 +69,3 @@ export interface FRadiobuttonOption {
  * F-Button
  */
 export type FButtonType = 'button' | 'submit'
-
-/**
- * PRIVATE
- */
-export const FORM_ELEMENTS = 'form-elements'
-
-export interface FValidation {
-    type:
-        | 'min'
-        | 'max'
-        | 'required'
-        | 'requiredTrue'
-        | 'email'
-        | 'minLength'
-        | 'maxLength'
-        | 'pattern'
-    value?: string | number
-    message: string
-}

@@ -18,12 +18,23 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
 
     private selected: Date
 
+    private defaults: flatpickr.Options.Options = {
+        allowInput: true,
+        dateFormat: 'd. F Y',
+        defaultDate: this.selected || null,
+        locale: locale.de,
+        weekNumbers: true,
+        onChange: value => {
+            this.selected = value[0]
+        },
+    }
+
     public constructor(@Inject('options') private options: ModuleOptions) {
         super()
     }
 
     public ngAfterViewInit(): void {
-        if (typeof this.options.date.picker === 'boolean' && this.options.date.picker === false) {
+        if (typeof this.options.datepicker === 'boolean' && this.options.datepicker === false) {
             return
         }
 
@@ -35,16 +46,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private initFlatpickr(): void {
-        const options = this.mergeOptions({
-            allowInput: true,
-            dateFormat: 'd. F Y',
-            defaultDate: this.selected || null,
-            locale: locale.de,
-            weekNumbers: true,
-            onChange: value => {
-                this.selected = value[0]
-            },
-        })
+        const options = this.mergeOptions()
 
         this.destroyFlatpickr()
 
@@ -57,13 +59,14 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         }
     }
 
-    private mergeOptions(defaults: flatpickr.Options.Options): flatpickr.Options.Options {
-        const picker = this.options.date.picker || {}
-        const options = picker && typeof picker === 'object' ? picker : {}
-
-        return {
-            ...defaults,
-            ...options,
+    private mergeOptions(): flatpickr.Options.Options {
+        if (this.options.datepicker && typeof this.options.datepicker === 'object') {
+            return {
+                ...this.defaults,
+                ...this.options.datepicker,
+            }
         }
+
+        return this.defaults
     }
 }
