@@ -1,4 +1,4 @@
-<button [class]="classes" [type]="type" [disabled]="disabled" (click)="clicked.emit($event)">
+<button [class]="classes" [type]="type" [id]="id" [attr.aria-label]="label" [disabled]="disabled" (click)="clicked.emit($event)">
     <cmp-f-icon class="cmp-f-button__icon" [name]="icon" *ngIf="icon"></cmp-f-icon>
-    <span class="cmp-f-button__text" *ngIf="text">{{text}}</span>
+    <span class="cmp-f-button__text" *ngIf="label">{{label}}</span>
 </button>
