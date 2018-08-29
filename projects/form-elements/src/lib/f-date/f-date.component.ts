@@ -1,6 +1,6 @@
 import { Component, AfterViewInit, OnDestroy, Inject, ViewChild, ElementRef } from '@angular/core'
-import flatpickr from 'flatpickr'
-import locale from 'flatpickr/dist/l10n'
+import flatpickr from 'flatpickr/dist/flatpickr.min'
+import { German } from 'flatpickr/dist/l10n/de'
 import { FInputComponent } from '../f-input/f-input.component'
 import { ModuleOptions } from '../typings'
 
@@ -22,7 +22,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         allowInput: true,
         dateFormat: 'd. F Y',
         defaultDate: this.selected || null,
-        locale: locale.de,
+        locale: German,
         weekNumbers: true,
         onChange: value => {
             this.selected = value[0]
