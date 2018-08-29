@@ -19,8 +19,9 @@ input,
 textarea,
 select,
 button[type="submit"] {
-    -webkit-appearance: none;
     outline: 0;
+    border: 0;
+    -webkit-appearance: none;
 }
 
 .flatpickr {
