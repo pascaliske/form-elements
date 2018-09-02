@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "flatpickr": "4.5.0",
+    "flatpickr": "4.5.2",
     "fuzzysearch": "^1.0.3"
   },
   "peerDependencies": {
