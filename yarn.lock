@@ -9,6 +9,13 @@
     "@angular-devkit/core" "0.7.4"
     rxjs "^6.0.0"
 
+"@angular-devkit/architect@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.8.0.tgz#c18e7582b1d6e9646c6ad0186c9a9a443a986d98"
+  dependencies:
+    "@angular-devkit/core" "0.8.0"
+    rxjs "~6.2.0"
+
 "@angular-devkit/build-angular@~0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.7.4.tgz#490c0d7f0a5c303b3c06248d823aa5b89960def1"
@@ -64,13 +71,14 @@
   optionalDependencies:
     node-sass "^4.9.3"
 
-"@angular-devkit/build-ng-packagr@~0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.7.4.tgz#ccc25315dfdf0fa292e4a0516f62669a1f8437d5"
+"@angular-devkit/build-ng-packagr@~0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.8.0.tgz#03f5f9584c04998bf76fed70001cb6ffb047d7ce"
   dependencies:
-    "@angular-devkit/architect" "0.7.4"
-    "@angular-devkit/core" "0.7.4"
-    rxjs "^6.0.0"
+    "@angular-devkit/architect" "0.8.0"
+    "@angular-devkit/core" "0.8.0"
+    rxjs "~6.2.0"
+    semver "^5.3.0"
 
 "@angular-devkit/build-optimizer@0.7.4":
   version "0.7.4"
@@ -96,6 +104,15 @@
     ajv "~6.4.0"
     chokidar "^2.0.3"
     rxjs "^6.0.0"
+    source-map "^0.5.6"
+
+"@angular-devkit/core@0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.8.0.tgz#d31c26677f7d5302e279946823933bbc95049e56"
+  dependencies:
+    ajv "~6.4.0"
+    chokidar "^2.0.3"
+    rxjs "~6.2.0"
     source-map "^0.5.6"
 
 "@angular-devkit/schematics@0.7.4":
@@ -2504,9 +2521,9 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flatpickr@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.0.tgz#f72c7164a1c24e3ad419e3b2209d1a2d3604724a"
+flatpickr@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.2.tgz#47c8ad472a096e5fb7e74b809b0703535383f20d"
 
 flush-write-stream@^1.0.0:
   version "1.0.3"
@@ -5780,7 +5797,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^6.0.0, rxjs@^6.1.0, rxjs@^6.2.2:
+rxjs@^6.0.0, rxjs@^6.1.0, rxjs@^6.2.2, rxjs@~6.2.0:
   version "6.2.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.2.tgz#eb75fa3c186ff5289907d06483a77884586e1cf9"
   dependencies:
