@@ -16,15 +16,15 @@
     "@angular-devkit/core" "0.8.0"
     rxjs "~6.2.0"
 
-"@angular-devkit/build-angular@~0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.8.0.tgz#2382934e95e1130baf2af32ba983ca4301cdd9d1"
+"@angular-devkit/build-angular@~0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.7.4.tgz#490c0d7f0a5c303b3c06248d823aa5b89960def1"
   dependencies:
-    "@angular-devkit/architect" "0.8.0"
-    "@angular-devkit/build-optimizer" "0.8.0"
-    "@angular-devkit/build-webpack" "0.8.0"
-    "@angular-devkit/core" "0.8.0"
-    "@ngtools/webpack" "6.2.0"
+    "@angular-devkit/architect" "0.7.4"
+    "@angular-devkit/build-optimizer" "0.7.4"
+    "@angular-devkit/build-webpack" "0.7.4"
+    "@angular-devkit/core" "0.7.4"
+    "@ngtools/webpack" "6.1.4"
     ajv "~6.4.0"
     autoprefixer "^8.4.1"
     circular-dependency-plugin "^5.0.2"
@@ -71,13 +71,14 @@
   optionalDependencies:
     node-sass "^4.9.3"
 
-"@angular-devkit/build-ng-packagr@~0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.7.4.tgz#ccc25315dfdf0fa292e4a0516f62669a1f8437d5"
+"@angular-devkit/build-ng-packagr@~0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.8.0.tgz#03f5f9584c04998bf76fed70001cb6ffb047d7ce"
   dependencies:
-    "@angular-devkit/architect" "0.7.4"
-    "@angular-devkit/core" "0.7.4"
-    rxjs "^6.0.0"
+    "@angular-devkit/architect" "0.8.0"
+    "@angular-devkit/core" "0.8.0"
+    rxjs "~6.2.0"
+    semver "^5.3.0"
 
 "@angular-devkit/build-optimizer@0.8.0":
   version "0.8.0"
