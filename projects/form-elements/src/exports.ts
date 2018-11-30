@@ -2,8 +2,8 @@
  * Public API Surface
  */
 export * from './lib/form-elements.module'
+export { ModuleOptions, OPTIONS } from './lib/options'
 export {
-    ModuleOptions,
     FValidationConfig,
     FExplanationConfig,
     FRowLayouts,

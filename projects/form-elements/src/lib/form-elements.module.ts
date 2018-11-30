@@ -16,7 +16,7 @@ import { FRadiobuttonComponent } from './f-radiobutton/f-radiobutton.component'
 import { FErrorComponent } from './f-error/f-error.component'
 import { FExplanationComponent } from './f-explanation/f-explanation.component'
 import { FIconComponent } from './f-icon/f-icon.component'
-import { ModuleOptions } from './typings'
+import { ModuleOptions, OPTIONS } from './options'
 
 const components = [
     FRowComponent,
@@ -47,7 +47,7 @@ export class FormElementsModule {
             ngModule: FormElementsModule,
             providers: [
                 {
-                    provide: 'options',
+                    provide: OPTIONS,
                     useValue: options,
                 },
             ],
