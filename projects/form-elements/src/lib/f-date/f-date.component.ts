@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnDestroy, Inject, ViewChild, ElementRef } fr
 import flatpickr from 'flatpickr/dist/flatpickr.min'
 import { German } from 'flatpickr/dist/l10n/de'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions } from '../typings'
+import { ModuleOptions, OPTIONS } from '../options'
 
 @Component({
     selector: 'cmp-f-date',
@@ -29,7 +29,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         },
     }
 
-    public constructor(@Inject('options') private options: ModuleOptions) {
+    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
         super()
     }
 

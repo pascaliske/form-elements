@@ -3,13 +3,6 @@ import flatpickr from 'flatpickr'
 /**
  * GENERAL
  */
-export interface ModuleOptions {
-    datepicker: flatpickr.Options.Options | boolean
-    email: {
-        suggestions: Array<string> | boolean
-    }
-}
-
 export interface FValidation {
     type:
         | 'min'

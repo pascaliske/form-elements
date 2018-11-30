@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions } from '../typings'
+import { ModuleOptions, OPTIONS } from '../options'
 
 @Component({
     selector: 'cmp-f-email',
@@ -39,7 +39,7 @@ export class FEmailComponent extends FInputComponent {
         'yahoo.de',
     ]
 
-    public constructor(@Inject('options') private options: ModuleOptions) {
+    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
         super()
     }
 
