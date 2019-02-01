@@ -26,20 +26,12 @@
     "test": "ng test form-elements",
     "lint": "ng lint form-elements",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
-    "precommit": "lint-staged",
     "link": "yarn run build && cd dist/form-elements && yarn link",
     "unlink": "cd dist/form-elements && yarn unlink"
   },
   "greenkeeper": {
     "ignore": [
       "typescript"
-    ]
-  },
-  "lint-staged": {
-    "{src,projects}/**/*.ts": [
-      "yarn run lint",
-      "yarn run format",
-      "git add"
     ]
   },
   "dependencies": {
