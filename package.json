@@ -1,7 +1,7 @@
 {
   "name": "form-elements",
   "description": "Collection of form elements for Angular 6+ projects.",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -23,8 +23,7 @@
     "build-scss": "scss-bundle -e projects/form-elements/src/lib/main.scss -d dist/form-elements/styles.scss",
     "copy-metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md",
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
-    "test": "ng test form-elements",
-    "lint": "ng lint form-elements",
+    "lint": "ng lint form-elements --fix",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
     "changelog": "standard-changelog --release-count 1",
     "link": "yarn run build && cd dist/form-elements && yarn link",
