@@ -26,6 +26,7 @@
     "test": "ng test form-elements",
     "lint": "ng lint form-elements",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "changelog": "standard-changelog --release-count 1",
     "link": "yarn run build && cd dist/form-elements && yarn link",
     "unlink": "cd dist/form-elements && yarn unlink"
   },
@@ -67,6 +68,7 @@
     "prettier": "^1.16.3",
     "protractor": "~5.4.2",
     "scss-bundle": "^2.4.0",
+    "standard-changelog": "^2.0.6",
     "ts-node": "~8.0.2",
     "tsickle": "^0.34.0",
     "tslib": "^1.9.3",
