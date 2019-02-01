@@ -19,7 +19,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve form-elements-demo",
-    "build": "ng build",
+    "build": "ng build --prod",
     "build-scss": "scss-bundle -e projects/form-elements/src/lib/main.scss -d dist/form-elements/styles.scss",
     "copy-metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md",
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
