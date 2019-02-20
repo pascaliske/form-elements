@@ -11,5 +11,10 @@ module.exports = config => {
         use: ['style-loader'],
     })
 
+    config.module.rules.unshift({
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+    })
+
     return config
 }

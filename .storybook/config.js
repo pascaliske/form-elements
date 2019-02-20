@@ -11,7 +11,7 @@ addDecorator(
     withOptions({
         name: name,
         url: repository.url.replace(/.git$/, ''),
-        theme: themes.dark,
+        theme: themes.normal,
         hierarchySeparator: /\//,
     }),
 )
