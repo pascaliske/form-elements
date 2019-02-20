@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 import { AbstractControl } from '@angular/forms'
-import { FValidation } from '../typings'
+import { FValidation } from '../f-input/f-input.component'
 
 @Component({
     selector: 'cmp-f-error',

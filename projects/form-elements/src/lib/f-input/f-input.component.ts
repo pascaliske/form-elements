@@ -1,8 +1,27 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
-import { FValidation } from '../typings'
 
+/**
+ *
+ */
+export interface FValidation {
+    type:
+        | 'min'
+        | 'max'
+        | 'required'
+        | 'requiredTrue'
+        | 'email'
+        | 'minLength'
+        | 'maxLength'
+        | 'pattern'
+    value?: string | number
+    message: string
+}
+
+/**
+ * F-Input
+ */
 @Component({
     selector: 'cmp-f-input',
     templateUrl: './f-input.component.html',

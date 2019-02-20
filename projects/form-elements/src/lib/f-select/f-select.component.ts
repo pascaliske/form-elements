@@ -1,8 +1,27 @@
 import { Component, Input } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { FInputComponent } from '../f-input/f-input.component'
-import { FSelectPlaceholder, FSelectOption } from '../typings'
 
+/**
+ *
+ */
+export interface FSelectOption {
+    label: string
+    value: any
+}
+
+/**
+ *
+ */
+export interface FSelectPlaceholder {
+    label: string
+    value: any
+    selectable: boolean
+}
+
+/**
+ * F-Select
+ */
 @Component({
     selector: 'cmp-f-select',
     templateUrl: './f-select.component.html',

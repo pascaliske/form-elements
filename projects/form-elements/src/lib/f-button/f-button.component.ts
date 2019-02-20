@@ -1,7 +1,14 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
-import { FButtonType } from '../typings'
 
+/**
+ *
+ */
+export type FButtonType = 'button' | 'submit'
+
+/**
+ * F-Button
+ */
 @Component({
     selector: 'cmp-f-button',
     templateUrl: './f-button.component.html',

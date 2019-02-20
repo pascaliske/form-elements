@@ -1,7 +1,18 @@
 import { Component, Input } from '@angular/core'
 import { FInputComponent } from '../f-input/f-input.component'
-import { FRadiobuttonOption } from '../typings'
 
+/**
+ *
+ */
+export interface FRadiobuttonOption {
+    label: string
+    value: string
+    checked: boolean
+}
+
+/**
+ * F-Radiobutton
+ */
 @Component({
     selector: 'cmp-f-radiobutton',
     templateUrl: './f-radiobutton.component.html',
