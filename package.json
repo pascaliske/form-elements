@@ -46,7 +46,7 @@
     "@angular/router": "^7.2.5",
     "@pascaliske/html-helpers": "^1.2.3",
     "core-js": "^2.6.5",
-    "flatpickr": "4.5.2",
+    "flatpickr": "4.5.4",
     "fuzzysearch": "^1.0.3",
     "rxjs": "^6.4.0",
     "zone.js": "^0.8.29"
