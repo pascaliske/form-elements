@@ -1,5 +1,15 @@
 {
-  "{src,projects}/**/*.ts": [
+  "src/**/*.ts": [
+    "tslint --project src/tsconfig.app.json --fix",
+    "prettier --write",
+    "git add"
+  ],
+  "projects/**/*.ts": [
+    "tslint --project projects/form-elements/tsconfig.lib.json --fix",
+    "prettier --write",
+    "git add"
+  ],
+  "{src,projects}/**/*.{scss,md,html}": [
     "prettier --write",
     "git add"
   ]

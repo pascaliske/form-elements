@@ -24,7 +24,7 @@
     "copy-metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md && cp CHANGELOG.md dist/form-elements/CHANGELOG.md",
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
     "lint": "ng lint form-elements --fix",
-    "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "format": "prettier --write \"{src,projects}/**/*.{ts,scss,md,html}\"",
     "changelog": "standard-changelog --release-count 1",
     "storybook": "start-storybook --port 9001 --config-dir .storybook",
     "docs": "build-storybook --config-dir .storybook --output-dir docs",
