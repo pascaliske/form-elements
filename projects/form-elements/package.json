@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/form-elements",
   "description": "Collection of form elements for Angular 6+ projects.",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "flatpickr": "4.5.2",
+    "flatpickr": "4.5.4",
     "fuzzysearch": "^1.0.3"
   },
   "peerDependencies": {
