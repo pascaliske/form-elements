@@ -15,6 +15,7 @@ addDecorator(
         url: repository.url.replace(/.git$/, ''),
         theme: themes.normal,
         hierarchySeparator: /\//,
+        sortStoriesByKind: true,
     }),
 )
 addDecorator(
