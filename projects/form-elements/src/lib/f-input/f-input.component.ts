@@ -51,9 +51,9 @@ export class FInputComponent implements OnInit {
     public autofocus: boolean
 
     @Input()
-    public disabled = false
+    public disabled: boolean = false
 
-    public focus = false
+    public focus: boolean = false
 
     public constructor() {}
 
