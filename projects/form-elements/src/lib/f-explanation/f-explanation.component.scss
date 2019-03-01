@@ -4,4 +4,13 @@ $component: 'cmp-f-explanation';
 
 @include cmp-base($component, block) {
     @include cmp-form-element();
+
+    &__icon,
+    &__message {
+        display: inline-block;
+    }
+
+    &__icon {
+        margin-right: 5px;
+    }
 }
