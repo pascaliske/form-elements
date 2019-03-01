@@ -4,9 +4,17 @@ $component: 'cmp-f-error';
 
 @include cmp-base($component, block) {
     @include cmp-form-element();
-
     margin-top: 10px;
     margin-bottom: 5px;
     color: $color-red;
     opacity: 0.5;
+
+    &__icon,
+    &__message {
+        display: inline-block;
+    }
+
+    &__icon {
+        margin-right: 5px;
+    }
 }

@@ -1,4 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 @Component({
     selector: 'cmp-f-icon',
@@ -9,10 +10,16 @@ export class FIconComponent {
     public static readonly cmpName: string = 'FIconComponent'
 
     @Input()
-    public name: string
+    public icon: IconDefinition
 
     @Input()
-    public animate: boolean = false
+    public animate: 'spin' | 'pulse'
 
-    public constructor() {}
+    public get spin(): boolean {
+        return this.animate && this.animate === 'spin'
+    }
+
+    public get pulse(): boolean {
+        return this.animate && this.animate === 'pulse'
+    }
 }
