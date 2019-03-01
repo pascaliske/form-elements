@@ -1,6 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ReactiveFormsModule } from '@angular/forms'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FRowComponent } from './f-row/f-row.component'
 import { FColumnComponent } from './f-column/f-column.component'
 import { FInputComponent } from './f-input/f-input.component'
@@ -37,7 +38,7 @@ const components = [
 ]
 
 @NgModule({
-    imports: [CommonModule, ReactiveFormsModule],
+    imports: [CommonModule, ReactiveFormsModule, FontAwesomeModule],
     declarations: [...components],
     entryComponents: [...components],
     exports: [...components],

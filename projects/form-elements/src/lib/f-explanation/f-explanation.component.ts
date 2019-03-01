@@ -1,5 +1,7 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core'
 import { AbstractControl } from '@angular/forms'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
     selector: 'cmp-f-explanation',
@@ -13,5 +15,5 @@ export class FExplanationComponent {
     @Input()
     public messages: Array<string>
 
-    public constructor() {}
+    public icon: IconDefinition = faInfoCircle
 }

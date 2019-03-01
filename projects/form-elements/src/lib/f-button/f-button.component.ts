@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 /**
  *
@@ -27,13 +28,13 @@ export class FButtonComponent {
     public label: string
 
     @Input()
-    public icon: string
+    public icon: IconDefinition
 
     @Input()
-    public theme = ''
+    public theme: string = ''
 
     @Input()
-    public disabled = false
+    public disabled: boolean = false
 
     @Output()
     public clicked: EventEmitter<Event> = new EventEmitter()

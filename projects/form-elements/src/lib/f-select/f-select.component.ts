@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FInputComponent } from '../f-input/f-input.component'
 
 /**
@@ -34,6 +36,8 @@ export class FSelectComponent extends FInputComponent {
 
     @Input()
     public options: Array<FSelectOption> = []
+
+    public icon: IconDefinition = faChevronDown
 
     public classes(namespace: string): string {
         const base = super.classes(namespace)

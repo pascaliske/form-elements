@@ -1,5 +1,7 @@
 import { Component } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
 import { FInputComponent } from '../f-input/f-input.component'
 
 @Component({
@@ -11,16 +13,20 @@ export class FPasswordComponent extends FInputComponent {
 
     public type: 'text' | 'password' = 'password'
 
+    public icon: IconDefinition = faEye
+
     public visible = false
 
-    public mouseup(): void {
-        this.type = 'password'
-        this.visible = false
-    }
-
-    public mousedown(): void {
-        this.type = 'text'
-        this.visible = true
+    public toggle(): void {
+        if (this.visible) {
+            this.type = 'password'
+            this.icon = faEye
+            this.visible = false
+        } else {
+            this.type = 'text'
+            this.icon = faEyeSlash
+            this.visible = true
+        }
     }
 
     public classes(namespace: string): string {

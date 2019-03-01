@@ -1,32 +1,42 @@
-<cmp-f-row layout="1-1">
+<cmp-f-row [layout]="'1-1'">
     <cmp-f-column>
-        <cmp-f-date label="Date Input"></cmp-f-date>
+        <cmp-f-date [label]="'Date Input'"></cmp-f-date>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-email label="Email Input"></cmp-f-email>
+        <cmp-f-input [label]="'Text Input'"></cmp-f-input>
     </cmp-f-column>
 </cmp-f-row>
-<cmp-f-row layout="1-1-1">
+<cmp-f-row [layout]="'1-1-1'">
     <cmp-f-column>
-        <cmp-f-input label="Text Input"></cmp-f-input>
+        <cmp-f-email
+            [label]="'Email'"
+            [validation]="validation.email"
+            [explanation]="explanation.email"
+        ></cmp-f-email>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-input label="DEMO"></cmp-f-input>
+        <cmp-f-password [label]="'Password'"></cmp-f-password>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-input label="DEMO"></cmp-f-input>
+        <cmp-f-select [label]="'Select'" [options]="options"></cmp-f-select>
     </cmp-f-column>
 </cmp-f-row>
 <cmp-f-row>
     <cmp-f-column>
-        <cmp-f-input label="DEMO"></cmp-f-input>
+        <cmp-f-text-area [label]="'Textarea'"></cmp-f-text-area>
     </cmp-f-column>
 </cmp-f-row>
-<cmp-f-row layout="1-1-1">
-    <cmp-f-column></cmp-f-column>
-    <cmp-f-column></cmp-f-column>
+<cmp-f-row [layout]="'1-1'">
     <cmp-f-column>
-        <cmp-f-button id="demo-button" label="Button Label #1" theme="primary"></cmp-f-button>
-        <cmp-f-button id="demo-button" label="Button Label #2" theme="secondary"></cmp-f-button>
+        <cmp-f-button [label]="'Button Label #1'" [theme]="'primary'"></cmp-f-button>
+        <cmp-f-button [label]="'Button Label #2'" [theme]="'secondary'"></cmp-f-button>
+    </cmp-f-column>
+    <cmp-f-column [flex]="true" [align]="'right'">
+        <cmp-f-button
+            [label]="'Button Label #1'"
+            [theme]="'primary'"
+            [icon]="icons.faPaperPlane"
+        ></cmp-f-button>
+        <cmp-f-button [label]="'Button Label #2'" [theme]="'secondary'"></cmp-f-button>
     </cmp-f-column>
 </cmp-f-row>
