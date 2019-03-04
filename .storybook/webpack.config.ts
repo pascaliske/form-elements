@@ -1,10 +1,12 @@
+import { Configuration } from 'webpack'
+
 /**
  * Tweak the built in webpack config for storybook.
  *
- * @param {object} config - The built in webpack config
- * @returns {object} - The tweaked webpack config
+ * @param config - The built in webpack config
+ * @returns - The tweaked webpack config
  */
-module.exports = config => {
+module.exports = (config: Configuration): Configuration => {
     // enable scss loading
     config.module.rules.unshift({
         test: /\.scss$/,
