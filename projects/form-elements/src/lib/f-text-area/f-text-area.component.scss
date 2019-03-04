@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-text-area';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-text-area, block) {
     @include cmp-form-element();
 
     &__control {

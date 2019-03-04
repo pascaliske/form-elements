@@ -1,9 +1,6 @@
-@import '../shared';
-@import '~flatpickr/dist/flatpickr.min.css';
+@import 'flatpickr/dist/flatpickr.min.css';
 
-$component: 'cmp-f-date';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-date, block) {
     @include cmp-form-element();
     @include cmp-form-input();
 }

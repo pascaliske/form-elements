@@ -20,7 +20,7 @@
     "ng": "ng",
     "start": "ng serve form-elements-demo",
     "build": "ng build --prod",
-    "build-scss": "scss-bundle -e projects/form-elements/src/lib/main.scss -d dist/form-elements/styles.scss",
+    "build-scss": "scss-bundle -e projects/form-elements/src/lib/main.scss -d dist/form-elements/styles.scss --includePaths node_modules",
     "copy-metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md && cp CHANGELOG.md dist/form-elements/CHANGELOG.md",
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
     "lint": "ng lint form-elements --fix",

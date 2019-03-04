@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-button';
-
-@include cmp-base($component) {
+@include cmp-base(cmp-f-button) {
     height: 40px;
     padding: 10px 20px;
     cursor: pointer;

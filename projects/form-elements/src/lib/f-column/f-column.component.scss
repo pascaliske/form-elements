@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-column';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-column, block) {
     &--flex {
         display: flex;
     }

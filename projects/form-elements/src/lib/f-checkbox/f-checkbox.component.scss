@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-checkbox';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-checkbox, block) {
     @include cmp-form-element();
 
     &__control {

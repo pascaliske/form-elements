@@ -1,18 +1,4 @@
-@import 'f-button/f-button.component';
-@import 'f-checkbox/f-checkbox.component';
-@import 'f-column/f-column.component';
-@import 'f-date/f-date.component';
-@import 'f-email/f-email.component';
-@import 'f-error/f-error.component';
-@import 'f-explanation/f-explanation.component';
-@import 'f-icon/f-icon.component';
-@import 'f-input/f-input.component';
-@import 'f-password/f-password.component';
-@import 'f-phone/f-phone.component';
-@import 'f-radiobutton/f-radiobutton.component';
-@import 'f-row/f-row.component';
-@import 'f-select/f-select.component';
-@import 'f-text-area/f-text-area.component';
+@import 'shared';
 
 button,
 input,
@@ -70,3 +56,19 @@ button[type='submit'] {
         }
     }
 }
+
+@import 'f-button/f-button.component';
+@import 'f-checkbox/f-checkbox.component';
+@import 'f-column/f-column.component';
+@import 'f-date/f-date.component';
+@import 'f-email/f-email.component';
+@import 'f-error/f-error.component';
+@import 'f-explanation/f-explanation.component';
+@import 'f-icon/f-icon.component';
+@import 'f-input/f-input.component';
+@import 'f-password/f-password.component';
+@import 'f-phone/f-phone.component';
+@import 'f-radiobutton/f-radiobutton.component';
+@import 'f-row/f-row.component';
+@import 'f-select/f-select.component';
+@import 'f-text-area/f-text-area.component';

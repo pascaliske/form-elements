@@ -1,6 +1,2 @@
-@import '../shared';
-
-$component: 'cmp-icon';
-
-@include cmp-base($component, inline-block) {
+@include cmp-base(cmp-icon, inline-block) {
 }
