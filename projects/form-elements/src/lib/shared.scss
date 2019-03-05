@@ -27,7 +27,45 @@ $color-white2: rgb(222, 222, 222) !default;
     position: relative;
 }
 
+@mixin cmp-form-line {
+    &__line {
+        &::before,
+        &::after {
+            height: 4px;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            display: block;
+            opacity: 0.2;
+            transition: width 0.2s, opacity 0.2s, background 0.2s;
+            content: ' ';
+        }
+
+        &::before {
+            width: 100%;
+            background: rgba($color-grey1, 0.8);
+        }
+
+        &::after {
+            width: 0;
+            background: $color-primary;
+        }
+    }
+
+    &--focus &__line::after {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &--invalid &__line::before,
+    &--invalid &__line::after {
+        background: $color-red;
+    }
+}
+
 @mixin cmp-form-input() {
+    @include cmp-form-line();
+
     &__control {
         height: 35px;
         line-height: 35px;
@@ -55,30 +93,6 @@ $color-white2: rgb(222, 222, 222) !default;
         pointer-events: none;
     }
 
-    &__line {
-        &::before,
-        &::after {
-            height: 4px;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            display: block;
-            opacity: 0.2;
-            transition: width 0.2s, opacity 0.2s, background 0.2s;
-            content: ' ';
-        }
-
-        &::before {
-            width: 100%;
-            background: rgba($color-grey1, 0.8);
-        }
-
-        &::after {
-            width: 0;
-            background: $color-primary;
-        }
-    }
-
     &--disabled &__label,
     &--disabled &__input {
         color: $color-grey2;
@@ -91,11 +105,6 @@ $color-white2: rgb(222, 222, 222) !default;
         height: 15px;
         line-height: 15px;
         top: -15px;
-    }
-
-    &--focus &__line::after {
-        opacity: 1;
-        width: 100%;
     }
 
     &--invalid &__label,
