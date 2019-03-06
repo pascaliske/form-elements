@@ -67,6 +67,7 @@
     "@babel/core": "^7.3.3",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
+    "@pascaliske/schematics": "^0.0.4",
     "@storybook/addon-actions": "^5.0.0",
     "@storybook/addon-knobs": "^5.0.0",
     "@storybook/addon-links": "^5.0.0",

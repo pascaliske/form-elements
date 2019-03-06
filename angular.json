@@ -4,7 +4,8 @@
   "newProjectRoot": "projects",
   "defaultProject": "form-elements",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "defaultCollection": "@pascaliske/schematics"
   },
   "schematics": {
     "@schematics/angular:component": {

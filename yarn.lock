@@ -102,12 +102,31 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
+"@angular-devkit/core@7.3.4", "@angular-devkit/core@^7.3.2":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.3.4.tgz#fae0521652c7430237025f117531ca3262ef8335"
+  integrity sha512-MBfen51iOBKfK4tlg5KwmPxePsF1QoFNUMGLuvUUwPkteonrGcupX1Q7NWTpf+HA+i08mOnZGuepeuQkD12IQw==
+  dependencies:
+    ajv "6.9.1"
+    chokidar "2.0.4"
+    fast-json-stable-stringify "2.0.0"
+    rxjs "6.3.3"
+    source-map "0.7.3"
+
 "@angular-devkit/schematics@7.3.2":
   version "7.3.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.2.tgz#e9d3c1f2128a56f66ea846ce3f80c69d4c3a9ae9"
   integrity sha512-pxPzMfgVNFq1V6aTrBRYKGATSHfzj67IFYOqKWYt6EnUQxHuAOdFqbB6vIKfZhsYko2anp9Q0dAs6mfesBThNQ==
   dependencies:
     "@angular-devkit/core" "7.3.2"
+    rxjs "6.3.3"
+
+"@angular-devkit/schematics@7.3.4", "@angular-devkit/schematics@^7.3.2":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.4.tgz#918c9349835f3a4c9a7128ebcda0738b623fc89e"
+  integrity sha512-BLI4MDHmpzw+snu/2Dw1nMmfJ0VAARTbU6DrmzXyl2Se45+iE/tdRy4yNx3IfHhyoCrVZ15R0y9CXeEsLftlIg==
+  dependencies:
+    "@angular-devkit/core" "7.3.4"
     rxjs "6.3.3"
 
 "@angular/animations@^7.2.5":
@@ -1317,6 +1336,15 @@
     classnames "^2.2.6"
     tslib "^1.9.3"
 
+"@pascaliske/schematics@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@pascaliske/schematics/-/schematics-0.0.4.tgz#3bd7726f51e551a0d043cf1efb211e938a058db2"
+  integrity sha512-LtPnKnRp2MBGzlSPuBoNN7eJD4/KvgA4Br3XSaGnGl8pbeLuDnniDtD/u3Eap7lCkSdtob4GiKinCLfKBABeeQ==
+  dependencies:
+    "@angular-devkit/core" "^7.3.2"
+    "@angular-devkit/schematics" "^7.3.2"
+    "@schematics/angular" "^7.3.2"
+
 "@reach/router@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.2.1.tgz#34ae3541a5ac44fa7796e5506a5d7274a162be4e"
@@ -1341,6 +1369,15 @@
   dependencies:
     "@angular-devkit/core" "7.3.2"
     "@angular-devkit/schematics" "7.3.2"
+    typescript "3.2.4"
+
+"@schematics/angular@^7.3.2":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-7.3.4.tgz#ba36efdd5474b793eb693d47772f998e6bd6043e"
+  integrity sha512-Bb5DZQ8MeP8yhxPe6nVqyQ7sGVNwUx6nXPlrQV45ZycD3nJlqsuxr2DE75HFpn5oU+vlkq9J/Sys4WLJ4E/OMw==
+  dependencies:
+    "@angular-devkit/core" "7.3.4"
+    "@angular-devkit/schematics" "7.3.4"
     typescript "3.2.4"
 
 "@schematics/update@0.13.2":
