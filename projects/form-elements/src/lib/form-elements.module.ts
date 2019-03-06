@@ -14,7 +14,6 @@ import { FPasswordComponent } from './f-password/f-password.component'
 import { FDateComponent } from './f-date/f-date.component'
 import { FCheckboxComponent } from './f-checkbox/f-checkbox.component'
 import { FRadiobuttonComponent } from './f-radiobutton/f-radiobutton.component'
-import { FIconComponent } from './f-icon/f-icon.component'
 import { FErrorComponent } from './f-error/f-error.component'
 import { FExplanationComponent } from './f-explanation/f-explanation.component'
 import { ModuleOptions, OPTIONS } from './options'
@@ -32,7 +31,6 @@ export const components = [
     FDateComponent,
     FCheckboxComponent,
     FRadiobuttonComponent,
-    FIconComponent,
 ]
 
 @NgModule({
