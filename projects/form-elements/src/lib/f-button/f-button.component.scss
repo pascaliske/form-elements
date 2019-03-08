@@ -1,4 +1,5 @@
 @include cmp-base(cmp-f-button) {
+    @include cmp-form-element();
     height: 40px;
     padding: 10px 20px;
     cursor: pointer;
@@ -22,15 +23,23 @@
         color: $color-primary;
     }
 
-    &--disabled &__wrapper {
-        opacity: 0.6;
+    &--disabled,
+    &--disabled &__wrapper,
+    &--disabled &__text {
         user-select: none;
         cursor: not-allowed;
     }
 
-    &--disabled {
-        pointer-events: none;
-        cursor: not-allowed;
+    &--disabled:not(&--secondary) {
+        background: rgba($color-primary, 0.4);
+
+        &:hover {
+            background: rgba($color-primary, 0.4);
+        }
+    }
+
+    &--disabled &__wrapper {
+        opacity: 0.6;
     }
 
     &--small {
@@ -38,9 +47,5 @@
         height: 28px;
         line-height: 21px;
         padding: 4px 20px;
-    }
-
-    &--no-margin {
-        margin-top: 0;
     }
 }
