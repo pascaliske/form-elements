@@ -45,7 +45,7 @@
     "@angular/platform-browser-dynamic": "^7.2.5",
     "@angular/router": "^7.2.5",
     "@pascaliske/html-helpers": "^1.2.3",
-    "core-js": "^2.6.5",
+    "core-js": "^3.0.0",
     "flatpickr": "4.5.4",
     "fuzzysearch": "^1.0.3",
     "rxjs": "^6.4.0",
