@@ -76,6 +76,7 @@
     "@storybook/angular": "^5.0.6",
     "@types/node": "^11.12.2",
     "@types/storybook__addon-actions": "^3.4.2",
+    "@types/storybook__addon-knobs": "^4.0.4",
     "@types/storybook__addon-links": "^3.3.4",
     "@types/webpack": "^4.4.26",
     "@types/webpack-env": "^1.13.9",
