@@ -1,0 +1,18 @@
+import { storiesOf } from '@storybook/angular'
+import { text } from '@storybook/addon-knobs'
+
+import { FDateComponent } from './f-date.component'
+import FDateReadme from './f-date.readme.md'
+import 'flatpickr/dist/flatpickr.min.css'
+import '../main.scss'
+
+storiesOf('02 Advanced/F-Date', module)
+    .addParameters({ notes: FDateReadme })
+    .add('Basic', () => ({
+        component: FDateComponent,
+        props: {
+            name: text('name', 'date'),
+            label: text('label', 'Date'),
+            autocomplete: 'off',
+        },
+    }))
