@@ -1,15 +1,12 @@
 import { storiesOf } from '@storybook/angular'
-import { withMarkdownNotes } from '@storybook/addon-notes'
-import { withKnobs, text, object, radios, boolean } from '@storybook/addon-knobs'
+import { text, object, radios, boolean } from '@storybook/addon-knobs'
 
 import { FInputComponent } from './f-input.component'
 import FInputReadme from './f-input.readme.md'
 import '../main.scss'
-import './f-input.component.scss'
 
-storiesOf('01 Basic/F-Input', module)
-    .addDecorator(withMarkdownNotes(FInputReadme))
-    .addDecorator(withKnobs())
+storiesOf('Basic|F-Input', module)
+    .addParameters({ notes: FInputReadme })
     .add('Basic', () => ({
         component: FInputComponent,
         props: {
@@ -22,13 +19,17 @@ storiesOf('01 Basic/F-Input', module)
                     message: 'The value should be at least 2 characters long!',
                 }),
             ],
-            autocomplete: radios('autocomplete', {
-                off: 'off',
-                on: 'on',
-                name: 'name',
-                email: 'email',
-                username: 'username',
-            }),
+            autocomplete: radios(
+                'autocomplete',
+                {
+                    off: 'off',
+                    on: 'on',
+                    name: 'name',
+                    email: 'email',
+                    username: 'username',
+                },
+                'off',
+            ),
             autofocus: boolean('autofocus', false),
         },
     }))
