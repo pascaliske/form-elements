@@ -8,6 +8,7 @@
             [attr.disabled]="disabled ? '' : null"
             (focus)="focusIn()"
             (focusout)="focusOut()"
+            (change)="changed.emit(fc.value)"
         >
             <option
                 class="cmp-f-select__placeholder"

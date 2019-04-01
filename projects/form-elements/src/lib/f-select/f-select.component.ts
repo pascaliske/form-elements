@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -36,6 +36,9 @@ export class FSelectComponent extends FInputComponent {
 
     @Input()
     public options: Array<FSelectOption> = []
+
+    @Output()
+    public changed: EventEmitter<void> = new EventEmitter()
 
     public icon: IconDefinition = faChevronDown
 
