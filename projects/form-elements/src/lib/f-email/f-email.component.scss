@@ -11,6 +11,18 @@
         z-index: 998;
     }
 
+    &__suggestion-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        fill: $color-primary;
+        text-align: center;
+        z-index: 999;
+        cursor: pointer;
+    }
+
     &__suggestion-list {
         width: 100%;
         height: 100%;
@@ -24,10 +36,10 @@
         height: 25px;
         line-height: 25px;
         position: relative;
-        cursor: pointer;
         pointer-events: all;
         user-select: none;
-        z-index: 999;
+        z-index: 998;
+        cursor: pointer;
     }
 
     &__input:focus ~ &__suggestions {

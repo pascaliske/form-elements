@@ -43,40 +43,42 @@ export class FEmailComponent extends FInputComponent {
         super()
     }
 
-    public suggest(event: KeyboardEvent): void {
-        if (!this.options.email.suggestions) {
+    public suggest(): void {
+        if (!this.options.email || !this.options.email.suggestions) {
             return
         }
 
-        const suggestions = this.options.email.suggestions
-        const value = (event.target as HTMLInputElement).value.match(/(.*)@(.*)/)
-
-        if (value && value.length > 2 && value[2] && value[2].length > 0) {
-            if (typeof suggestions === 'object' && suggestions.length > 0) {
-                this.suggestions$.next(suggestions.filter(item => fuzzysearch(value[2], item)))
-            } else {
-                this.suggestions$.next(this.providers.filter(item => fuzzysearch(value[2], item)))
-            }
-        } else {
+        const value = this.fc.value.match(/(.*)@(.*)/)
+        if (!value || value.length <= 2 || value[1].length === 0 || value[2].length === 0) {
             this.suggestions$.next([])
+            return
         }
+
+        this.suggestions$.next(this.fetchSuggestions().filter(item => fuzzysearch(value[2], item)))
     }
 
-    public use(event: Event): void {
+    public use(suggestion: string): void {
         if (!this.options.email.suggestions) {
             return
         }
 
         const parts = this.fc.value.split('@')
         const input = parts.slice(0, parts.length - 1).join('@')
-        const suggestion = (event.target as HTMLElement).innerText
 
-        this.suggestions$.next([])
         this.fc.setValue(`${input}@${suggestion}`)
+        this.suggestions$.next([])
     }
 
-    public focusOut(): void {
-        super.focusOut()
-        setTimeout(() => this.suggestions$.next([]))
+    public close(): void {
+        this.suggestions$.next([])
+    }
+
+    private fetchSuggestions(): Array<string> {
+        const suggestions = this.options.email.suggestions
+        if (Array.isArray(suggestions) && suggestions.length > 0) {
+            return suggestions
+        }
+
+        return this.providers
     }
 }
