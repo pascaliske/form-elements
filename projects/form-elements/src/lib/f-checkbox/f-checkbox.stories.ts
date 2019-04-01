@@ -5,7 +5,7 @@ import { FCheckboxComponent } from './f-checkbox.component'
 import FCheckboxReadme from './f-checkbox.readme.md'
 import '../main.scss'
 
-storiesOf('01 Basic/F-Checkbox', module)
+storiesOf('Basic|F-Checkbox', module)
     .addParameters({ notes: FCheckboxReadme })
     .add('Basic', () => ({
         component: FCheckboxComponent,

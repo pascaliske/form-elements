@@ -9,7 +9,7 @@ import '../main.scss'
 
 const icons = ['faCheck', 'faAngleDown', 'faPaperPlane', 'faSave']
 
-storiesOf('01 Basic/F-Button', module)
+storiesOf('Basic|F-Button', module)
     .addParameters({ notes: FButtonReadme })
     .add('Primary', () => ({
         component: FButtonComponent,

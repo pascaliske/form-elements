@@ -6,7 +6,7 @@ import FDateReadme from './f-date.readme.md'
 import 'flatpickr/dist/flatpickr.min.css'
 import '../main.scss'
 
-storiesOf('02 Advanced/F-Date', module)
+storiesOf('Advanced|F-Date', module)
     .addParameters({ notes: FDateReadme })
     .add('Basic', () => ({
         component: FDateComponent,
