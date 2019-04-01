@@ -35,7 +35,9 @@
         top: 0;
         left: 0;
         padding-left: 50px;
+        color: $color-primary;
         opacity: 0.5;
+        transition: color 0.2s;
     }
 
     &--filled &__symbol {
@@ -45,5 +47,14 @@
 
     &--filled &__check {
         stroke-dashoffset: 0;
+    }
+
+    &--disabled &__label {
+        color: $color-grey2;
+        cursor: not-allowed;
+    }
+
+    &--invalid &__label {
+        color: $color-red;
     }
 }

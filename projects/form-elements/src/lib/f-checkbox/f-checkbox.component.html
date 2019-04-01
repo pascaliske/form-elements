@@ -1,13 +1,41 @@
 <div [class]="classes('cmp-f-checkbox')">
     <div class="cmp-f-checkbox__control">
-        <input class="cmp-f-checkbox__input" type="checkbox" [id]="name" [name]="name" [formControl]="fc" [autocomplete]="autocomplete" [attr.disabled]="disabled ? '': null" (focus)="focusIn()" (focusout)="focusOut()" />
-        <svg class="cmp-f-checkbox__symbol" width="35" height="35" viewBox="-10 -10 55 55" xmlns="http://www.w3.org/2000/svg">
-            <svg:path class="cmp-f-checkbox__check" fill="none" stroke="#fff" stroke-width="5" stroke-miterlimit="20" d="M1.9,20.2l10.9,8.5L32.5,3.3"/>
+        <input
+            class="cmp-f-checkbox__input"
+            type="checkbox"
+            [id]="name"
+            [name]="name"
+            [formControl]="fc"
+            [attr.autocomplete]="autocomplete ? autocomplete : null"
+            [attr.disabled]="disabled ? '' : null"
+            (focus)="focusIn()"
+            (focusout)="focusOut()"
+            [checked]="fc.value === true"
+        />
+        <svg
+            class="cmp-f-checkbox__symbol"
+            width="35"
+            height="35"
+            viewBox="-10 -10 55 55"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <svg:path
+                class="cmp-f-checkbox__check"
+                fill="none"
+                stroke="#fff"
+                stroke-width="5"
+                stroke-miterlimit="20"
+                d="M1.9,20.2l10.9,8.5L32.5,3.3"
+            />
         </svg>
         <label class="cmp-f-checkbox__label" [for]="name">
-            {{label}}<span class="cmp-f-checkbox__required" *ngIf="isRequired()">*</span>
+            {{ label }}<span class="cmp-f-checkbox__required" *ngIf="isRequired()">*</span>
         </label>
     </div>
-    <cmp-f-explanation class="cmp-f-phone__explanations" [fc]="fc" [messages]="explanation"></cmp-f-explanation>
-    <cmp-f-error class="cmp-f-checkbox__errors" [fc]="fc" [messages]="validation" ></cmp-f-error>
+    <cmp-f-explanation
+        class="cmp-f-phone__explanations"
+        [fc]="fc"
+        [messages]="explanation"
+    ></cmp-f-explanation>
+    <cmp-f-error class="cmp-f-checkbox__errors" [fc]="fc" [messages]="validation"></cmp-f-error>
 </div>
