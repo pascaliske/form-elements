@@ -1,29 +1,30 @@
 <cmp-f-row [layout]="'1-1'">
     <cmp-f-column>
-        <cmp-f-date [label]="'Date Input'"></cmp-f-date>
+        <cmp-f-date [fc]="fc" [label]="'Date Input'" [name]="'date'"></cmp-f-date>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-input [label]="'Text Input'"></cmp-f-input>
+        <cmp-f-input [label]="'Text Input'" [name]="'text'"></cmp-f-input>
     </cmp-f-column>
 </cmp-f-row>
 <cmp-f-row [layout]="'1-1-1'">
     <cmp-f-column>
         <cmp-f-email
             [label]="'Email'"
-            [validation]="validation.email"
-            [explanation]="explanation.email"
+            [name]="'email'"
+            [validation]="validation"
+            [explanation]="explanation"
         ></cmp-f-email>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-password [label]="'Password'"></cmp-f-password>
+        <cmp-f-password [label]="'Password'" [name]="'password'"></cmp-f-password>
     </cmp-f-column>
     <cmp-f-column>
-        <cmp-f-select [label]="'Select'" [options]="options"></cmp-f-select>
+        <cmp-f-select [label]="'Select'" [name]="'select'" [options]="options"></cmp-f-select>
     </cmp-f-column>
 </cmp-f-row>
 <cmp-f-row>
     <cmp-f-column>
-        <cmp-f-text-area [label]="'Textarea'"></cmp-f-text-area>
+        <cmp-f-text-area [label]="'Textarea'" [name]="'textarea'"></cmp-f-text-area>
     </cmp-f-column>
 </cmp-f-row>
 <cmp-f-row [layout]="'1-1'">
@@ -38,5 +39,10 @@
             [icon]="icons.faPaperPlane"
         ></cmp-f-button>
         <cmp-f-button [label]="'Button Label #2'" [theme]="'secondary'"></cmp-f-button>
+    </cmp-f-column>
+</cmp-f-row>
+<cmp-f-row>
+    <cmp-f-column>
+        <cmp-f-checkbox [label]="'Checkbox Label'" [name]="'checkbox'"></cmp-f-checkbox>
     </cmp-f-column>
 </cmp-f-row>
