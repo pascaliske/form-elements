@@ -3,7 +3,6 @@ import { text } from '@storybook/addon-knobs'
 
 import { FDateComponent } from './f-date.component'
 import FDateReadme from './f-date.readme.md'
-import 'flatpickr/dist/flatpickr.min.css'
 import '../main.scss'
 
 storiesOf('Advanced|F-Date', module)

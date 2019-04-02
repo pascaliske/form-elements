@@ -1,5 +1,3 @@
-@import 'flatpickr/dist/flatpickr.min.css';
-
 @include cmp-base(cmp-f-date, block) {
     @include cmp-form-element();
     @include cmp-form-input();
