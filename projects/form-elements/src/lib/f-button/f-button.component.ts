@@ -1,8 +1,10 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { FButtonType } from '../typings'
 
+/**
+ * F-Button
+ */
 @Component({
     selector: 'cmp-f-button',
     templateUrl: './f-button.component.html',
@@ -12,7 +14,7 @@ export class FButtonComponent {
     public static readonly cmpName: string = 'FButtonComponent'
 
     @Input()
-    public type: FButtonType = 'button'
+    public type: 'button' | 'submit' = 'button'
 
     @Input()
     public id: string
@@ -24,15 +26,13 @@ export class FButtonComponent {
     public icon: IconDefinition
 
     @Input()
-    public theme: string = ''
+    public theme: string = 'primary'
 
     @Input()
     public disabled: boolean = false
 
     @Output()
     public clicked: EventEmitter<Event> = new EventEmitter()
-
-    public constructor() {}
 
     public get classes(): string {
         return modifiers('cmp-f-button', this.theme, {

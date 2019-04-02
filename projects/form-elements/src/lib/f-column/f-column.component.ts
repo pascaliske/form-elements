@@ -1,7 +1,9 @@
 import { Component, ViewEncapsulation, Input } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
-import { FColumnAlignments } from '../typings'
 
+/**
+ * F-Column
+ */
 @Component({
     selector: 'cmp-f-column',
     templateUrl: './f-column.component.html',
@@ -14,7 +16,7 @@ export class FColumnComponent {
     public flex = false
 
     @Input()
-    public align: FColumnAlignments = 'left'
+    public align: 'left' | 'right' = 'left'
 
     public constructor() {}
 

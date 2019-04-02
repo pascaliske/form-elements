@@ -4,7 +4,8 @@
   "newProjectRoot": "projects",
   "defaultProject": "form-elements",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "defaultCollection": "@pascaliske/schematics"
   },
   "schematics": {
     "@schematics/angular:component": {
@@ -17,7 +18,6 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "cmp",
-      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,6 +27,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "es5BrowserSupport": true,
             "assets": [
               {
                 "glob": "favicon.ico",
@@ -40,6 +41,7 @@
               }
             ],
             "styles": [
+              "dist/form-elements/styles.scss",
               "src/scss/styles.scss"
             ],
             "scripts": [],

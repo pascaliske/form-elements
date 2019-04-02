@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-error';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-error, block) {
     @include cmp-form-element();
     margin-top: 10px;
     margin-bottom: 5px;

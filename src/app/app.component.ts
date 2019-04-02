@@ -1,14 +1,16 @@
-import { Component } from '@angular/core'
-import { FSelectOption, FValidationConfig, FExplanationConfig } from '@pascaliske/form-elements'
+import { Component, OnInit } from '@angular/core'
+import { AbstractControl, FormControl } from '@angular/forms'
+import { FSelectOption, FValidation } from '@pascaliske/form-elements'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-    public options: FSelectOption[] = [
+export class AppComponent implements OnInit {
+    public fc: AbstractControl = new FormControl()
+
+    public options: Array<FSelectOption> = [
         {
             label: 'Option #1',
             value: 'option-1',
@@ -27,22 +29,24 @@ export class AppComponent {
         },
     ]
 
-    public validation: FValidationConfig = {
-        email: [
-            {
-                type: 'required',
-                message: 'This field is required!',
-            },
-            {
-                type: 'email',
-                message: 'Please check your input!',
-            },
-        ],
-    }
+    public validation: Array<FValidation> = [
+        {
+            type: 'required',
+            message: 'This field is required!',
+        },
+        {
+            type: 'email',
+            message: 'Please check your input!',
+        },
+    ]
 
-    public explanation: FExplanationConfig = {
-        email: ['Hello World!'],
-    }
+    public explanation: Array<string> = ['Hello World!']
 
     public icons = { faPaperPlane }
+
+    public ngOnInit(): void {
+        this.fc.valueChanges.subscribe(value => {
+            console.log(value)
+        })
+    }
 }
