@@ -21,7 +21,7 @@ export class FRadiobuttonComponent extends FInputComponent {
     public static readonly cmpName: string = 'FRadiobuttonComponent'
 
     @Input()
-    public options: Array<FRadiobuttonOption> = []
+    public options: FRadiobuttonOption[] = []
 
     public setValue(index: number): void {
         this.options.map(item => (item.checked = false))

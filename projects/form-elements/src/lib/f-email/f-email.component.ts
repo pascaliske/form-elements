@@ -11,9 +11,9 @@ import { ModuleOptions, OPTIONS } from '../options'
 export class FEmailComponent extends FInputComponent {
     public static readonly cmpName: string = 'FEmailComponent'
 
-    public suggestions$: BehaviorSubject<Array<string>> = new BehaviorSubject([])
+    public suggestions$: BehaviorSubject<string[]> = new BehaviorSubject([])
 
-    private providers: Array<string> = [
+    private providers: string[] = [
         'aol.com',
         'arcor.de',
         'freenet.de',
@@ -73,7 +73,7 @@ export class FEmailComponent extends FInputComponent {
         this.suggestions$.next([])
     }
 
-    private fetchSuggestions(): Array<string> {
+    private fetchSuggestions(): string[] {
         const suggestions = this.options.email.suggestions
         if (Array.isArray(suggestions) && suggestions.length > 0) {
             return suggestions

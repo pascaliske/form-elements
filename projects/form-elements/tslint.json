@@ -2,6 +2,9 @@
   "extends": "../../tslint.json",
   "rules": {
     "directive-selector": false,
-    "component-selector": false
+    "component-selector": false,
+    "use-input-property-decorator": null,
+    "use-output-property-decorator": null,
+    "use-host-property-decorator": null
   }
 }

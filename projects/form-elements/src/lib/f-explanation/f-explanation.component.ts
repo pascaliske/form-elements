@@ -13,7 +13,7 @@ export class FExplanationComponent {
     public fc: AbstractControl
 
     @Input()
-    public messages: Array<string>
+    public messages: string[]
 
     public icon: IconDefinition = faInfoCircle
 }

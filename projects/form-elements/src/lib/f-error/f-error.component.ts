@@ -13,7 +13,7 @@ export class FErrorComponent {
     public fc: AbstractControl
 
     @Input()
-    public messages: Array<FValidation>
+    public messages: FValidation[]
 
     public icon: IconDefinition = faExclamationCircle
 

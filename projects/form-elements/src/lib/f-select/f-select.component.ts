@@ -35,7 +35,7 @@ export class FSelectComponent extends FInputComponent {
     public placeholder: FSelectPlaceholder
 
     @Input()
-    public options: Array<FSelectOption> = []
+    public options: FSelectOption[] = []
 
     @Output()
     public changed: EventEmitter<void> = new EventEmitter()

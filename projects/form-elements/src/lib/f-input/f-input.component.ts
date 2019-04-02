@@ -39,10 +39,10 @@ export class FInputComponent implements OnInit {
     public fc: AbstractControl = new FormControl()
 
     @Input()
-    public validation: Array<FValidation> = []
+    public validation: FValidation[] = []
 
     @Input()
-    public explanation: Array<string> = []
+    public explanation: string[] = []
 
     @Input()
     public autocomplete: string
@@ -88,7 +88,7 @@ export class FInputComponent implements OnInit {
     }
 
     private setValidators(): void {
-        const validators: Array<ValidatorFn> = []
+        const validators: ValidatorFn[] = []
 
         this.validation.forEach(({ type, value }) => {
             if (Validators[type] && typeof Validators[type] === 'function') {
