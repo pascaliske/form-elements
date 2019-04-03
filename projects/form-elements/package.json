@@ -18,16 +18,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "flatpickr": "4.5.4",
-    "fuzzysearch": "^1.0.3"
-  },
   "peerDependencies": {
     "@angular/common": "^6.0.0 || ^7.0.0",
     "@angular/core": "^6.0.0 || ^7.0.0",
     "@angular/forms": "^6.0.0 || ^7.0.0",
     "@angular/http": "^6.0.0 || ^7.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
+    "flatpickr": "4.5.4",
+    "fuzzysearch": "^1.0.3",
     "rxjs": "^6.0.0"
   }
 }

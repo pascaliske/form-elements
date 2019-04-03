@@ -1,11 +1,14 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/form-elements",
-  "whitelistedNonPeerDependencies": [
-    "flatpickr",
-    "fuzzysearch"
-  ],
+  "whitelistedNonPeerDependencies": [],
   "lib": {
-    "entryFile": "src/exports.ts"
+    "entryFile": "src/exports.ts",
+    "umdModuleIds": {
+      "@fortawesome/angular-fontawesome": "fortawesome.angular-fontawesome",
+      "@fortawesome/free-regular-svg-icons": "free-regular-svg-icons",
+      "@fortawesome/free-solid-svg-icons": "free-solid-svg-icons",
+      "flatpickr": "flatpickr"
+    }
   }
 }
