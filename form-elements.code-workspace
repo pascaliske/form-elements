@@ -16,6 +16,9 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "typescript.tsdk": "node_modules/typescript/lib",
+        "search.exclude": {
+            "**/docs": true
+        },
         "[yaml]": {
             "editor.formatOnSave": false,
             "editor.formatOnType": false
