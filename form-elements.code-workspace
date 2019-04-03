@@ -15,8 +15,10 @@
     "settings": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
-        "tslint.autoFixOnSave": true,
-        "typescript.tsdk": "form-elements/node_modules/typescript/lib",
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "search.exclude": {
+            "**/docs": true
+        },
         "[yaml]": {
             "editor.formatOnSave": false,
             "editor.formatOnType": false

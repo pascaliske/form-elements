@@ -1,6 +1,5 @@
 import { Component, AfterViewInit, OnDestroy, Inject, ViewChild, ElementRef } from '@angular/core'
-import flatpickr from 'flatpickr/dist/flatpickr.min'
-import { German } from 'flatpickr/dist/l10n/de'
+import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
 import { ModuleOptions, OPTIONS } from '../options'
 
@@ -16,17 +15,11 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
 
     private instance: flatpickr.Instance
 
-    private selected: Date
-
-    private defaults: flatpickr.Options.Options = {
+    private readonly defaults: flatpickr.Options.Options = {
         allowInput: true,
         dateFormat: 'd. F Y',
-        defaultDate: this.selected || null,
-        locale: German,
+        defaultDate: null,
         weekNumbers: true,
-        onChange: value => {
-            this.selected = value[0]
-        },
     }
 
     public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
@@ -34,39 +27,38 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     public ngAfterViewInit(): void {
+        this.destroy()
+        this.init()
+    }
+
+    public ngOnDestroy(): void {
+        this.destroy()
+    }
+
+    private init() {
         if (typeof this.options.datepicker === 'boolean' && this.options.datepicker === false) {
             return
         }
 
-        this.initFlatpickr()
+        this.instance = flatpickr(this.inputRef.nativeElement, this.merge())
     }
 
-    public ngOnDestroy(): void {
-        this.destroyFlatpickr()
-    }
-
-    private initFlatpickr(): void {
-        const options = this.mergeOptions()
-
-        this.destroyFlatpickr()
-
-        this.instance = flatpickr(this.inputRef.nativeElement, options) as flatpickr.Instance
-    }
-
-    private destroyFlatpickr(): void {
-        if (this.instance) {
-            this.instance.destroy()
+    private destroy(): void {
+        if (!this.instance) {
+            return
         }
+
+        this.instance.destroy()
     }
 
-    private mergeOptions(): flatpickr.Options.Options {
+    private merge(): flatpickr.Options.Options {
         if (this.options.datepicker && typeof this.options.datepicker === 'object') {
             return {
-                ...this.defaults,
-                ...this.options.datepicker,
+                ...(this.defaults as flatpickr.Options.Options),
+                ...(this.options.datepicker as flatpickr.Options.Options),
             }
         }
 
-        return this.defaults
+        return this.defaults as flatpickr.Options.Options
     }
 }

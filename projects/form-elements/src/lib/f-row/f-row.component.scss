@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-row';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-row, block) {
     display: flex;
     flex-direction: row;
 

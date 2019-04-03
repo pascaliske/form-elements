@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-radiobutton';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-radiobutton, block) {
     @include cmp-form-element();
 
     &__control {

@@ -1,8 +1,27 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
-import { FValidation } from '../typings'
 
+/**
+ *
+ */
+export interface FValidation {
+    type:
+        | 'min'
+        | 'max'
+        | 'required'
+        | 'requiredTrue'
+        | 'email'
+        | 'minLength'
+        | 'maxLength'
+        | 'pattern'
+    value?: string | number
+    message: string
+}
+
+/**
+ * F-Input
+ */
 @Component({
     selector: 'cmp-f-input',
     templateUrl: './f-input.component.html',
@@ -20,10 +39,10 @@ export class FInputComponent implements OnInit {
     public fc: AbstractControl = new FormControl()
 
     @Input()
-    public validation: Array<FValidation> = []
+    public validation: FValidation[] = []
 
     @Input()
-    public explanation: Array<string> = []
+    public explanation: string[] = []
 
     @Input()
     public autocomplete: string
@@ -32,9 +51,9 @@ export class FInputComponent implements OnInit {
     public autofocus: boolean
 
     @Input()
-    public disabled = false
+    public disabled: boolean = false
 
-    public focus = false
+    public focus: boolean = false
 
     public constructor() {}
 
@@ -69,7 +88,7 @@ export class FInputComponent implements OnInit {
     }
 
     private setValidators(): void {
-        const validators: Array<ValidatorFn> = []
+        const validators: ValidatorFn[] = []
 
         this.validation.forEach(({ type, value }) => {
             if (Validators[type] && typeof Validators[type] === 'function') {

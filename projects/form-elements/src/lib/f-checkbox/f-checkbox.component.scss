@@ -1,8 +1,4 @@
-@import '../shared';
-
-$component: 'cmp-f-checkbox';
-
-@include cmp-base($component, block) {
+@include cmp-base(cmp-f-checkbox, block) {
     @include cmp-form-element();
 
     &__control {
@@ -39,7 +35,9 @@ $component: 'cmp-f-checkbox';
         top: 0;
         left: 0;
         padding-left: 50px;
+        color: $color-primary;
         opacity: 0.5;
+        transition: color 0.2s;
     }
 
     &--filled &__symbol {
@@ -49,5 +47,14 @@ $component: 'cmp-f-checkbox';
 
     &--filled &__check {
         stroke-dashoffset: 0;
+    }
+
+    &--disabled &__label {
+        color: $color-grey2;
+        cursor: not-allowed;
+    }
+
+    &--invalid &__label {
+        color: $color-red;
     }
 }

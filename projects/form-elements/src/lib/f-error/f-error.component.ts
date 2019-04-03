@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core'
 import { AbstractControl } from '@angular/forms'
-import { FValidation } from '../typings'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
+import { FValidation } from '../f-input/f-input.component'
 
 @Component({
     selector: 'cmp-f-error',
@@ -11,7 +13,11 @@ export class FErrorComponent {
     public fc: AbstractControl
 
     @Input()
-    public messages: Array<FValidation>
+    public messages: FValidation[]
 
-    public constructor() {}
+    public icon: IconDefinition = faExclamationCircle
+
+    public hasErrorFor(validation: FValidation): boolean {
+        return this.fc.hasError(validation.type) && (this.fc.dirty || this.fc.touched)
+    }
 }

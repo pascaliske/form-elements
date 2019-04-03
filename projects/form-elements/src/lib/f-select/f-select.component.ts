@@ -1,8 +1,29 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FInputComponent } from '../f-input/f-input.component'
-import { FSelectPlaceholder, FSelectOption } from '../typings'
 
+/**
+ *
+ */
+export interface FSelectOption {
+    label: string
+    value: any
+}
+
+/**
+ *
+ */
+export interface FSelectPlaceholder {
+    label: string
+    value: any
+    selectable: boolean
+}
+
+/**
+ * F-Select
+ */
 @Component({
     selector: 'cmp-f-select',
     templateUrl: './f-select.component.html',
@@ -14,7 +35,12 @@ export class FSelectComponent extends FInputComponent {
     public placeholder: FSelectPlaceholder
 
     @Input()
-    public options: Array<FSelectOption> = []
+    public options: FSelectOption[] = []
+
+    @Output()
+    public changed: EventEmitter<void> = new EventEmitter()
+
+    public icon: IconDefinition = faChevronDown
 
     public classes(namespace: string): string {
         const base = super.classes(namespace)

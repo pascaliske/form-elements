@@ -4,7 +4,7 @@ import flatpickr from 'flatpickr'
 export interface ModuleOptions {
     datepicker: flatpickr.Options.Options | boolean
     email: {
-        suggestions: Array<string> | boolean
+        suggestions: string[] | boolean
     }
 }
 
