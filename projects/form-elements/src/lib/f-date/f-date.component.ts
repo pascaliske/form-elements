@@ -36,7 +36,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private init() {
-        if (typeof this.options === 'boolean') {
+        if (typeof this.options.datepicker === 'boolean' && this.options.datepicker === false) {
             return
         }
 
@@ -57,8 +57,8 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
                 ...(this.defaults as flatpickr.Options.Options),
                 ...(this.options.datepicker as flatpickr.Options.Options),
             }
-        } else {
-            return this.defaults as flatpickr.Options.Options
         }
+
+        return this.defaults as flatpickr.Options.Options
     }
 }
