@@ -7,6 +7,7 @@ import { FCheckboxComponent } from './f-checkbox/f-checkbox.component'
 import { FColumnComponent } from './f-column/f-column.component'
 import { FDateComponent } from './f-date/f-date.component'
 import { FEmailComponent } from './f-email/f-email.component'
+import { FFormComponent } from './f-form/f-form.component'
 import { FInputComponent } from './f-input/f-input.component'
 import { FPasswordComponent } from './f-password/f-password.component'
 import { FPhoneComponent } from './f-phone/f-phone.component'
@@ -24,6 +25,7 @@ export const components = [
     FColumnComponent,
     FDateComponent,
     FEmailComponent,
+    FFormComponent,
     FInputComponent,
     FPasswordComponent,
     FPhoneComponent,

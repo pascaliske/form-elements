@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { AbstractControl, FormControl } from '@angular/forms'
+import { AbstractControl, FormGroup, FormControl } from '@angular/forms'
 import { FSelectOption, FValidation } from '@pascaliske/form-elements'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,9 +8,11 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
     templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
+    public fg: FormGroup = new FormGroup({})
+
     public fc: AbstractControl = new FormControl()
 
-    public options: Array<FSelectOption> = [
+    public options: FSelectOption[] = [
         {
             label: 'Option #1',
             value: 'option-1',
@@ -29,7 +31,7 @@ export class AppComponent implements OnInit {
         },
     ]
 
-    public validation: Array<FValidation> = [
+    public validation: FValidation[] = [
         {
             type: 'required',
             message: 'This field is required!',
@@ -40,7 +42,7 @@ export class AppComponent implements OnInit {
         },
     ]
 
-    public explanation: Array<string> = ['Hello World!']
+    public explanation: string[] = ['Hello World!']
 
     public icons = { faPaperPlane }
 
@@ -48,5 +50,9 @@ export class AppComponent implements OnInit {
         this.fc.valueChanges.subscribe(value => {
             console.log(value)
         })
+    }
+
+    public submit(event: Event): void {
+        console.log(event)
     }
 }
