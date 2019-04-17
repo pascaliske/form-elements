@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/pascaliske/form-elements/compare/v2.0.0...v2.1.0) (2019-04-17)
+
+
+### Features
+
+* **f-form:** add general form component for wrapping form elements and handling submit events ([4d593f1](https://github.com/pascaliske/form-elements/commit/4d593f1))
+
+
+
 # [2.0.0](https://github.com/pascaliske/form-elements/compare/v1.2.5...v2.0.0) (2019-04-03)
 
 
