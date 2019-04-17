@@ -35,14 +35,22 @@ Then import the styles in your global scss styles:
 @import '~@pascaliske/form-elements/styles';
 ```
 
+> **Note:** If you want to use the `cmp-f-date` component you also need to add the `flatpickr` styles:
+>
+> ```scss
+> @import '~flatpickr/dist/flatpickr.min.css';
+> ```
+
 Now you can use the components in your template:
 
 ```html
-<cmp-f-row>
-    <cmp-f-column>
-        <cmp-f-input label="My text input"></cmp-f-input>
-    </cmp-f-column>
-</cmp-f-row>
+<cmp-f-form>
+    <cmp-f-row>
+        <cmp-f-column>
+            <cmp-f-input label="My text input"></cmp-f-input>
+        </cmp-f-column>
+    </cmp-f-row>
+</cmp-f-form>
 ```
 
 ## License
