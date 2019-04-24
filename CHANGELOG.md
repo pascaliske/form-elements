@@ -1,3 +1,18 @@
+# [2.2.0](https://github.com/pascaliske/form-elements/compare/v2.1.0...v2.2.0) (2019-04-24)
+
+
+### Bug Fixes
+
+* **f-button:** fix background color of submit buttons ([f7cd48d](https://github.com/pascaliske/form-elements/commit/f7cd48d))
+* **f-error:** initialize input with empty validation messages array ([f7dcfc4](https://github.com/pascaliske/form-elements/commit/f7dcfc4))
+
+
+### Features
+
+* **f-form:** allow direct sending of data on form submit ([141def2](https://github.com/pascaliske/form-elements/commit/141def2))
+
+
+
 # [2.1.0](https://github.com/pascaliske/form-elements/compare/v2.0.0...v2.1.0) (2019-04-17)
 
 
