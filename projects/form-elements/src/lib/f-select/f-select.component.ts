@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core'
+import { Component, forwardRef, Input, Output, EventEmitter } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -27,6 +27,7 @@ export interface FSelectPlaceholder {
 @Component({
     selector: 'cmp-f-select',
     templateUrl: './f-select.component.html',
+    providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FSelectComponent) }],
 })
 export class FSelectComponent extends FInputComponent {
     public static readonly cmpName: string = 'FSelectComponent'

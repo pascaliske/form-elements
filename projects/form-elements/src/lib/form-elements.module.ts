@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FButtonComponent } from './f-button/f-button.component'
@@ -36,7 +37,7 @@ export const components = [
 ]
 
 @NgModule({
-    imports: [CommonModule, ReactiveFormsModule, FontAwesomeModule],
+    imports: [CommonModule, HttpClientModule, ReactiveFormsModule, FontAwesomeModule],
     declarations: [...components, FErrorComponent, FExplanationComponent],
     entryComponents: [...components],
     exports: [...components],

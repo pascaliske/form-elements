@@ -1,4 +1,12 @@
-import { Component, AfterViewInit, OnDestroy, Inject, ViewChild, ElementRef } from '@angular/core'
+import {
+    Component,
+    forwardRef,
+    AfterViewInit,
+    OnDestroy,
+    Inject,
+    ViewChild,
+    ElementRef,
+} from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
 import { ModuleOptions, OPTIONS } from '../options'
@@ -6,6 +14,7 @@ import { ModuleOptions, OPTIONS } from '../options'
 @Component({
     selector: 'cmp-f-date',
     templateUrl: './f-date.component.html',
+    providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FDateComponent) }],
 })
 export class FDateComponent extends FInputComponent implements AfterViewInit, OnDestroy {
     public static readonly cmpName: string = 'FDateComponent'

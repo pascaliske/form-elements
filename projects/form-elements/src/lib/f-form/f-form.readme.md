@@ -3,7 +3,7 @@
 ## Usage
 
 ```html
-<cmp-f-form [fg]="formGroup" (submit)="onSubmit">
+<cmp-f-form [formGroup]="formGroup" (submitted)="onSubmit">
     <cmp-f-row>
         <cmp-f-column><!-- [...] --></cmp-f-column>
     </cmp-f-row>
@@ -16,7 +16,8 @@
 
 ## Inputs / Outputs
 
-| Name       | Type                  |
-| ---------- | --------------------- |
-| `[fg]`     | `FormGroup`           |
-| `(submit)` | `EventEmitter<Event>` |
+| Name          | Type                  |
+| ------------- | --------------------- |
+| `[formGroup]` | `FormGroup`           |
+| `[url]`       | `string`              |
+| `(submitted)` | `EventEmitter<Event>` |
