@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, forwardRef } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
@@ -7,6 +7,7 @@ import { FInputComponent } from '../f-input/f-input.component'
 @Component({
     selector: 'cmp-f-password',
     templateUrl: './f-password.component.html',
+    providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FPasswordComponent) }],
 })
 export class FPasswordComponent extends FInputComponent {
     public static readonly cmpName: string = 'FPasswordComponent'

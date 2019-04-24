@@ -19,7 +19,7 @@
             <span class="cmp-f-email__required" *ngIf="isRequired()">*</span>
         </label>
         <span class="cmp-f-email__line"></span>
-        <div class="cmp-f-email__suggestions" *ngIf="(suggestions$ | async) as items">
+        <div class="cmp-f-email__suggestions" *ngIf="suggestions$ | async as items">
             <ng-template [ngIf]="items.length > 0">
                 <div class="cmp-f-email__suggestion-close" (click)="close()">X</div>
                 <div class="cmp-f-email__suggestion-list">
