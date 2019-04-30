@@ -86,17 +86,7 @@
     "@angular-devkit/core" "7.3.8"
     rxjs "6.3.3"
 
-"@angular-devkit/core@7.3.4", "@angular-devkit/core@^7.3.2":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.3.4.tgz#fae0521652c7430237025f117531ca3262ef8335"
-  dependencies:
-    ajv "6.9.1"
-    chokidar "2.0.4"
-    fast-json-stable-stringify "2.0.0"
-    rxjs "6.3.3"
-    source-map "0.7.3"
-
-"@angular-devkit/core@7.3.8":
+"@angular-devkit/core@7.3.8", "@angular-devkit/core@^7.3.8":
   version "7.3.8"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.3.8.tgz#702b0944a69c71cce3a1492e0d62de18df22a993"
   dependencies:
@@ -106,14 +96,7 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@7.3.4", "@angular-devkit/schematics@^7.3.2":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.4.tgz#918c9349835f3a4c9a7128ebcda0738b623fc89e"
-  dependencies:
-    "@angular-devkit/core" "7.3.4"
-    rxjs "6.3.3"
-
-"@angular-devkit/schematics@7.3.8":
+"@angular-devkit/schematics@7.3.8", "@angular-devkit/schematics@^7.3.8":
   version "7.3.8"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.8.tgz#70bfc7876f7924ff53ab9310a00b62f20acf2f5c"
   dependencies:
@@ -123,7 +106,6 @@
 "@angular/animations@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-7.2.14.tgz#06ec2feac31e58f53429e673bc4c7f780a9d0710"
-  integrity sha512-K+wdq7TslmvDhrbwy65x7owE8wezI0fDdO+8SO9RU4m/w6R6vo4QS3uSdc5I2pxwm4QSXSc5eKhoWJkq0muTbQ==
   dependencies:
     tslib "^1.9.0"
 
@@ -148,14 +130,12 @@
 "@angular/common@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-7.2.14.tgz#6477b87a203af918e6a00b8238c29198322456f2"
-  integrity sha512-c2QBhVpbQhg1FDhOQkyVdFvU11mfvYHW5ZaXzxdCpq2rZXCureYiCSnlv++EsIAKqi22+2a6GACHF9Gh8kBmSg==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/compiler-cli@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-7.2.14.tgz#6deba7f804d1c6d423f1db135ac77204389021ef"
-  integrity sha512-w5qn1nIPjiCP3WdbqicofpKpiRlh6NMYjWhe6mJysSBnVd34aSuGisYW/gVPQrmD46E1gmfpWTnWPeABVnjj6w==
   dependencies:
     canonical-path "1.0.0"
     chokidar "^2.1.1"
@@ -172,54 +152,46 @@
 "@angular/compiler@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-7.2.14.tgz#39abf41a0250a43c6a00e3501088ecee83c536e6"
-  integrity sha512-Idhs+5HIzx+1+hrXIDaRpSqobMB7UvSvPlvCvtb3EDYjmltTNG68TtwMzGM8W2jdayliYuFOjFrnw1wCTkK3Ag==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/core@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-7.2.14.tgz#b78c936d284223c1c5a4c4b02cd0d5fd6d03ec91"
-  integrity sha512-XeZZJCyBKSKo0E/7Ef0SfJejmn+E7uBXa5cR1QapafS0Hnrq/hZu/NI039IDU/51NoycMDH2vTV19SmKu9Mkow==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/forms@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-7.2.14.tgz#7df70df357b9e1ae4aa8a0d008bf7ec753ccc03d"
-  integrity sha512-jL5YbTk7VZmz4l0++iFVUNa1vGM+nnALjHKi1Ub8VWioRDRboYUsHyxzlgWW9gZRbHpnLEXFiUz1td+v7TouJw==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/http@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-7.2.14.tgz#13a0e71133296e2bb1c0b68d48281a70a5f233b5"
-  integrity sha512-rSdH2JojApDU83qVm7RabIlNo3Ni3yr2gwsmQWs4XZ7SC8jLNnDkzdUbQ6T0vfuVX3v/FtAuMJl0yaVcG3EUJg==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/language-service@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-7.2.14.tgz#f0c90e030fbb3777293a2946c2cb4b79c152856f"
-  integrity sha512-YTU4ePAKikbIxNae9Qta8qaDArPgek7nhLEW9QfvrUAnpF7BkVboEI+7yLX5+NTfGf9cQ9cUfQ0TEreV+tMs7A==
 
 "@angular/platform-browser-dynamic@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-7.2.14.tgz#ae055ab0d3246c0f2d27d40a46cd99c012aa199d"
-  integrity sha512-lmTCBiDRbOPtniIqBjm1n5jl1TdyQM0qWQdBcoCsKpMNS/6/RacRcQsJZApAMdWm6gIVuLgmRQzaCLkSoekfYA==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/platform-browser@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-7.2.14.tgz#9b259c335eb0dda64bc79409fa8dbb8fbb6bd818"
-  integrity sha512-yAq2+3W4J4B48HEmZYQucdEb9AHwRnv72q9CC/SxU7g59vaLhl1nv7cAWGJ4XFaJTbB7aB4Y4rLffuR+Gxkn7A==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/router@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-7.2.14.tgz#c8994ce10e6df3d5ada06e409a6a0b00ae9536d4"
-  integrity sha512-uqg0SKy79voEOIOvzVbCzFDD9XOAfZWkYt01ca2qLFXMx+6jWeVQIDuXc8Dmz5udIXNK5Ae//9R+nt5UZUZrSA==
   dependencies:
     tslib "^1.9.0"
 
@@ -1244,18 +1216,17 @@
 "@pascaliske/html-helpers@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@pascaliske/html-helpers/-/html-helpers-1.4.0.tgz#6e55a7f1160f55e9dece46870e7e6253dda8f559"
-  integrity sha512-5ONsHWc8kTcB/deYunGBCDWVb4+xxarTB7v10j7FmGkh597pxARpSM9A+jxX+gZl0+KmEIZJZU9HeM56J3E1Bg==
   dependencies:
     classnames "^2.2.6"
     tslib "^1.9.3"
 
-"@pascaliske/schematics@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@pascaliske/schematics/-/schematics-0.0.4.tgz#3bd7726f51e551a0d043cf1efb211e938a058db2"
+"@pascaliske/schematics@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@pascaliske/schematics/-/schematics-0.0.5.tgz#9cff04b0de490164a98d78e2fbc37f970d1ee9cb"
   dependencies:
-    "@angular-devkit/core" "^7.3.2"
-    "@angular-devkit/schematics" "^7.3.2"
-    "@schematics/angular" "^7.3.2"
+    "@angular-devkit/core" "^7.3.8"
+    "@angular-devkit/schematics" "^7.3.8"
+    "@schematics/angular" "^7.3.8"
 
 "@reach/router@^1.2.1":
   version "1.2.1"
@@ -1273,20 +1244,12 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@schematics/angular@7.3.8":
+"@schematics/angular@7.3.8", "@schematics/angular@^7.3.8":
   version "7.3.8"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-7.3.8.tgz#9cded496b79830164acbc2fc382b66e5b5f7cf02"
   dependencies:
     "@angular-devkit/core" "7.3.8"
     "@angular-devkit/schematics" "7.3.8"
-    typescript "3.2.4"
-
-"@schematics/angular@^7.3.2":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-7.3.4.tgz#ba36efdd5474b793eb693d47772f998e6bd6043e"
-  dependencies:
-    "@angular-devkit/core" "7.3.4"
-    "@angular-devkit/schematics" "7.3.4"
     typescript "3.2.4"
 
 "@schematics/update@0.13.8":
@@ -1305,7 +1268,6 @@
 "@storybook/addon-actions@^5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.0.10.tgz#7791ee26c41c63f6d2f36ec0b41108ba9b138171"
-  integrity sha512-zPwGMsS11uoKu/gBkBdcdXMtAle2u04O7B1rWFoHFtbQRX+ZDgtkjtSRldpn9t6MYEqJmZ4s3TUxbwv6hKeBOQ==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/components" "5.0.10"
@@ -1325,7 +1287,6 @@
 "@storybook/addon-knobs@^5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.0.10.tgz#6c8828ee188572ce7ba2430846e875318b049cbf"
-  integrity sha512-5HIncloKy/cj/q2RoW2b9Xe5Ew41v9wDSN3XLiOgsr1TA1uZslStoIfvhuHT4I0rBFTYEgjWebBGgnuY7vvZoA==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/components" "5.0.10"
@@ -1347,7 +1308,6 @@
 "@storybook/addon-links@^5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.0.10.tgz#abf97d9d336a76ea773e71781a0bc1808ff1dd42"
-  integrity sha512-dDiwtHtJydN0fAGKWlWIFQUA8wAiMEepWfKf3Fi7a7gW5syZf9HczlqKqJW9R0oUshPJ+GBTr5Ua49Yan6+9RQ==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/core-events" "5.0.10"
@@ -1360,7 +1320,6 @@
 "@storybook/addon-notes@^5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.0.10.tgz#67875b85402cf07c7b56717c35ba6bdde69bdc78"
-  integrity sha512-x1s2Ihyv3Qkowok/rqPxp2IAYEyhqJOBSqRWgBzch3uKqumzDS2a9bRbasvghuVyV/gubPNzyRTdd3Fhy/tmxg==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1375,7 +1334,6 @@
 "@storybook/addons@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.0.10.tgz#8911e6e7797185327f0117035a4bc451a57e62d7"
-  integrity sha512-plpLh17dt8KWhs8dRQlleClc7sibE1Plq7QQWyAsZjblRHfpNnv82Ax9ArmMeGFx2TRTTbCOcw9PiaKkt5/E7Q==
   dependencies:
     "@storybook/channels" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1386,7 +1344,6 @@
 "@storybook/angular@^5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-5.0.10.tgz#e443dd29128a6e613dc17114e0284045e8b73f2d"
-  integrity sha512-26C5T5UL9RKx3osOG5Oci6TkZ4m2w9zNLViyTQlzkUjqqUD/VqVYznhCnbTOsrv9b4idr5RXl72JDIR2WqSmJQ==
   dependencies:
     "@storybook/core" "5.0.10"
     "@storybook/node-logger" "5.0.10"
@@ -1405,7 +1362,6 @@
 "@storybook/channel-postmessage@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.0.10.tgz#ade24994e57d7c684d334c2dac3dd049e36c08ff"
-  integrity sha512-5qM6JhgO0eXUcos+CNckq1gOVYJNi9LUBBT0yniO3PdEf7CzwQicv0pTyoFXfUwVNdRobXNPihErqceScXxcFQ==
   dependencies:
     "@storybook/channels" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1416,14 +1372,12 @@
 "@storybook/channels@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.0.10.tgz#b1ae31784359a3d12403a53a5be8eb2327c4a467"
-  integrity sha512-5WWSHEI6uFkzv3E5UaqMH2H0BFCI1CyPrJRUZyhsrBcnJctUQ+4J74IMCP9FQhaBCc6yLQlKWLpllaIHB5kPbA==
   dependencies:
     core-js "^2.6.5"
 
 "@storybook/client-api@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.0.10.tgz#c9cae5e35369658415a3f41d9a65418605664ad1"
-  integrity sha512-AfzSvXKfnQQQQUs3U+AecIJx0aNW0NT+pb8OcQLsO47gKdSTE2ursRiii7+YbjSG96/cL4mpdD/AmFoWJ+ubow==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1443,14 +1397,12 @@
 "@storybook/client-logger@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.0.10.tgz#710b249c30aa320a0aef7da464d7e621a390bf92"
-  integrity sha512-Nh4dJ8rTPtOT1/Bef39+4HZVYX6EJthMpjjV04AWxT5ngxBa2MzhmcbnoYc3NOBSRh9fhJ6jm14/skQmLAO/jQ==
   dependencies:
     core-js "^2.6.5"
 
 "@storybook/components@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.0.10.tgz#e0e7eed0e42160a8143fb7e57e7b45bb1ed71841"
-  integrity sha512-G2+2+8y3vFBvOqbaqOLDAjWFM9iO3TNnWadqkS5t6jAsl/pCVozKecPihR8S7Qr4Joy3PpdVSXGjFNFDWVJT4g==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1481,14 +1433,12 @@
 "@storybook/core-events@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.0.10.tgz#6437f8b6a6c3c902fa2fbad8de992c5104115332"
-  integrity sha512-Hp8PleSXAbVNr/yi58JIQb/tjZVpRcjEe8ztIp4JT5qhpz+xHTiVnS7mo8gCdyMw5cr38ANgdlZGnLshJY29lQ==
   dependencies:
     core-js "^2.6.5"
 
 "@storybook/core@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.0.10.tgz#fa9632a97fa97fd86c75c9fbeb02a54c34c7e903"
-  integrity sha512-b87JULxcvZxyM3w8JwdW5iJAt9aVqohfFA3v6dTGSq+H6q8do2rGD3nBCG/iaLsy1NnSskLw6Cd2BNuLDvvWOA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.3.0"
     "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
@@ -1562,7 +1512,6 @@
 "@storybook/node-logger@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.0.10.tgz#ee1908c30d5fd0262e3b01c13cfd92b07dbbb083"
-  integrity sha512-+ais31IeGdbJ1AyZ0MRoNdWnIjZmqrp7SBgwyj37EKn1isgTsN/iP6xqEgmAdWlxMTPRFExYMD3pkxip1WtwaQ==
   dependencies:
     chalk "^2.4.2"
     core-js "^2.6.5"
@@ -1573,7 +1522,6 @@
 "@storybook/router@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.0.10.tgz#a756dc521fc4df19a090fcc23eed0a5de5fedc87"
-  integrity sha512-mHxMynnsbUNcr1GoXXunRVI+JvDTBE/lAAdqzMUduI4E6eUv8MHXw2KfeNQcZaNAf0PLynvbqJd2qpfMpKo/zA==
   dependencies:
     "@reach/router" "^1.2.1"
     "@storybook/theming" "5.0.10"
@@ -1585,7 +1533,6 @@
 "@storybook/theming@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.0.10.tgz#6e2b00f879678419e2297ed8a31c357ae7976801"
-  integrity sha512-4IUtWglyAQCPHKMqPZkTWc/8FbfGHwtRSbaNxbv5S6PEcfWPIiMVWWRYMBNyETvYoYbCOHORH1w7iwJs75sRmA==
   dependencies:
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
@@ -1605,7 +1552,6 @@
 "@storybook/ui@5.0.10":
   version "5.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.0.10.tgz#58b7d8c706776eb9c048d3dc69bedc8a198b0609"
-  integrity sha512-iKMmfY5MCJ3hVrWxqlN0t1sldJhnx9t0cXp91yI8Y+cV190Yw3KI5nE8kHF2ETInhHLfSRSl4Ssz/Xi2s4AsKg==
   dependencies:
     "@storybook/addons" "5.0.10"
     "@storybook/client-logger" "5.0.10"
@@ -1691,7 +1637,6 @@
 "@types/node@^11.13.7":
   version "11.13.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.7.tgz#85dbb71c510442d00c0631f99dae957ce44fd104"
-  integrity sha512-suFHr6hcA9mp8vFrZTgrmqW2ZU3mbWsryQtQlY/QvwTISCw7nw/j+bCQPPohqmskhmqa5wLNuMHTTsc+xf1MQg==
 
 "@types/prop-types@*":
   version "15.7.0"
@@ -3827,13 +3772,22 @@ cosmiconfig@^4.0.0:
     parse-json "^4.0.0"
     require-from-string "^2.0.1"
 
-cosmiconfig@^5.0.2, cosmiconfig@^5.0.5, cosmiconfig@^5.0.7:
+cosmiconfig@^5.0.2, cosmiconfig@^5.0.5:
   version "5.0.7"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.0.7.tgz#39826b292ee0d78eda137dfa3173bd1c21a43b04"
   dependencies:
     import-fresh "^2.0.0"
     is-directory "^0.3.1"
     js-yaml "^3.9.0"
+    parse-json "^4.0.0"
+
+cosmiconfig@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.0.tgz#45038e4d28a7fe787203aede9c25bca4a08b12c8"
+  dependencies:
+    import-fresh "^2.0.0"
+    is-directory "^0.3.1"
+    js-yaml "^3.13.0"
     parse-json "^4.0.0"
 
 create-ecdh@^4.0.0:
@@ -5227,9 +5181,9 @@ get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
 
-get-stdin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
+get-stdin@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-7.0.0.tgz#8d5de98f15171a125c5e516643c7a6d0ea8a96f6"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -5749,18 +5703,18 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-1.3.1.tgz#26823e399300388ca2afff11cfa8a86b0033fae0"
+husky@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-2.0.0.tgz#fdc232f6e44af8257d86602c34105673ce532c79"
   dependencies:
-    cosmiconfig "^5.0.7"
+    cosmiconfig "^5.2.0"
     execa "^1.0.0"
     find-up "^3.0.0"
-    get-stdin "^6.0.0"
+    get-stdin "^7.0.0"
     is-ci "^2.0.0"
-    pkg-dir "^3.0.0"
+    pkg-dir "^4.1.0"
     please-upgrade-node "^3.1.1"
-    read-pkg "^4.0.1"
+    read-pkg "^5.0.0"
     run-node "^1.0.0"
     slash "^2.0.0"
 
@@ -8172,6 +8126,12 @@ pkg-dir@^3.0.0:
   dependencies:
     find-up "^3.0.0"
 
+pkg-dir@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-4.1.0.tgz#aaeb91c0d3b9c4f74a44ad849f4de34781ae01de"
+  dependencies:
+    find-up "^3.0.0"
+
 pkg-up@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
@@ -8858,14 +8818,6 @@ read-pkg@^3.0.0:
     load-json-file "^4.0.0"
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
-
-read-pkg@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-4.0.1.tgz#963625378f3e1c4d48c85872b5a6ec7d5d093237"
-  dependencies:
-    normalize-package-data "^2.3.2"
-    parse-json "^4.0.0"
-    pify "^3.0.0"
 
 read-pkg@^5.0.0:
   version "5.0.0"
