@@ -11,7 +11,7 @@ import {
 } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { FormGroup, AbstractControl } from '@angular/forms'
-import { modifiers } from '@pascaliske/html-helpers'
+import { modifiers, join } from '@pascaliske/html-helpers'
 import { FInputComponent } from '../f-input/f-input.component'
 
 @Component({
@@ -20,6 +20,9 @@ import { FInputComponent } from '../f-input/f-input.component'
 })
 export class FFormComponent implements AfterContentInit {
     public static readonly cmpName: string = 'FFormComponent'
+
+    @Input()
+    public class: string
 
     @Input()
     public formGroup: FormGroup
@@ -51,7 +54,7 @@ export class FFormComponent implements AfterContentInit {
 
     @HostBinding('class')
     public get classes(): string {
-        return modifiers('cmp-f-form', {})
+        return join(modifiers('cmp-f-form'), this.class)
     }
 
     private collect(): Record<string, AbstractControl> {
