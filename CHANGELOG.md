@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/pascaliske/form-elements/compare/v2.2.0...v2.2.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* **f-form:** allow custom classes with form wrapper ([dc3f02b](https://github.com/pascaliske/form-elements/commit/dc3f02b))
+
+
+
 # [2.2.0](https://github.com/pascaliske/form-elements/compare/v2.1.0...v2.2.0) (2019-04-24)
 
 
