@@ -42,8 +42,10 @@ export class FFormComponent implements AfterContentInit {
         this.formGroup = this.formGroup || new FormGroup(this.collect())
     }
 
-    @HostListener('submit')
-    public onSubmit(): void {
+    @HostListener('submit', ['$event'])
+    public onSubmit(event: Event): void {
+        event.preventDefault()
+
         if (this.url && this.url.length > 0) {
             this.http.post(this.url, this.formGroup.value).subscribe()
         }
