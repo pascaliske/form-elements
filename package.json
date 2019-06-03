@@ -83,7 +83,7 @@
     "babel-loader": "^8.0.5",
     "chalk": "^2.4.2",
     "codelyzer": "~5.0.1",
-    "flatpickr": "4.5.7",
+    "flatpickr": "4.6.0",
     "fuzzysearch": "^1.0.3",
     "husky": "^2.2.0",
     "lint-staged": "^8.1.6",
