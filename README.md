@@ -1,6 +1,6 @@
 # `@pascaliske/form-elements`
 
-[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/form-elements.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/form-elements)](https://dependabot.com)
 
 ## Installation
 
