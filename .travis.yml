@@ -3,7 +3,7 @@ node_js:
   - '11'
   - '10'
 install:
-  - yarn install
+  - yarn install --frozen-lockfile
 script:
   - yarn run lint
   - yarn run build --prod
