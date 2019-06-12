@@ -24,7 +24,7 @@
     "@angular/forms": "^6.0.0 || ^7.0.0",
     "@angular/http": "^6.0.0 || ^7.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
-    "flatpickr": "^4.5.4",
+    "flatpickr": "^4.6.1",
     "fuzzysearch": "^1.0.3",
     "rxjs": "^6.0.0"
   }
