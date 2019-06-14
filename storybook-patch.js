@@ -1,9 +1,8 @@
-#!/usr/bin/env ts-node
-
-import { readFile, writeFile } from 'fs'
-import { join, dirname } from 'path'
-import { promisify } from 'util'
-import chalk from 'chalk'
+#!/usr/bin/env node
+const { readFile, writeFile } = require('fs')
+const { join, dirname } = require('path')
+const { promisify } = require('util')
+const chalk = require('chalk')
 
 /* tslint:disable:max-line-length */
 const SEARCH = `
@@ -34,6 +33,7 @@ async function execute() {
     if (!contents.includes(SEARCH)) {
         console.warn(
             chalk.yellow(
+                // tslint:disable-next-line
                 '@storybook/angular was not patched as their source code changed or the patch is already applied.',
             ),
         )
