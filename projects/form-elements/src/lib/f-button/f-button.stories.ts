@@ -7,17 +7,24 @@ import { FButtonComponent } from './f-button.component'
 import FButtonReadme from './f-button.readme.md'
 import '../main.scss'
 
-const icons = { faCheck, faAngleDown, faPaperPlane, faSave }
+const defs = { faCheck, faAngleDown, faPaperPlane, faSave }
+const buttons = { button: 'button', submit: 'submit' }
+const icons = {
+    faCheck: 'faCheck',
+    faAngleDown: 'faAngleDown',
+    faPaperPlane: 'faPaperPlane',
+    faSave: 'faSave',
+}
 
 storiesOf('Basic|F-Button', module)
     .addParameters({ notes: FButtonReadme })
     .add('Primary', () => ({
         component: FButtonComponent,
         props: {
-            type: radios('type', { button: 'button', submit: 'submit' }, 'button'),
+            type: radios('type', buttons, 'button'),
             id: text('id', 'primary'),
             label: text('label', 'Primary Button'),
-            icon: icons[radios('icon', icons, icons[0])],
+            icon: defs[radios('icon', icons, icons['faCheck'])],
             theme: 'primary',
             disabled: boolean('disabled', false),
             clicked: action('click'),
@@ -26,10 +33,10 @@ storiesOf('Basic|F-Button', module)
     .add('Secondary', () => ({
         component: FButtonComponent,
         props: {
-            type: radios('type', { button: 'button', submit: 'submit' }, 'button'),
+            type: radios('type', buttons, 'button'),
             id: text('id', 'secondary'),
             label: text('label', 'Secondary Button'),
-            icon: icons[radios('icon', icons, icons[0])],
+            icon: defs[radios('icon', icons, icons['faCheck'])],
             theme: 'secondary',
             disabled: boolean('disabled', false),
             clicked: action('click'),
