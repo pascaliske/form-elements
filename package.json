@@ -18,6 +18,7 @@
   "private": true,
   "scripts": {
     "ng": "ng",
+    "postinstall": "node storybook-patch.js",
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
     "start": "ng serve form-elements-demo",
     "build": "ng build --prod",
