@@ -43,7 +43,9 @@ export const components = [
     exports: [...components],
 })
 export class FormElementsModule {
-    public static forRoot(options?: Partial<ModuleOptions>): ModuleWithProviders {
+    public static forRoot(
+        options?: Partial<ModuleOptions>,
+    ): ModuleWithProviders<FormElementsModule> {
         return {
             ngModule: FormElementsModule,
             providers: [
