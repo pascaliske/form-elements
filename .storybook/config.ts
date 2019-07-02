@@ -5,7 +5,7 @@ import { FormElementsModule } from '../projects/form-elements/src/lib/form-eleme
 import { theme } from './theme'
 import 'flatpickr/dist/flatpickr.min.css'
 
-const load = require.context('../projects', true, /.stories.ts$/)
+const context = require.context('../projects', true, /.stories.ts$/)
 
 addParameters({
     options: {
@@ -28,4 +28,4 @@ addDecorator(
     }),
 )
 
-configure(() => load.keys().forEach(file => load(file)), module)
+configure(() => context.keys().forEach(context), module)
