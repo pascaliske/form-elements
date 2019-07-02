@@ -32,13 +32,6 @@
     "link": "yarn run build && cd dist/form-elements && yarn link",
     "unlink": "cd dist/form-elements && yarn unlink"
   },
-  "greenkeeper": {
-    "ignore": [
-      "core-js",
-      "typescript",
-      "zone.js"
-    ]
-  },
   "dependencies": {
     "@angular/animations": "^8.0.3",
     "@angular/common": "^8.0.3",
