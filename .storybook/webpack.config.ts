@@ -6,7 +6,7 @@ import { Configuration } from 'webpack'
  * @param config - The built in webpack config
  * @returns - The tweaked webpack config
  */
-export = ({ config }: { config: Configuration }): Configuration => {
+module.exports = ({ config }: { config: Configuration }): Configuration => {
     // enable scss loading
     config.module.rules.unshift({
         test: /\.scss$/,

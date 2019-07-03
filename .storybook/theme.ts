@@ -1,9 +1,9 @@
 import { create } from '@storybook/theming'
-import { name, repository } from '../package.json'
+import { name, homepage } from '../package.json'
 
 export const theme = create({
     base: 'dark',
     brandTitle: name,
-    brandUrl: repository.url.replace(/.git$/, ''),
+    brandUrl: homepage.replace(/.git$/, ''),
     brandImage: null,
 })

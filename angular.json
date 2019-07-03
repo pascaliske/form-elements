@@ -26,8 +26,7 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "es5BrowserSupport": true,
+            "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "favicon.ico",
@@ -87,7 +86,7 @@
           "options": {
             "fix": true,
             "tsConfig": [
-              "src/tsconfig.app.json"
+              "tsconfig.app.json"
             ],
             "exclude": [
               "**/node_modules/**"
