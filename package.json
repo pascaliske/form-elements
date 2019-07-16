@@ -60,7 +60,7 @@
     "@angular/language-service": "^8.1.1",
     "@babel/core": "^7.5.4",
     "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@pascaliske/schematics": "^0.0.8",
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-knobs": "^5.1.9",
