@@ -1,3 +1,23 @@
+# [2.3.0](https://github.com/pascaliske/form-elements/compare/v2.2.1...v2.3.0) (2019-07-25)
+
+
+### Bug Fixes
+
+* **f-button:** fix icon prop knob for button stories ([a712825](https://github.com/pascaliske/form-elements/commit/a712825))
+* **f-button:** fix icon prop knob for button stories ([c1c6819](https://github.com/pascaliske/form-elements/commit/c1c6819))
+* **f-form:** prevent default browser submit event ([7e633ac](https://github.com/pascaliske/form-elements/commit/7e633ac))
+* **package:** update @fortawesome/angular-fontawesome to version 0.4.0 ([88d2777](https://github.com/pascaliske/form-elements/commit/88d2777))
+* **scss:** reset outline on input fields only ([05f9eff](https://github.com/pascaliske/form-elements/commit/05f9eff))
+* **storybook:** remove component declaration patch ([3f00b3c](https://github.com/pascaliske/form-elements/commit/3f00b3c))
+
+
+### Features
+
+* **storybook:** update storybook ([03a7531](https://github.com/pascaliske/form-elements/commit/03a7531))
+* compatibility update for angular v8 ([6c22381](https://github.com/pascaliske/form-elements/commit/6c22381))
+
+
+
 ## [2.2.1](https://github.com/pascaliske/form-elements/compare/v2.2.0...v2.2.1) (2019-05-07)
 
 

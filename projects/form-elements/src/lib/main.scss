@@ -1,13 +1,18 @@
 @import 'shared';
 
-button,
 input,
 textarea,
 select,
+button,
 button[type='submit'] {
-    outline: 0;
     border: 0;
     -webkit-appearance: none;
+}
+
+input,
+textarea,
+select {
+    outline: 0;
 }
 
 @import 'f-button/f-button.component';

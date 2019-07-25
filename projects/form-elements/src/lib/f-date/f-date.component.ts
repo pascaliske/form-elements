@@ -19,7 +19,7 @@ import { ModuleOptions, OPTIONS } from '../options'
 export class FDateComponent extends FInputComponent implements AfterViewInit, OnDestroy {
     public static readonly cmpName: string = 'FDateComponent'
 
-    @ViewChild('inputRef')
+    @ViewChild('inputRef', { static: true })
     public inputRef: ElementRef
 
     private instance: flatpickr.Instance

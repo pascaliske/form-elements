@@ -1,4 +1,4 @@
-<cmp-f-form [fg]="fg" (submit)="submit($event)">
+<form [formGroup]="fg" (submit)="submit($event)">
     <cmp-f-row [layout]="'1-1'">
         <cmp-f-column>
             <cmp-f-date [fc]="fc" [label]="'Date Input'" [name]="'date'"></cmp-f-date>
@@ -47,4 +47,4 @@
             <cmp-f-checkbox [label]="'Checkbox Label'" [name]="'checkbox'"></cmp-f-checkbox>
         </cmp-f-column>
     </cmp-f-row>
-</cmp-f-form>
+</form>

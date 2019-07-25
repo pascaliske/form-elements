@@ -1,6 +1,6 @@
-# `@pascaliske/form-elements`
+# [`@pascaliske/form-elements`](https://pascaliske.github.io/form-elements)
 
-[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/form-elements.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/form-elements)](https://dependabot.com)
 
 ## Installation
 
@@ -47,7 +47,7 @@ Now you can use the components in your template:
 <cmp-f-form>
     <cmp-f-row>
         <cmp-f-column>
-            <cmp-f-input label="My text input"></cmp-f-input>
+            <cmp-f-input [label]="'My text input'"></cmp-f-input>
         </cmp-f-column>
     </cmp-f-row>
 </cmp-f-form>
