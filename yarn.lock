@@ -1490,14 +1490,14 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
-"@storybook/angular@^5.2.0-beta.10":
-  version "5.2.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-5.2.0-beta.10.tgz#f2e341ab16cd2308e58a0cb27df0817fb40ea138"
-  integrity sha512-t+hDNNLx0ZXAgmY88z/dgqZ71rHrv8y07yTdnTv4xyi/hwHnAI60a2wbDlfUNeLgZgJTv3y2qlig+HgrMUaZHA==
+"@storybook/angular@^5.2.0-beta.14":
+  version "5.2.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-5.2.0-beta.14.tgz#27664d81682b29f373511561d13ecfc5e7e69a3f"
+  integrity sha512-XyzRO9dWzj7blp9PAUPa2WP6zfzAzgGD2s3r1mQV9xAI5bVps6+3tQfxWbiSF0h9e0qtJnVtO+88kBdBwtmPLw==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.10"
-    "@storybook/core" "5.2.0-beta.10"
-    "@storybook/node-logger" "5.2.0-beta.10"
+    "@storybook/addons" "5.2.0-beta.14"
+    "@storybook/core" "5.2.0-beta.14"
+    "@storybook/node-logger" "5.2.0-beta.14"
     angular2-template-loader "^0.6.2"
     core-js "^3.0.1"
     fork-ts-checker-webpack-plugin "^1.3.4"
@@ -1875,25 +1875,25 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/core@5.2.0-beta.10":
-  version "5.2.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.2.0-beta.10.tgz#8b58e3f6bf2e6adbbd6be1c3fe9ca1c0517989b6"
-  integrity sha512-5EcoFLAWKCGfxh9PVua259PabYvkTi5cXbTuNvhWR45RjthNPJy6hOpNV562n/2yQypYx6WLnqFx2HDQO6wtwA==
+"@storybook/core@5.2.0-beta.14":
+  version "5.2.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.2.0-beta.14.tgz#a36c09c31508b48d609ad8b0adbfdffc949ac852"
+  integrity sha512-xWYms5Q0iGnwZ9hc5CYmvXmLQ8X9AKzi6ZgjYm9+HTOzfEcpyL8B2cV9xD/IQ8cUOB4ePzg4xdpAGo2fj/wq4w==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.3.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/plugin-transform-react-constant-elements" "^7.2.0"
     "@babel/preset-env" "^7.4.5"
-    "@storybook/addons" "5.2.0-beta.10"
-    "@storybook/channel-postmessage" "5.2.0-beta.10"
-    "@storybook/client-api" "5.2.0-beta.10"
-    "@storybook/client-logger" "5.2.0-beta.10"
-    "@storybook/core-events" "5.2.0-beta.10"
-    "@storybook/node-logger" "5.2.0-beta.10"
-    "@storybook/router" "5.2.0-beta.10"
-    "@storybook/theming" "5.2.0-beta.10"
-    "@storybook/ui" "5.2.0-beta.10"
+    "@storybook/addons" "5.2.0-beta.14"
+    "@storybook/channel-postmessage" "5.2.0-beta.14"
+    "@storybook/client-api" "5.2.0-beta.14"
+    "@storybook/client-logger" "5.2.0-beta.14"
+    "@storybook/core-events" "5.2.0-beta.14"
+    "@storybook/node-logger" "5.2.0-beta.14"
+    "@storybook/router" "5.2.0-beta.14"
+    "@storybook/theming" "5.2.0-beta.14"
+    "@storybook/ui" "5.2.0-beta.14"
     airbnb-js-shims "^1 || ^2"
     ansi-to-html "^0.6.11"
     autoprefixer "^9.4.9"
@@ -1948,10 +1948,10 @@
     webpack-dev-middleware "^3.7.0"
     webpack-hot-middleware "^2.25.0"
 
-"@storybook/node-logger@5.2.0-beta.10":
-  version "5.2.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.2.0-beta.10.tgz#d5a18cb5e87a319804e30bc6c5557eb73ab06d9b"
-  integrity sha512-h12MpQKqG72rj+wQdiVZtP7pHD0yXsqmJE084SypfxArF/Ao/UIClys0RhQ0NYl5UeYxlXIuoC1C2RfEJF+KBg==
+"@storybook/node-logger@5.2.0-beta.14":
+  version "5.2.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.2.0-beta.14.tgz#c768fdfb55900c7e9b0ad94a1457f3d3f2587b43"
+  integrity sha512-UZCDBsFFSy19sVZeJ3Cx6pB0Z2qkdsq6FgEMThUQ58rcEu9Dvr98wWcfbx+kqM/gSKIwnGixpLbACPxVLaVf5A==
   dependencies:
     chalk "^2.4.2"
     core-js "^3.0.1"
@@ -2079,19 +2079,19 @@
     prop-types "^15.7.2"
     resolve-from "^5.0.0"
 
-"@storybook/ui@5.2.0-beta.10":
-  version "5.2.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.2.0-beta.10.tgz#116572106d3d273899f44e2dcbe802f50fa68b7c"
-  integrity sha512-tOM2qfJWupFZ7HEqLDGE/q/6byFuCwLdPH/lYFTTEy4HKFrs29RI0lKd0SaHnVPC3knUjA/5bCOUrjisO5WCQw==
+"@storybook/ui@5.2.0-beta.14":
+  version "5.2.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.2.0-beta.14.tgz#ed95343809d685a7e63753ff22689006a3fc58f0"
+  integrity sha512-+klpnHeBzkVqxtUEASjPk0Att/puAAjebDcwnNupJiVqpaPmx3JRgfAdgY6b8+svsS2AWpvm2rboDQqOXmYlPQ==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.10"
-    "@storybook/api" "5.2.0-beta.10"
-    "@storybook/channels" "5.2.0-beta.10"
-    "@storybook/client-logger" "5.2.0-beta.10"
-    "@storybook/components" "5.2.0-beta.10"
-    "@storybook/core-events" "5.2.0-beta.10"
-    "@storybook/router" "5.2.0-beta.10"
-    "@storybook/theming" "5.2.0-beta.10"
+    "@storybook/addons" "5.2.0-beta.14"
+    "@storybook/api" "5.2.0-beta.14"
+    "@storybook/channels" "5.2.0-beta.14"
+    "@storybook/client-logger" "5.2.0-beta.14"
+    "@storybook/components" "5.2.0-beta.14"
+    "@storybook/core-events" "5.2.0-beta.14"
+    "@storybook/router" "5.2.0-beta.14"
+    "@storybook/theming" "5.2.0-beta.14"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     core-js-pure "^3.0.1"
@@ -2115,7 +2115,7 @@
     resolve-from "^5.0.0"
     semver "^6.0.0"
     store2 "^2.7.1"
-    telejson "^2.2.1"
+    telejson "^2.2.2"
     util-deprecate "^1.0.2"
 
 "@szmarczak/http-timer@^1.1.2":
