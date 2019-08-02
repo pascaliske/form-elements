@@ -1404,14 +1404,14 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.0"
 
-"@storybook/addon-links@^5.2.0-beta.20":
-  version "5.2.0-beta.20"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.2.0-beta.20.tgz#29f29051994085f6f7dc40ae88db69a8c968dfb6"
-  integrity sha512-g1jjEYoooJXGruGz5/JURC7Mg2YB5QI5zwektgEUiG14dku0ssWUs0e1nCjne/aXCrwY8ui5G4zlaIFvDrxShA==
+"@storybook/addon-links@^5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.2.0-beta.21.tgz#1c6a7cf5d05f0e6d74508139295fdc39e188d022"
+  integrity sha512-ai4wE/BtYri9+Iih4n7Nleetoa+f5YVGMSY0a3XG37B3j2XKPk6Iq2oI7u9A1zr2jZFwGjq76S8vfj9P2de0+g==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.20"
-    "@storybook/core-events" "5.2.0-beta.20"
-    "@storybook/router" "5.2.0-beta.20"
+    "@storybook/addons" "5.2.0-beta.21"
+    "@storybook/core-events" "5.2.0-beta.21"
+    "@storybook/router" "5.2.0-beta.21"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     global "^4.3.2"
@@ -1445,6 +1445,18 @@
     "@storybook/api" "5.2.0-beta.20"
     "@storybook/channels" "5.2.0-beta.20"
     "@storybook/client-logger" "5.2.0-beta.20"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.2.0-beta.21.tgz#c505a63eac6d0fbcd49536c322904166f8a73b0a"
+  integrity sha512-m1XVU0OC3FmzPbxVY4WZ02hSXvY5Sks0L+OryeHtcmkHHPw512mM0/utclkSsBx8ikaunj5183smfACXFAEPeA==
+  dependencies:
+    "@storybook/api" "5.2.0-beta.21"
+    "@storybook/channels" "5.2.0-beta.21"
+    "@storybook/client-logger" "5.2.0-beta.21"
     core-js "^3.0.1"
     global "^4.3.2"
     util-deprecate "^1.0.2"
@@ -1489,6 +1501,29 @@
     telejson "^2.2.2"
     util-deprecate "^1.0.2"
 
+"@storybook/api@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/api/-/api-5.2.0-beta.21.tgz#6f55953100b53d1e464975b59c0a97d50c34c729"
+  integrity sha512-stSNDNYg9h9WFRAae5boYEU5zwRy+Sl6Ww8BlkMM2RRh2rwIGLriUZrSOQcRJHrtI+brZYk/qnBjlsTSAjrWYw==
+  dependencies:
+    "@storybook/channels" "5.2.0-beta.21"
+    "@storybook/client-logger" "5.2.0-beta.21"
+    "@storybook/core-events" "5.2.0-beta.21"
+    "@storybook/router" "5.2.0-beta.21"
+    "@storybook/theming" "5.2.0-beta.21"
+    core-js "^3.0.1"
+    fast-deep-equal "^2.0.1"
+    global "^4.3.2"
+    lodash "^4.17.11"
+    memoizerific "^1.11.3"
+    prop-types "^15.6.2"
+    react "^16.8.3"
+    semver "^6.0.0"
+    shallow-equal "^1.1.0"
+    store2 "^2.7.1"
+    telejson "^2.2.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/channel-postmessage@5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.20.tgz#588b3fb7b0ae74e623686f6b42cfd34f2c4568c6"
@@ -1504,6 +1539,13 @@
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.2.0-beta.20.tgz#68eef42b302cea5caf7c8a30d37067c02bea61fa"
   integrity sha512-mUZ5NaKlyDKm3XdgjFGi3bgiA9pnDnGGb8JhjVAlmOyBs23obkWvDgDfReawjT6LhZm1NExP1rPb7VSt/ojxKg==
+  dependencies:
+    core-js "^3.0.1"
+
+"@storybook/channels@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.2.0-beta.21.tgz#ab6c72575422dc92cfbfffc29951a79433eba697"
+  integrity sha512-bnhFdNvWLj5VkQmkxnEKVC37iFqR9Y2z8C1gQx8C9Cd48SEFn0pm2kecO6AZ6TDXKWTL29jyq+wCeCStov3Q6g==
   dependencies:
     core-js "^3.0.1"
 
@@ -1535,6 +1577,13 @@
   dependencies:
     core-js "^3.0.1"
 
+"@storybook/client-logger@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-5.2.0-beta.21.tgz#436c436a03b28cef46b4d78c7511baae1791e9d7"
+  integrity sha512-spnJZVPTGRVA8wyiV/PHtTlXvRT6/rJkhL74tWFx66wxm5bWrN2/Pwrshu6JoUkdc1ATsa8iAqK1q5yFNXo6lw==
+  dependencies:
+    core-js "^3.0.1"
+
 "@storybook/components@5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.0-beta.20.tgz#d96de7c4866bf17305bfb9626c3ba3d3acef7ca6"
@@ -1563,6 +1612,13 @@
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.2.0-beta.20.tgz#7bbdd0d53feb2ff844ec849bd396e4648c9e5202"
   integrity sha512-baCHpMa5aQv1aNwagXX5UgbQA1z2P+Nih9l2EcaKtsVaTGtVVvNRDiG9CfEG++ioIJmIBHaOs2fadFzd7qfGTg==
+  dependencies:
+    core-js "^3.0.1"
+
+"@storybook/core-events@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-5.2.0-beta.21.tgz#511c4e9fd74a3e93443fa07deb97234fe1a2bc40"
+  integrity sha512-hvELJFXn5XHW0u+B8G5KBpjWNRGEKeGhcqHjLRHVwDXA6rYJx97uwQHMgYQ9xPo9RFYQvQ2q+ky1IEEnTzkZ8A==
   dependencies:
     core-js "^3.0.1"
 
@@ -1662,6 +1718,18 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
 
+"@storybook/router@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.2.0-beta.21.tgz#3aa9e567ea99cd7a0765d6a564e32a1f56b813e2"
+  integrity sha512-58DHHToKHzrGpRR6YYNGLaltcOoBxDG75ytBsctC15lSxCWZRIUXesdAm8aHu1jW4hRtRnakFZAb8GnM7Lo+Iw==
+  dependencies:
+    "@reach/router" "^1.2.1"
+    "@types/reach__router" "^1.2.3"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
+
 "@storybook/theming@5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.2.0-beta.20.tgz#4e1ed7c14770902dd3f1bbe57c02064511ac47ea"
@@ -1670,6 +1738,24 @@
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
     "@storybook/client-logger" "5.2.0-beta.20"
+    common-tags "^1.8.0"
+    core-js "^3.0.1"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.14"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    prop-types "^15.7.2"
+    resolve-from "^5.0.0"
+
+"@storybook/theming@5.2.0-beta.21":
+  version "5.2.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.2.0-beta.21.tgz#073dc775c4a40a16846fee4f06269a354ede6fd5"
+  integrity sha512-TiT6Uek+J3PKJofLVXwaHCA30/PE0Lxw9YCPhRT0AvuRXcjqpGmaJP+qZTP81nMZZ2Tt6ea11GQOAQOqdUX16w==
+  dependencies:
+    "@emotion/core" "^10.0.14"
+    "@emotion/styled" "^10.0.14"
+    "@storybook/client-logger" "5.2.0-beta.21"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     deep-object-diff "^1.1.0"
