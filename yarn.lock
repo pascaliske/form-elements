@@ -1380,7 +1380,7 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@storybook/addon-actions@5.2.0-beta.20":
+"@storybook/addon-actions@5.2.0-beta.20", "@storybook/addon-actions@^5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-beta.20.tgz#5d6b53aba372b52a10f8d301ed392c1e63eeec57"
   integrity sha512-7U351f0v2X1Ud2XbWaQ7WL+Gmem8EipWWbg6pcnwBN0I7SjYC/AiFpz5I9NXr0JJ97VavIW8Pwaxeim0LAClBA==
@@ -1391,26 +1391,6 @@
     "@storybook/components" "5.2.0-beta.20"
     "@storybook/core-events" "5.2.0-beta.20"
     "@storybook/theming" "5.2.0-beta.20"
-    core-js "^3.0.1"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    polished "^3.3.1"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-inspector "^3.0.2"
-    uuid "^3.3.2"
-
-"@storybook/addon-actions@^5.2.0-beta.18":
-  version "5.2.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-beta.18.tgz#507f04580cb46f63f435650787c0b4a2a68b64d4"
-  integrity sha512-yntx1JnPJ9Fbj1soDg1/YpSYqass/Xl35726aWrkc7xEVFB3hOCGp8xDd+H45QsT56ihbnbbrGUZnsGv+8pDeA==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.18"
-    "@storybook/api" "5.2.0-beta.18"
-    "@storybook/client-api" "5.2.0-beta.18"
-    "@storybook/components" "5.2.0-beta.18"
-    "@storybook/core-events" "5.2.0-beta.18"
-    "@storybook/theming" "5.2.0-beta.18"
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
     global "^4.3.2"
