@@ -1400,7 +1400,7 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-knobs@5.2.0-beta.20":
+"@storybook/addon-knobs@5.2.0-beta.20", "@storybook/addon-knobs@^5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.20.tgz#ac6258e48f26390aa49839537bf69a554eacd92b"
   integrity sha512-bRPhD/RQBK7pKOtOB1W71YdYeDFfHfxyPkYFe3Iaey1N30vPUhJxyDkkV5zUKj6KRnxU5qOGwsLLj92gu2J+aA==
@@ -1411,29 +1411,6 @@
     "@storybook/components" "5.2.0-beta.20"
     "@storybook/core-events" "5.2.0-beta.20"
     "@storybook/theming" "5.2.0-beta.20"
-    copy-to-clipboard "^3.0.8"
-    core-js "^3.0.1"
-    escape-html "^1.0.3"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    prop-types "^15.7.2"
-    qs "^6.6.0"
-    react-color "^2.17.0"
-    react-lifecycles-compat "^3.0.4"
-    react-select "^3.0.0"
-
-"@storybook/addon-knobs@^5.2.0-beta.18":
-  version "5.2.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.18.tgz#4596d927b7ed0e7c210f17b204f4362fb7113392"
-  integrity sha512-EcIlnjDjQKNCbDFuLSQ9/1T9+NfCT2WpvEAyOjYp+hAVBqXhOB4uW9adfOM5y37ATChViO7AJ1FpwcSI+54Uew==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.18"
-    "@storybook/api" "5.2.0-beta.18"
-    "@storybook/client-api" "5.2.0-beta.18"
-    "@storybook/components" "5.2.0-beta.18"
-    "@storybook/core-events" "5.2.0-beta.18"
-    "@storybook/theming" "5.2.0-beta.18"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     escape-html "^1.0.3"
@@ -1566,17 +1543,6 @@
     telejson "^2.2.2"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@5.2.0-beta.18":
-  version "5.2.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.18.tgz#84ca657fb244088bb4261937ebdd39ecd8c8669c"
-  integrity sha512-ftOYy22Vkh54yBYs1iYwMOV7jjX0eSzCs7kFSrfsRqxsDkDRcxOhTP7BBlp2g6NYiX3UatOJNXbLjEvQHKR4vg==
-  dependencies:
-    "@storybook/channels" "5.2.0-beta.18"
-    "@storybook/client-logger" "5.2.0-beta.18"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^2.2.2"
-
 "@storybook/channel-postmessage@5.2.0-beta.20":
   version "5.2.0-beta.20"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.20.tgz#588b3fb7b0ae74e623686f6b42cfd34f2c4568c6"
@@ -1601,27 +1567,6 @@
   integrity sha512-mUZ5NaKlyDKm3XdgjFGi3bgiA9pnDnGGb8JhjVAlmOyBs23obkWvDgDfReawjT6LhZm1NExP1rPb7VSt/ojxKg==
   dependencies:
     core-js "^3.0.1"
-
-"@storybook/client-api@5.2.0-beta.18":
-  version "5.2.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.2.0-beta.18.tgz#9aaf4dcd0a438a42666da1cbf22082fd879812cd"
-  integrity sha512-fGABtap520r332mjqVo+Jrr5KVSUlNnpJw711qls550KhgNu649CFeWSgeC9omX1t/tgVMm94U/tfIusjo0pNA==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.18"
-    "@storybook/channel-postmessage" "5.2.0-beta.18"
-    "@storybook/channels" "5.2.0-beta.18"
-    "@storybook/client-logger" "5.2.0-beta.18"
-    "@storybook/core-events" "5.2.0-beta.18"
-    "@storybook/router" "5.2.0-beta.18"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    util-deprecate "^1.0.2"
 
 "@storybook/client-api@5.2.0-beta.20":
   version "5.2.0-beta.20"
@@ -7400,12 +7345,12 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@4.17.14, lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@~4.17.10:
+lodash@4.17.14:
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
-lodash@^4.17.12:
+lodash@^4.0.0, lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@~4.17.10:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
