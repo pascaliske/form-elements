@@ -65,7 +65,7 @@
     "@storybook/addon-knobs": "^5.2.0-beta.25",
     "@storybook/addon-links": "^5.2.0-beta.25",
     "@storybook/addon-notes": "^5.2.0-beta.25",
-    "@storybook/angular": "^5.2.0-beta.21",
+    "@storybook/angular": "^5.2.0-beta.25",
     "@types/node": "^12.7.1",
     "@types/storybook__addon-actions": "^3.4.3",
     "@types/storybook__addon-knobs": "^5.0.3",
