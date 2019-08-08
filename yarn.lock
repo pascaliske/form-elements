@@ -1381,17 +1381,17 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-actions@^5.2.0-beta.22":
-  version "5.2.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-beta.22.tgz#ca6eb2e24c102a43d3592fb64f8bb1d41eff05ad"
-  integrity sha512-t/xzx6XrQ91T0H1yM2mPlZiqdSPPo1v+dyDMUzm7sOf57T9BI8kbPorW9N5iI++/5rwltCJq2YavuptIA6rRqA==
+"@storybook/addon-actions@^5.2.0-beta.25":
+  version "5.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-beta.25.tgz#1538be61c8f9e4779276acca84fef92f4ae83973"
+  integrity sha512-PTRr7Z7x8gHBb7ANG+Tju1v8ZPNpa0G8udBlQZfFVuPs/7UVAswuzcXy/jN5MOYGIT84IIfiJs6wxozCUuFjWQ==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.22"
-    "@storybook/api" "5.2.0-beta.22"
-    "@storybook/client-api" "5.2.0-beta.22"
-    "@storybook/components" "5.2.0-beta.22"
-    "@storybook/core-events" "5.2.0-beta.22"
-    "@storybook/theming" "5.2.0-beta.22"
+    "@storybook/addons" "5.2.0-beta.25"
+    "@storybook/api" "5.2.0-beta.25"
+    "@storybook/client-api" "5.2.0-beta.25"
+    "@storybook/components" "5.2.0-beta.25"
+    "@storybook/core-events" "5.2.0-beta.25"
+    "@storybook/theming" "5.2.0-beta.25"
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
     global "^4.3.2"
@@ -1613,17 +1613,6 @@
     global "^4.3.2"
     telejson "^2.2.2"
 
-"@storybook/channel-postmessage@5.2.0-beta.22":
-  version "5.2.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.22.tgz#3cf2d950d21a439ac064a7aaf179174f0e6d57b0"
-  integrity sha512-WvYhVbMiAmOhN/B+R+6iIYcZB/WPZQrD1EbJsdmtfXdow7/gUsj5htbsji+UB/BRxeF3tryV76qM+6OTGa7s1w==
-  dependencies:
-    "@storybook/channels" "5.2.0-beta.22"
-    "@storybook/client-logger" "5.2.0-beta.22"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^2.2.2"
-
 "@storybook/channel-postmessage@5.2.0-beta.25":
   version "5.2.0-beta.25"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.25.tgz#b8f575c1e842e4f6586a59dbfb012cf7c8797873"
@@ -1667,27 +1656,6 @@
     "@storybook/client-logger" "5.2.0-beta.21"
     "@storybook/core-events" "5.2.0-beta.21"
     "@storybook/router" "5.2.0-beta.21"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    util-deprecate "^1.0.2"
-
-"@storybook/client-api@5.2.0-beta.22":
-  version "5.2.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.2.0-beta.22.tgz#aeda3c9c62d6b4e81aeec13672a82dd7f5a0f676"
-  integrity sha512-25yvM7jadBWCQ6Zl+L/uWpujxMpMnG7MHgerOQz+RZH4pVfALVnOeGqRCGwDlc75RBSN0pT37QaVvcYvgMw30A==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.22"
-    "@storybook/channel-postmessage" "5.2.0-beta.22"
-    "@storybook/channels" "5.2.0-beta.22"
-    "@storybook/client-logger" "5.2.0-beta.22"
-    "@storybook/core-events" "5.2.0-beta.22"
-    "@storybook/router" "5.2.0-beta.22"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     eventemitter3 "^4.0.0"
@@ -1747,30 +1715,6 @@
   dependencies:
     "@storybook/client-logger" "5.2.0-beta.21"
     "@storybook/theming" "5.2.0-beta.21"
-    "@types/react-syntax-highlighter" "10.1.0"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    markdown-to-jsx "^6.9.1"
-    memoizerific "^1.11.3"
-    polished "^3.3.1"
-    popper.js "^1.14.7"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-dom "^16.8.3"
-    react-focus-lock "^1.18.3"
-    react-helmet-async "^1.0.2"
-    react-popper-tooltip "^2.8.3"
-    react-syntax-highlighter "^8.0.1"
-    react-textarea-autosize "^7.1.0"
-    simplebar-react "^1.0.0-alpha.6"
-
-"@storybook/components@5.2.0-beta.22":
-  version "5.2.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.0-beta.22.tgz#49064d7037c96ac80484ba572c7a0fe042f1f5ba"
-  integrity sha512-09LK/7k4q7BczR6lI+qPnSHLMUWWQ2CbxqN10UDI41GB/z6VXsBgDQWsqRMZ1MgGUUVhFO7UHqZ0A54+i4V0pQ==
-  dependencies:
-    "@storybook/client-logger" "5.2.0-beta.22"
-    "@storybook/theming" "5.2.0-beta.22"
     "@types/react-syntax-highlighter" "10.1.0"
     core-js "^3.0.1"
     global "^4.3.2"
