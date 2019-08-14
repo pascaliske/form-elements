@@ -79,7 +79,7 @@
     "fuzzysearch": "^1.0.3",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
-    "ng-packagr": "^5.4.3",
+    "ng-packagr": "^5.5.0",
     "prettier": "^1.18.2",
     "scss-bundle": "^2.5.1",
     "standard-changelog": "^2.0.13",
