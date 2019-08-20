@@ -1462,18 +1462,18 @@
     prop-types "^15.7.2"
     qs "^6.6.0"
 
-"@storybook/addon-notes@^5.2.0-beta.33":
-  version "5.2.0-beta.33"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.0-beta.33.tgz#466572db993b0a6f0c6b1f14e36b5fdb07d2e773"
-  integrity sha512-ctxcsaiQgPp98viRWYjO3ejXpL9i84djdd5CwxKp6YzkQx/ynvnEt4ouytKewpcu9WZyzpUrhSLtASli+iFyuw==
+"@storybook/addon-notes@^5.2.0-beta.36":
+  version "5.2.0-beta.36"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.0-beta.36.tgz#b9524050df8a39b30578c03af31d4459c1dc3829"
+  integrity sha512-7XaKx5zCquqJzU5UkVfiO7JKhMn/GvLFSyfCCRe6VlK5EFnpqaeNj/O6WLQC4YDKRZtLZjkUnO0nI7HWlEPNmQ==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.33"
-    "@storybook/api" "5.2.0-beta.33"
-    "@storybook/client-logger" "5.2.0-beta.33"
-    "@storybook/components" "5.2.0-beta.33"
-    "@storybook/core-events" "5.2.0-beta.33"
-    "@storybook/router" "5.2.0-beta.33"
-    "@storybook/theming" "5.2.0-beta.33"
+    "@storybook/addons" "5.2.0-beta.36"
+    "@storybook/api" "5.2.0-beta.36"
+    "@storybook/client-logger" "5.2.0-beta.36"
+    "@storybook/components" "5.2.0-beta.36"
+    "@storybook/core-events" "5.2.0-beta.36"
+    "@storybook/router" "5.2.0-beta.36"
+    "@storybook/theming" "5.2.0-beta.36"
     core-js "^3.0.1"
     global "^4.3.2"
     markdown-to-jsx "^6.10.3"
