@@ -1,0 +1,7 @@
+{
+  "bundlerOptions": {
+    "entryFile": "projects/form-elements/src/lib/main.scss",
+    "outFile": "dist/form-elements/styles.scss",
+    "includePaths": ["node_modules"]
+  }
+}
