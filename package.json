@@ -22,7 +22,7 @@
     "postbuild": "yarn run build-scss && yarn run copy-metadata",
     "start": "ng serve form-elements-demo",
     "build": "ng build --prod",
-    "build-scss": "scss-bundle -e projects/form-elements/src/lib/main.scss -d dist/form-elements/styles.scss --includePaths node_modules",
+    "build-scss": "scss-bundle",
     "copy-metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md && cp CHANGELOG.md dist/form-elements/CHANGELOG.md",
     "lint": "ng lint form-elements --fix",
     "format": "prettier --write \"{src,projects}/**/*.{ts,scss,md,html}\"",
