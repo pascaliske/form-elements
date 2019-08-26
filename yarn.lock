@@ -1427,7 +1427,7 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-knobs@5.2.0-beta.40":
+"@storybook/addon-knobs@5.2.0-beta.40", "@storybook/addon-knobs@^5.2.0-beta.40":
   version "5.2.0-beta.40"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.40.tgz#56c84015daef514dd95ed0c9104b154d8da8a93a"
   integrity sha512-6yL17LPu2l42BTFqge0AXfJJ6u//I+XYjM+eBoTtR9mcHvneKpR7AKVs3IXMBbX8K0J/sr/57hXb1QoIi6ggtQ==
@@ -1438,29 +1438,6 @@
     "@storybook/components" "5.2.0-beta.40"
     "@storybook/core-events" "5.2.0-beta.40"
     "@storybook/theming" "5.2.0-beta.40"
-    copy-to-clipboard "^3.0.8"
-    core-js "^3.0.1"
-    escape-html "^1.0.3"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    prop-types "^15.7.2"
-    qs "^6.6.0"
-    react-color "^2.17.0"
-    react-lifecycles-compat "^3.0.4"
-    react-select "^3.0.0"
-
-"@storybook/addon-knobs@^5.2.0-beta.39":
-  version "5.2.0-beta.39"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.39.tgz#8228db003f46ba711e03eb1075e94c88843e584d"
-  integrity sha512-VdfGXYw0iYj7ro5zoBl4GVi8E5ivQrEsjj49qUfMwwxV2ENrEtJG1jKwm9bx6Xbp0WU3RnEfEvnsQPUTXJXM2Q==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.39"
-    "@storybook/api" "5.2.0-beta.39"
-    "@storybook/client-api" "5.2.0-beta.39"
-    "@storybook/components" "5.2.0-beta.39"
-    "@storybook/core-events" "5.2.0-beta.39"
-    "@storybook/theming" "5.2.0-beta.39"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     escape-html "^1.0.3"
@@ -1593,17 +1570,6 @@
     telejson "^2.2.2"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@5.2.0-beta.39":
-  version "5.2.0-beta.39"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.39.tgz#1b3d0f9f3b23588bdc184ed59f2ac7c2456da11f"
-  integrity sha512-oiNuS1DAk8PWTisjNjTFwnXqdkp0ic5ZTk7plzqazgZpabRtyIoF9m3FwwxNJ4tYNw2sGv9eaSL0pBO9gcM9mQ==
-  dependencies:
-    "@storybook/channels" "5.2.0-beta.39"
-    "@storybook/client-logger" "5.2.0-beta.39"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^2.2.2"
-
 "@storybook/channel-postmessage@5.2.0-beta.40":
   version "5.2.0-beta.40"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-beta.40.tgz#9614c971df5f97c42ae1ab50aecba68c89306175"
@@ -1628,27 +1594,6 @@
   integrity sha512-mFQXv9FoQ6zRlFUvXVwvuPS+THscPfAOrL/qyVlKK4NhBNk91eqsCR57C0XsE1avtWtpBmPrJ4oEwHBqcYIsVA==
   dependencies:
     core-js "^3.0.1"
-
-"@storybook/client-api@5.2.0-beta.39":
-  version "5.2.0-beta.39"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.2.0-beta.39.tgz#a04e5670465b523fef46836d278cf552195ab0f3"
-  integrity sha512-dGbnv85/8TFjBMeMHyNecA4MJ/vEZMScQmkOFTWN/BIQYYkE+ZByrANvoR1ckywDlcbWToa01H3Nf78k0m7LHw==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.39"
-    "@storybook/channel-postmessage" "5.2.0-beta.39"
-    "@storybook/channels" "5.2.0-beta.39"
-    "@storybook/client-logger" "5.2.0-beta.39"
-    "@storybook/core-events" "5.2.0-beta.39"
-    "@storybook/router" "5.2.0-beta.39"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    util-deprecate "^1.0.2"
 
 "@storybook/client-api@5.2.0-beta.40":
   version "5.2.0-beta.40"
@@ -1684,30 +1629,6 @@
   integrity sha512-0LOLo5oOQ4ahhFWD/JmjpMeuAUVqZ7ckVEkT8zq9no745bPwFjux7Eb8mBz7mROJ0EIaiwF4TJ4x7krPAB7WiA==
   dependencies:
     core-js "^3.0.1"
-
-"@storybook/components@5.2.0-beta.39":
-  version "5.2.0-beta.39"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.0-beta.39.tgz#5a8c53906954b6a1c4a3fa62a8cd0a83e91e3ec6"
-  integrity sha512-Ub02KJKty+jNk1j8r0LDkMnIb8MpGABI8PblzBfNsCrS4d9vYi1FQOxLVxFNFFsUDPtGoIrtAfZJ4ATwhJ5t9Q==
-  dependencies:
-    "@storybook/client-logger" "5.2.0-beta.39"
-    "@storybook/theming" "5.2.0-beta.39"
-    "@types/react-syntax-highlighter" "10.1.0"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    markdown-to-jsx "^6.9.1"
-    memoizerific "^1.11.3"
-    polished "^3.3.1"
-    popper.js "^1.14.7"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-dom "^16.8.3"
-    react-focus-lock "^1.18.3"
-    react-helmet-async "^1.0.2"
-    react-popper-tooltip "^2.8.3"
-    react-syntax-highlighter "^8.0.1"
-    react-textarea-autosize "^7.1.0"
-    simplebar-react "^1.0.0-alpha.6"
 
 "@storybook/components@5.2.0-beta.40":
   version "5.2.0-beta.40"
