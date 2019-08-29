@@ -1447,7 +1447,7 @@
     react-inspector "^3.0.2"
     uuid "^3.3.2"
 
-"@storybook/addon-knobs@5.2.0-beta.46":
+"@storybook/addon-knobs@5.2.0-beta.46", "@storybook/addon-knobs@^5.2.0-beta.46":
   version "5.2.0-beta.46"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.46.tgz#b20697a4a02b4a9da2990504498f640ed75ad326"
   integrity sha512-RnkKq7rAy3U2zOIYc64epVaxugZQro6xSxcJaAN11iEgqZLUBxERKaA99bkZYCAkmk0gR1o1Tf7anU3KxWY8cQ==
@@ -1458,29 +1458,6 @@
     "@storybook/components" "5.2.0-beta.46"
     "@storybook/core-events" "5.2.0-beta.46"
     "@storybook/theming" "5.2.0-beta.46"
-    copy-to-clipboard "^3.0.8"
-    core-js "^3.0.1"
-    escape-html "^1.0.3"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    prop-types "^15.7.2"
-    qs "^6.6.0"
-    react-color "^2.17.0"
-    react-lifecycles-compat "^3.0.4"
-    react-select "^3.0.0"
-
-"@storybook/addon-knobs@^5.2.0-beta.45":
-  version "5.2.0-beta.45"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.0-beta.45.tgz#d22b82d37c69a8d40319853d3938f49656c4c092"
-  integrity sha512-QaADqMb+ydbx+H57uQaWQ1/r1qKKc6fO4PUCfTfRzUAAE/et16C09OuJ33WcrtrBIwqFHJ4nSCfA6sf0KhsYeA==
-  dependencies:
-    "@storybook/addons" "5.2.0-beta.45"
-    "@storybook/api" "5.2.0-beta.45"
-    "@storybook/client-api" "5.2.0-beta.45"
-    "@storybook/components" "5.2.0-beta.45"
-    "@storybook/core-events" "5.2.0-beta.45"
-    "@storybook/theming" "5.2.0-beta.45"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     escape-html "^1.0.3"
