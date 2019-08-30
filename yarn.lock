@@ -1465,18 +1465,18 @@
     prop-types "^15.7.2"
     qs "^6.6.0"
 
-"@storybook/addon-notes@^5.2.0-beta.47":
-  version "5.2.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.0-beta.47.tgz#b51ef70c111bb1c2e9a7082bfa2e20146423e1b3"
-  integrity sha512-+dnPnrhsrA15zelDdHK/L8vUqxZ8FZXASwnqGGrQv5hJuGCq4Sj7K/L7rgtO2rnpH1KcEGyaN7du6qHoYCq6rg==
+"@storybook/addon-notes@^5.2.0-rc.0":
+  version "5.2.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.0-rc.0.tgz#583f08abe43d6b94083f927e0ef8423e64d6909f"
+  integrity sha512-pVWKVOIhPPKWMFw4hIrS/MWHP8ZfB5vl4EtMJj5uWubt+jBY/Vj8llWLreEpm8wq4620cxvr5zZyJMuro156rA==
   dependencies:
-    "@storybook/addons" "5.2.0-beta.47"
-    "@storybook/api" "5.2.0-beta.47"
-    "@storybook/client-logger" "5.2.0-beta.47"
-    "@storybook/components" "5.2.0-beta.47"
-    "@storybook/core-events" "5.2.0-beta.47"
-    "@storybook/router" "5.2.0-beta.47"
-    "@storybook/theming" "5.2.0-beta.47"
+    "@storybook/addons" "5.2.0-rc.0"
+    "@storybook/api" "5.2.0-rc.0"
+    "@storybook/client-logger" "5.2.0-rc.0"
+    "@storybook/components" "5.2.0-rc.0"
+    "@storybook/core-events" "5.2.0-rc.0"
+    "@storybook/router" "5.2.0-rc.0"
+    "@storybook/theming" "5.2.0-rc.0"
     core-js "^3.0.1"
     global "^4.3.2"
     markdown-to-jsx "^6.10.3"
@@ -1632,30 +1632,6 @@
   integrity sha512-JybBEafWRGbU5FhGH+s39K/ycMM+qQBHkEkcmfFFC2WqYN085vxgjTZAPCslDTnk76XJj85tD7EbIeczkDXMow==
   dependencies:
     core-js "^3.0.1"
-
-"@storybook/components@5.2.0-beta.47":
-  version "5.2.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.0-beta.47.tgz#9e19541b1836d01a8092beb87d539a9e6ec00efe"
-  integrity sha512-JyXjJKby6YOxLODdWo6CXzQDIj0KNZbIGj6jaXaYG/WEyyZS4QScIQ/llO92ypSQUG3A5y+XWEEl5whG4h43dw==
-  dependencies:
-    "@storybook/client-logger" "5.2.0-beta.47"
-    "@storybook/theming" "5.2.0-beta.47"
-    "@types/react-syntax-highlighter" "10.1.0"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    markdown-to-jsx "^6.9.1"
-    memoizerific "^1.11.3"
-    polished "^3.3.1"
-    popper.js "^1.14.7"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-dom "^16.8.3"
-    react-focus-lock "^1.18.3"
-    react-helmet-async "^1.0.2"
-    react-popper-tooltip "^2.8.3"
-    react-syntax-highlighter "^8.0.1"
-    react-textarea-autosize "^7.1.0"
-    simplebar-react "^1.0.0-alpha.6"
 
 "@storybook/components@5.2.0-rc.0":
   version "5.2.0-rc.0"
