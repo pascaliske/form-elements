@@ -1408,7 +1408,7 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@storybook/addon-actions@5.2.0-rc.5":
+"@storybook/addon-actions@5.2.0-rc.5", "@storybook/addon-actions@^5.2.0-rc.5":
   version "5.2.0-rc.5"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-rc.5.tgz#df46dc33f939da9c51ada4a1dbb60601bbaa33a1"
   integrity sha512-OxhsOQ0Z99PZSlEZSOe4GB05O7I+ctRbswmPRgM7A6GCI4VLKWYNTK9t/lZEWLcuiWzbocHhr5upnlktKP/ADw==
@@ -1419,26 +1419,6 @@
     "@storybook/components" "5.2.0-rc.5"
     "@storybook/core-events" "5.2.0-rc.5"
     "@storybook/theming" "5.2.0-rc.5"
-    core-js "^3.0.1"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    polished "^3.3.1"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-inspector "^3.0.2"
-    uuid "^3.3.2"
-
-"@storybook/addon-actions@^5.2.0-rc.2":
-  version "5.2.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.2.0-rc.2.tgz#75df7c2551f1692e28d269a992f219ccf694bd01"
-  integrity sha512-ZduVaxLoWaPAuTk+L2GyOoTYQZGHyxAzL394KZoIRIrtSYoqaqhfKbkNMZtreGwxkGX57SfABHO2HDrHrZ9Fvg==
-  dependencies:
-    "@storybook/addons" "5.2.0-rc.2"
-    "@storybook/api" "5.2.0-rc.2"
-    "@storybook/client-api" "5.2.0-rc.2"
-    "@storybook/components" "5.2.0-rc.2"
-    "@storybook/core-events" "5.2.0-rc.2"
-    "@storybook/theming" "5.2.0-rc.2"
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
     global "^4.3.2"
@@ -1593,17 +1573,6 @@
     telejson "^2.2.2"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@5.2.0-rc.2":
-  version "5.2.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-rc.2.tgz#bcd7b7b5f624b9e754c4fd3a60a135a8b7a2237e"
-  integrity sha512-jb2rOn8a/fCxND8Yl3UX2j2qqWRyusQyVsG/AGSZMNwc+4W+KNAwHFbylSqmJ+p/fWe7O0g/gX43Er45PbeZRQ==
-  dependencies:
-    "@storybook/channels" "5.2.0-rc.2"
-    "@storybook/client-logger" "5.2.0-rc.2"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^2.2.2"
-
 "@storybook/channel-postmessage@5.2.0-rc.5":
   version "5.2.0-rc.5"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.2.0-rc.5.tgz#b917a8acfd47ac10791ec7f028374f93a5487a30"
@@ -1628,27 +1597,6 @@
   integrity sha512-RnC3OBoXRaJtII759WxBJ5vGu1HV4Aq+cRn57cKtq7G6wzsLElwR6wYcOfizTCd2fXBj6mb8xt/A9RfsbxnTIg==
   dependencies:
     core-js "^3.0.1"
-
-"@storybook/client-api@5.2.0-rc.2":
-  version "5.2.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.2.0-rc.2.tgz#f5f2e54d490ed5f296ca46db7820f43f804d969a"
-  integrity sha512-HoniZRQSzMMJneDT5yK3xHVOByFPiqgHunpkSWI8bHuPclQJZ1x11FOB8i9Gq9UgHcwS3/JBkeLk+29KPv3c7A==
-  dependencies:
-    "@storybook/addons" "5.2.0-rc.2"
-    "@storybook/channel-postmessage" "5.2.0-rc.2"
-    "@storybook/channels" "5.2.0-rc.2"
-    "@storybook/client-logger" "5.2.0-rc.2"
-    "@storybook/core-events" "5.2.0-rc.2"
-    "@storybook/router" "5.2.0-rc.2"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    util-deprecate "^1.0.2"
 
 "@storybook/client-api@5.2.0-rc.5":
   version "5.2.0-rc.5"
