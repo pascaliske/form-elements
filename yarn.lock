@@ -1494,14 +1494,14 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.0"
 
-"@storybook/addon-links@^5.2.0-rc.9":
-  version "5.2.0-rc.9"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.2.0-rc.9.tgz#a83f6607b0b63c51c47750510a563700b67eaefb"
-  integrity sha512-LvOS7g9K2/7j6QG6FgZGSqqgzAThufOKIyIjmTBSvUhJehfEItUicnhdO9lFX48lWFqscZIE9umHIRL21/rRUQ==
+"@storybook/addon-links@^5.2.0-rc.10":
+  version "5.2.0-rc.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-5.2.0-rc.10.tgz#d0f0d282528d7af09a0e9b6ffbf9e56fc6b4ddd9"
+  integrity sha512-AHuWJfaIW6uWa5W/3sGULQK9O14+Jmc2lORWQQ4idQwpJCDv3eS2cK3xF7Mab6d17wXY22LVdUI1btro5JjyMg==
   dependencies:
-    "@storybook/addons" "5.2.0-rc.9"
-    "@storybook/core-events" "5.2.0-rc.9"
-    "@storybook/router" "5.2.0-rc.9"
+    "@storybook/addons" "5.2.0-rc.10"
+    "@storybook/core-events" "5.2.0-rc.10"
+    "@storybook/router" "5.2.0-rc.10"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     global "^4.3.2"
