@@ -82,7 +82,7 @@
     "ng-packagr": "^5.6.1",
     "prettier": "^1.18.2",
     "scss-bundle": "^3.0.1",
-    "standard-changelog": "^2.0.13",
+    "standard-changelog": "^2.0.15",
     "style-loader": "^0.23.1",
     "ts-node": "^8.4.1",
     "tsickle": "^0.36.0",
