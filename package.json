@@ -80,7 +80,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "ng-packagr": "^5.7.1",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.0",
     "scss-bundle": "^3.0.1",
     "standard-changelog": "^2.0.15",
     "style-loader": "^0.23.1",
