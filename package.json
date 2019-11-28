@@ -84,7 +84,7 @@
     "scss-bundle": "^3.0.2",
     "standard-changelog": "^2.0.18",
     "style-loader": "^0.23.1",
-    "ts-node": "^8.5.3",
+    "ts-node": "^8.5.4",
     "tsickle": "^0.36.0",
     "tslib": "^1.10.0",
     "tslint": "~5.20.1",
