@@ -1509,18 +1509,18 @@
     prop-types "^15.7.2"
     qs "^6.6.0"
 
-"@storybook/addon-notes@^5.2.6":
-  version "5.2.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.6.tgz#bf74ff4f8018e315a4c07c3d5e90cd9154ce6e8e"
-  integrity sha512-CfWOkoPFI1ZAWQYnwFVqGmeCeXnVQGoFyDSVc3NcIFF1lsk2aagGV+ifJMJuDTXIKu0FClKpvMcENWt+bBpA+w==
+"@storybook/addon-notes@^5.2.7":
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.2.7.tgz#0ba055c83a8208f346685e51caa313dca94ed460"
+  integrity sha512-v6NuGEN1qr7bgObrp2fY3GYsmDqwyT6tB1hz1+/O+HqiLGGx91fqmTJTrMhXIt0b6uPW7W+kLL4cNcDuWE3xEQ==
   dependencies:
-    "@storybook/addons" "5.2.6"
-    "@storybook/api" "5.2.6"
-    "@storybook/client-logger" "5.2.6"
-    "@storybook/components" "5.2.6"
-    "@storybook/core-events" "5.2.6"
-    "@storybook/router" "5.2.6"
-    "@storybook/theming" "5.2.6"
+    "@storybook/addons" "5.2.7"
+    "@storybook/api" "5.2.7"
+    "@storybook/client-logger" "5.2.7"
+    "@storybook/components" "5.2.7"
+    "@storybook/core-events" "5.2.7"
+    "@storybook/router" "5.2.7"
+    "@storybook/theming" "5.2.7"
     core-js "^3.0.1"
     global "^4.3.2"
     markdown-to-jsx "^6.10.3"
@@ -1683,6 +1683,31 @@
   dependencies:
     "@storybook/client-logger" "5.2.6"
     "@storybook/theming" "5.2.6"
+    "@types/react-syntax-highlighter" "10.1.0"
+    "@types/react-textarea-autosize" "^4.3.3"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    markdown-to-jsx "^6.9.1"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    popper.js "^1.14.7"
+    prop-types "^15.7.2"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-focus-lock "^1.18.3"
+    react-helmet-async "^1.0.2"
+    react-popper-tooltip "^2.8.3"
+    react-syntax-highlighter "^8.0.1"
+    react-textarea-autosize "^7.1.0"
+    simplebar-react "^1.0.0-alpha.6"
+
+"@storybook/components@5.2.7":
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.7.tgz#810327a517dc839293ef1d684f960a548e257689"
+  integrity sha512-BRmfSMXqiDDWwgYKTyq0XseCYhETvlBzljAqIeI+xuSPh4FzRY1uoXrD3yJJo/jtEfP+vtEV98/6g3pmZf3pBw==
+  dependencies:
+    "@storybook/client-logger" "5.2.7"
+    "@storybook/theming" "5.2.7"
     "@types/react-syntax-highlighter" "10.1.0"
     "@types/react-textarea-autosize" "^4.3.3"
     core-js "^3.0.1"
