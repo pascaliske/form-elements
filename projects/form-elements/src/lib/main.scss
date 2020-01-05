@@ -1,5 +1,3 @@
-@import 'shared';
-
 input,
 textarea,
 select,
@@ -14,6 +12,8 @@ textarea,
 select {
     outline: 0;
 }
+
+@import 'shared';
 
 @import 'f-button/f-button.component';
 @import 'f-checkbox/f-checkbox.component';
