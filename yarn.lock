@@ -1647,18 +1647,18 @@
     qs "^6.6.0"
     ts-dedent "^1.1.0"
 
-"@storybook/addon-notes@^5.3.4":
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.3.4.tgz#edd5b575d3ae76c34a6729d0ff5ddab7d58e66d9"
-  integrity sha512-n8FZd3QAXBNKo+drd5JdZAF38qk0owNitgUCAgZkl47nlhDWN3bC19VYwYUPOFC27awZTSEPGpxeicQW7eIuaQ==
+"@storybook/addon-notes@^5.3.5":
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.3.5.tgz#e476b6f518ad914d3889c2fa310a1eec0e1e780f"
+  integrity sha512-QG+GjOI297Vj0/kwH70Hf3PmiuQ18SSXG4/nZ9JeldqpwfM2Cwhxj3T9HFF4PR3sGOLLePljYMLsk78FOXJpvw==
   dependencies:
-    "@storybook/addons" "5.3.4"
-    "@storybook/api" "5.3.4"
-    "@storybook/client-logger" "5.3.4"
-    "@storybook/components" "5.3.4"
-    "@storybook/core-events" "5.3.4"
-    "@storybook/router" "5.3.4"
-    "@storybook/theming" "5.3.4"
+    "@storybook/addons" "5.3.5"
+    "@storybook/api" "5.3.5"
+    "@storybook/client-logger" "5.3.5"
+    "@storybook/components" "5.3.5"
+    "@storybook/core-events" "5.3.5"
+    "@storybook/router" "5.3.5"
+    "@storybook/theming" "5.3.5"
     core-js "^3.0.1"
     global "^4.3.2"
     markdown-to-jsx "^6.10.3"
@@ -1829,6 +1829,33 @@
   dependencies:
     "@storybook/client-logger" "5.3.4"
     "@storybook/theming" "5.3.4"
+    "@types/react-syntax-highlighter" "11.0.2"
+    "@types/react-textarea-autosize" "^4.3.3"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    markdown-to-jsx "^6.9.1"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    popper.js "^1.14.7"
+    prop-types "^15.7.2"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-focus-lock "^2.1.0"
+    react-helmet-async "^1.0.2"
+    react-popper-tooltip "^2.8.3"
+    react-syntax-highlighter "^11.0.2"
+    react-textarea-autosize "^7.1.0"
+    simplebar-react "^1.0.0-alpha.6"
+    ts-dedent "^1.1.0"
+
+"@storybook/components@5.3.5":
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.5.tgz#3b2e93ed140c351775f43f4c8e4947144feb3a05"
+  integrity sha512-B8z5GwL5LL9lCwCTuJ1Amod6QJC1FfRfnTZYxUgRxG1EfiYsejoFeB2tOKlIy/EaX8Lmm3XE47A9I1FhBWvCHw==
+  dependencies:
+    "@storybook/client-logger" "5.3.5"
+    "@storybook/theming" "5.3.5"
     "@types/react-syntax-highlighter" "11.0.2"
     "@types/react-textarea-autosize" "^4.3.3"
     core-js "^3.0.1"
