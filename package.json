@@ -64,7 +64,7 @@
     "@storybook/addon-actions": "^5.3.4",
     "@storybook/addon-knobs": "^5.3.4",
     "@storybook/addon-links": "^5.3.5",
-    "@storybook/addon-notes": "^5.3.4",
+    "@storybook/addon-notes": "^5.3.5",
     "@storybook/angular": "^5.3.4",
     "@types/node": "^13.1.7",
     "@types/storybook__addon-actions": "^3.4.3",
