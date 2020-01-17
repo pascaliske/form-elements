@@ -2282,10 +2282,12 @@
   resolved "https://registry.yarnpkg.com/@types/source-list-map/-/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
   integrity sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==
 
-"@types/storybook__addon-actions@^3.4.3":
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/@types/storybook__addon-actions/-/storybook__addon-actions-3.4.3.tgz#bb0c3fd066e1f495d3f2b724487e2b99194b3f1a"
-  integrity sha512-RSFFfruUHL7La4CZpuiKZ0mZvr5orjenFA2jc31tfPwvA3fYNH4/9XSfA2MB08IpJbF3aErtYWT5Dtigkxnltg==
+"@types/storybook__addon-actions@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-actions/-/storybook__addon-actions-5.2.0.tgz#adcd955c2e8b2e21711aec530b5059458c65fd64"
+  integrity sha512-GybV9Ao3jhSzH7bijrhj8+wxlIxI+4tX0i/7330PbiQuoJwqgLe4NVzu/mx2glYSi4Xr7tYL8fmkIqtEWcEdLA==
+  dependencies:
+    storybook__addon-actions "*"
 
 "@types/storybook__addon-knobs@^5.2.0":
   version "5.2.0"
@@ -11655,6 +11657,11 @@ storybook-chromatic@^2.2.2:
     tmp "^0.1.0"
     tree-kill "^1.1.0"
     uuid "^3.3.2"
+
+storybook__addon-actions@*:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/storybook__addon-actions/-/storybook__addon-actions-0.0.4.tgz#aa6232c434644044a5ffb4cbe594c5c4c3d7171b"
+  integrity sha512-5t/P2c1VoOzMiBghq4WQnJZGBJ9qpA0sxVI+ZySEOOM5RsVpaP/cPRdOeMr1RbyuXOp4zp16EhD6dlAgLdTQig==
 
 storybook__addon-knobs@*:
   version "0.0.4"
