@@ -2141,12 +2141,12 @@
   dependencies:
     storybook__addon-knobs "*"
 
-"@types/storybook__addon-links@^3.3.5":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@types/storybook__addon-links/-/storybook__addon-links-3.3.5.tgz#38326426b3a83a237123bce0d348d9159451710f"
-  integrity sha512-h+8Kb+uZv4/uuWD+K5rku8aRxdl6yjDJrFzbcGwwdZt6IwYGK9G8PmkP+6Hv+N7HMOuyhrZPiLL//qVFWDL/0Q==
+"@types/storybook__addon-links@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-links/-/storybook__addon-links-5.2.0.tgz#284776662a42e78f289610a65e9dcd7c0aa7eb44"
+  integrity sha512-lVKIrPG8EfUUjBnZYcCF8tTeh1VDvEKa+U556z9LBgcymE5xSpqsdgoUZXdSgO+AmXwmWexKnSxEG/GpQKsz5A==
   dependencies:
-    "@types/react" "*"
+    storybook__addon-links "*"
 
 "@types/tapable@*":
   version "1.0.4"
@@ -11507,6 +11507,11 @@ storybook__addon-knobs@*:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/storybook__addon-knobs/-/storybook__addon-knobs-0.0.4.tgz#a9965d85bf93341b8fa227105049d681f5e24676"
   integrity sha512-MZogtup7usbyDsbT8fdPNwB3VGQVcBD+u1+LpgrEYB6U3TwG6PEDujTl2d0CXsC5DP4FxEbJN4CBPxNtXU7zRg==
+
+storybook__addon-links@*:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/storybook__addon-links/-/storybook__addon-links-0.0.4.tgz#7944d28f39da4fbc7006d2592888904bec3e8825"
+  integrity sha512-mTl+18VfYvqj8mbC058adtciTiB9MPhkSMY2e74FWED8WZsF6G4judAi1Fox+cM6AoehamFLW4nRC0WOh3VyEg==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
