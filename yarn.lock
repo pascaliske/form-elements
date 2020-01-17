@@ -2134,13 +2134,12 @@
   resolved "https://registry.yarnpkg.com/@types/storybook__addon-actions/-/storybook__addon-actions-3.4.3.tgz#bb0c3fd066e1f495d3f2b724487e2b99194b3f1a"
   integrity sha512-RSFFfruUHL7La4CZpuiKZ0mZvr5orjenFA2jc31tfPwvA3fYNH4/9XSfA2MB08IpJbF3aErtYWT5Dtigkxnltg==
 
-"@types/storybook__addon-knobs@^5.0.4":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@types/storybook__addon-knobs/-/storybook__addon-knobs-5.0.4.tgz#8d29b295459279a7a8e91cf2fffc99a3727258ea"
-  integrity sha512-B43R3SWGjQe/dyGpzjjCLloMBcxhHUtLOYv1EwIEiCBaZrz8h4ItdHA3yMX3GO6L6MyH9BVhNUUc9QzdfnyyjQ==
+"@types/storybook__addon-knobs@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-knobs/-/storybook__addon-knobs-5.2.0.tgz#338e555dc6c0c4595f265d7ed7e2bcbb0eaa553d"
+  integrity sha512-Q1U5R1udWQ4Z5qJJkshGd2wxcTKM4n7HhNiSabZ8GKeme2B/oDTldqGUKEOqp0nIvWMb5eqinizxDx7NfEDlPg==
   dependencies:
-    "@types/react" "*"
-    "@types/storybook__react" "*"
+    storybook__addon-knobs "*"
 
 "@types/storybook__addon-links@^3.3.5":
   version "3.3.5"
@@ -2148,14 +2147,6 @@
   integrity sha512-h+8Kb+uZv4/uuWD+K5rku8aRxdl6yjDJrFzbcGwwdZt6IwYGK9G8PmkP+6Hv+N7HMOuyhrZPiLL//qVFWDL/0Q==
   dependencies:
     "@types/react" "*"
-
-"@types/storybook__react@*":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/storybook__react/-/storybook__react-4.0.2.tgz#f36fb399574c662e79c1a0cf6e429b6ff730da40"
-  integrity sha512-U/+J5qccRdKFryvHkk1a0IeZaSIZLCmTwAQhTSDGeC3SPNIYPus+EtunBqP49r870l8czbfxtjeC3IL9P66ngQ==
-  dependencies:
-    "@types/react" "*"
-    "@types/webpack-env" "*"
 
 "@types/tapable@*":
   version "1.0.4"
@@ -2169,7 +2160,7 @@
   dependencies:
     source-map "^0.6.1"
 
-"@types/webpack-env@*", "@types/webpack-env@^1.15.0":
+"@types/webpack-env@^1.15.0":
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.15.0.tgz#bd9956d5044b1fb43e869a9ba9148862ff98d9fd"
   integrity sha512-TfcyNecCz8Z9/s90gBOBniyzZrTru8u2Vp0VZODq4KEBaQu8bfXvu7o/KUOecMpzjbFPUA7aqgSq628Iue5BQg==
@@ -11511,6 +11502,11 @@ storybook-chromatic@^2.2.2:
     tmp "^0.1.0"
     tree-kill "^1.1.0"
     uuid "^3.3.2"
+
+storybook__addon-knobs@*:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/storybook__addon-knobs/-/storybook__addon-knobs-0.0.4.tgz#a9965d85bf93341b8fa227105049d681f5e24676"
+  integrity sha512-MZogtup7usbyDsbT8fdPNwB3VGQVcBD+u1+LpgrEYB6U3TwG6PEDujTl2d0CXsC5DP4FxEbJN4CBPxNtXU7zRg==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
