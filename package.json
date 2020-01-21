@@ -65,7 +65,7 @@
     "@storybook/addon-knobs": "^5.3.8",
     "@storybook/addon-links": "^5.3.7",
     "@storybook/addon-notes": "^5.3.8",
-    "@storybook/angular": "^5.3.7",
+    "@storybook/angular": "^5.3.8",
     "@types/node": "^13.1.8",
     "@types/webpack": "^4.41.2",
     "@types/webpack-env": "^1.15.0",
