@@ -1,9 +1,8 @@
 import { storiesOf } from '@storybook/angular'
 
 import FColumnReadme from './f-column.readme.md'
-import '../main.scss'
 
-storiesOf('Layout|F-Column', module)
+storiesOf('Layout/F-Column', module)
     .addParameters({ notes: FColumnReadme })
     .add('Align Left', () => ({
         template: `

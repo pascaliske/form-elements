@@ -3,9 +3,8 @@ import { text, object, boolean } from '@storybook/addon-knobs'
 
 import { FTextAreaComponent } from './f-text-area.component'
 import FTextAreaReadme from './f-text-area.readme.md'
-import '../main.scss'
 
-storiesOf('Basic|F-TextArea', module)
+storiesOf('Basic/F-TextArea', module)
     .addParameters({ notes: FTextAreaReadme })
     .add('Basic', () => ({
         component: FTextAreaComponent,

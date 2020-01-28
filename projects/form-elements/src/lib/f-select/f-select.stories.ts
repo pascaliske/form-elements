@@ -4,9 +4,8 @@ import { action } from '@storybook/addon-actions'
 
 import { FSelectComponent } from './f-select.component'
 import FSelectReadme from './f-select.readme.md'
-import '../main.scss'
 
-storiesOf('Basic|F-Select', module)
+storiesOf('Basic/F-Select', module)
     .addParameters({ notes: FSelectReadme })
     .add('Basic', () => ({
         component: FSelectComponent,

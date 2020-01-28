@@ -3,9 +3,8 @@ import { text, object, radios, boolean } from '@storybook/addon-knobs'
 
 import { FInputComponent } from './f-input.component'
 import FInputReadme from './f-input.readme.md'
-import '../main.scss'
 
-storiesOf('Basic|F-Input', module)
+storiesOf('Basic/F-Input', module)
     .addParameters({ notes: FInputReadme })
     .add('Basic', () => ({
         component: FInputComponent,

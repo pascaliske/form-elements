@@ -3,9 +3,8 @@ import { text, radios, boolean } from '@storybook/addon-knobs'
 
 import { FPhoneComponent } from './f-phone.component'
 import FPhoneReadme from './f-phone.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Phone', module)
+storiesOf('Advanced/F-Phone', module)
     .addParameters({ notes: FPhoneReadme })
     .add('Basic', () => ({
         component: FPhoneComponent,

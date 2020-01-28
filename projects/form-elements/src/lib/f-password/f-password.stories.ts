@@ -3,9 +3,8 @@ import { text, radios, boolean } from '@storybook/addon-knobs'
 
 import { FPasswordComponent } from './f-password.component'
 import FPasswordReadme from './f-password.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Password', module)
+storiesOf('Advanced/F-Password', module)
     .addParameters({ notes: FPasswordReadme })
     .add('Basic', () => ({
         component: FPasswordComponent,

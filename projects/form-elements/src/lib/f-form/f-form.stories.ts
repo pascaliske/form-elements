@@ -2,9 +2,8 @@ import { storiesOf } from '@storybook/angular'
 import { action } from '@storybook/addon-actions'
 
 import FFormReadme from './f-form.readme.md'
-import '../main.scss'
 
-storiesOf('Layout|F-Form', module)
+storiesOf('Layout/F-Form', module)
     .addParameters({ notes: FFormReadme })
     .add('Basic', () => ({
         props: {

@@ -3,9 +3,8 @@ import { text, radios, boolean } from '@storybook/addon-knobs'
 
 import { FEmailComponent } from './f-email.component'
 import FEmailReadme from './f-email.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Email', module)
+storiesOf('Advanced/F-Email', module)
     .addParameters({ notes: FEmailReadme })
     .add('Basic', () => ({
         component: FEmailComponent,

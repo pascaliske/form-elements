@@ -5,7 +5,6 @@ import { faCheck, faAngleDown, faPaperPlane, faSave } from '@fortawesome/free-so
 
 import { FButtonComponent } from './f-button.component'
 import FButtonReadme from './f-button.readme.md'
-import '../main.scss'
 
 const defs = { faCheck, faAngleDown, faPaperPlane, faSave }
 const buttons = { button: 'button', submit: 'submit' }

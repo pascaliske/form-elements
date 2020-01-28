@@ -1,9 +1,8 @@
 import { storiesOf } from '@storybook/angular'
 
 import FRowReadme from './f-row.readme.md'
-import '../main.scss'
 
-storiesOf('Layout|F-Row', module)
+storiesOf('Layout/F-Row', module)
     .addParameters({ notes: FRowReadme })
     .add('Layout 1', () => ({
         template: `
