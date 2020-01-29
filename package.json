@@ -68,7 +68,7 @@
     "@storybook/angular": "^5.3.9",
     "@types/node": "^13.5.2",
     "@types/webpack": "^4.41.3",
-    "@types/webpack-env": "^1.15.0",
+    "@types/webpack-env": "^1.15.1",
     "babel-loader": "^8.0.6",
     "chalk": "^3.0.0",
     "codelyzer": "^5.2.1",
