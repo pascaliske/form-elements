@@ -61,7 +61,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@pascaliske/schematics": "^0.0.8",
-    "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-actions": "^5.3.10",
     "@storybook/addon-knobs": "^5.3.9",
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addon-notes": "^5.3.10",
