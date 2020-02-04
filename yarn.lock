@@ -1678,14 +1678,14 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
-"@storybook/angular@^5.3.11":
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-5.3.11.tgz#3b6dd8085c22c518330e9ef2265148cf06ca62a8"
-  integrity sha512-3yEe9NOAwWd04OeK4M8kz9elIvd94HgX3a4GCK+vMlzXpXDodsytrXmgmt1UAbRi4mzU8IO9kyHw5QwPz/+0EQ==
+"@storybook/angular@^5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/angular/-/angular-5.3.12.tgz#0a42fdf9fbeac1ce9469f174dff99b3857343a68"
+  integrity sha512-MUW1KHviYNS6YHmEtIS0Ub4qWLY3a4zfycddIjBKnHkGix46i6lvsUB9pVkO/OMqeP5oh4/ZDS2iozcqg/AdrQ==
   dependencies:
-    "@storybook/addons" "5.3.11"
-    "@storybook/core" "5.3.11"
-    "@storybook/node-logger" "5.3.11"
+    "@storybook/addons" "5.3.12"
+    "@storybook/core" "5.3.12"
+    "@storybook/node-logger" "5.3.12"
     "@types/webpack-env" "^1.15.0"
     core-js "^3.0.1"
     fork-ts-checker-webpack-plugin "^3.0.1"
@@ -1759,6 +1759,17 @@
     global "^4.3.2"
     telejson "^3.2.0"
 
+"@storybook/channel-postmessage@5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-5.3.12.tgz#945c9702f335018f6224af3159bf4d33c66a131e"
+  integrity sha512-yQZ6Ef0KnxI7vxJrcJaBYeZpxhl/18WEFtAO9MphvYvtd1dudqKNqdx9B/30PIXb7c/SptvGJR/EZhsRNr4Oug==
+  dependencies:
+    "@storybook/channels" "5.3.12"
+    "@storybook/client-logger" "5.3.12"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    telejson "^3.2.0"
+
 "@storybook/channels@5.3.11":
   version "5.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.3.11.tgz#c7f2bcb12f2ecfc4b3f98e651e0e103009377d76"
@@ -1783,6 +1794,29 @@
     "@storybook/channels" "5.3.11"
     "@storybook/client-logger" "5.3.11"
     "@storybook/core-events" "5.3.11"
+    "@storybook/csf" "0.0.1"
+    "@types/webpack-env" "^1.15.0"
+    core-js "^3.0.1"
+    eventemitter3 "^4.0.0"
+    global "^4.3.2"
+    is-plain-object "^3.0.0"
+    lodash "^4.17.15"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
+    stable "^0.1.8"
+    ts-dedent "^1.1.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/client-api@5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-5.3.12.tgz#7c18921d0290b30b020ad7d41fbda170009780bd"
+  integrity sha512-Qzi+pS9FwqrArnG1VMV4QJxEdvw7KVc2ufgax7jCvK8JtDlSVe1/qpbJn7U3o1z4TPY/u3m6PbBLJDoSWTVonw==
+  dependencies:
+    "@storybook/addons" "5.3.12"
+    "@storybook/channel-postmessage" "5.3.12"
+    "@storybook/channels" "5.3.12"
+    "@storybook/client-logger" "5.3.12"
+    "@storybook/core-events" "5.3.12"
     "@storybook/csf" "0.0.1"
     "@types/webpack-env" "^1.15.0"
     core-js "^3.0.1"
@@ -1878,26 +1912,26 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/core@5.3.11":
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.3.11.tgz#9fe7bdde1c14d86e9e18313a416edc7030e74af6"
-  integrity sha512-bAKFyZd1Dzq1BV3fScFN71ItGbSOWgwB4NXuMnMBRJSSO6ij+8P+1l1pY7FiXPZksrXU39+XNUxk8MHU5jHjWQ==
+"@storybook/core@5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.3.12.tgz#972cec3c7ee3e78a628a017c0b72bb6a52d9146d"
+  integrity sha512-oqffKLyMEVREeOC8O1RVO+xn68zk4wZkjWN9KbhbMoP3zdxM1gdvpsemdVE1C008mZfe1A/KBwuuEmcn9EBTNw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.0"
     "@babel/plugin-proposal-object-rest-spread" "^7.6.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/plugin-transform-react-constant-elements" "^7.2.0"
     "@babel/preset-env" "^7.4.5"
-    "@storybook/addons" "5.3.11"
-    "@storybook/channel-postmessage" "5.3.11"
-    "@storybook/client-api" "5.3.11"
-    "@storybook/client-logger" "5.3.11"
-    "@storybook/core-events" "5.3.11"
+    "@storybook/addons" "5.3.12"
+    "@storybook/channel-postmessage" "5.3.12"
+    "@storybook/client-api" "5.3.12"
+    "@storybook/client-logger" "5.3.12"
+    "@storybook/core-events" "5.3.12"
     "@storybook/csf" "0.0.1"
-    "@storybook/node-logger" "5.3.11"
-    "@storybook/router" "5.3.11"
-    "@storybook/theming" "5.3.11"
-    "@storybook/ui" "5.3.11"
+    "@storybook/node-logger" "5.3.12"
+    "@storybook/router" "5.3.12"
+    "@storybook/theming" "5.3.12"
+    "@storybook/ui" "5.3.12"
     airbnb-js-shims "^2.2.1"
     ansi-to-html "^0.6.11"
     autoprefixer "^9.7.2"
@@ -1964,10 +1998,10 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/node-logger@5.3.11":
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.3.11.tgz#753d19d1cbe3e4766481437c83d78a9a3a5bd3d5"
-  integrity sha512-O2Vsjm8dmnacCEF5tY7/PXLJ6F5SIdDrCg5QET4PAXncmVUlF1+KGEUFgTDdDQj+HciqtMO2onzcUyecLMQhpg==
+"@storybook/node-logger@5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.3.12.tgz#df25b725583cb5aa799b6c5b8103a8ea0921d3ba"
+  integrity sha512-ytIqS1Lx+gWFBNxwWOK7F63702YYsoU90UFQNUMC44lC1L7tOI9BQXtGIWTvmXJYns+O5pHHOVKkHLT9EGX2OA==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^3.0.0"
@@ -2042,20 +2076,20 @@
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
 
-"@storybook/ui@5.3.11":
-  version "5.3.11"
-  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.3.11.tgz#51ffeb8e3fe3cf5df13b7f86f7b67e9df5d940f4"
-  integrity sha512-oJS1Zfso/xy4hd2NhGv/a/nYpcQ/GcHxfT59fPwYBGvxb3hHD0IyJ/3maT8Moq3twBLQeZhXFiAX0h45CimX4A==
+"@storybook/ui@5.3.12":
+  version "5.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.3.12.tgz#c66f6a1302d2ff80a8b94402d95648d1b28066f8"
+  integrity sha512-dVYJJkwjfGkz3u0lnfawnT6hqBRnANVlKEYirKYZyQ/RouCN3naNh9Sagrpg7hJHYib4Ny6J/pyaNdfdieDS+w==
   dependencies:
     "@emotion/core" "^10.0.20"
-    "@storybook/addons" "5.3.11"
-    "@storybook/api" "5.3.11"
-    "@storybook/channels" "5.3.11"
-    "@storybook/client-logger" "5.3.11"
-    "@storybook/components" "5.3.11"
-    "@storybook/core-events" "5.3.11"
-    "@storybook/router" "5.3.11"
-    "@storybook/theming" "5.3.11"
+    "@storybook/addons" "5.3.12"
+    "@storybook/api" "5.3.12"
+    "@storybook/channels" "5.3.12"
+    "@storybook/client-logger" "5.3.12"
+    "@storybook/components" "5.3.12"
+    "@storybook/core-events" "5.3.12"
+    "@storybook/router" "5.3.12"
+    "@storybook/theming" "5.3.12"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     core-js-pure "^3.0.1"
