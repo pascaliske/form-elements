@@ -1,12 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, object, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FTextAreaComponent } from './f-text-area.component'
 import FTextAreaReadme from './f-text-area.readme.md'
 
-storiesOf('Basic/F-TextArea', module)
-    .addParameters({ notes: FTextAreaReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Basic/F-TextArea',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FTextAreaReadme },
+    factory: () => ({
         component: FTextAreaComponent,
         props: {
             name: text('name', 'name'),
@@ -20,12 +24,17 @@ storiesOf('Basic/F-TextArea', module)
             ],
             autofocus: boolean('autofocus', false),
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FTextAreaReadme },
+    factory: () => ({
         component: FTextAreaComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
         },
-    }))
+    }),
+})

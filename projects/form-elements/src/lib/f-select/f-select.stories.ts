@@ -1,13 +1,17 @@
-import { storiesOf } from '@storybook/angular'
 import { text, boolean } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FSelectComponent } from './f-select.component'
 import FSelectReadme from './f-select.readme.md'
 
-storiesOf('Basic/F-Select', module)
-    .addParameters({ notes: FSelectReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Basic/F-Select',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
@@ -32,8 +36,12 @@ storiesOf('Basic/F-Select', module)
                 },
             ],
         },
-    }))
-    .add('Placeholder', () => ({
+    }),
+})
+
+export const Placeholder = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
@@ -63,12 +71,17 @@ storiesOf('Basic/F-Select', module)
                 },
             ],
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
         },
-    }))
+    }),
+})

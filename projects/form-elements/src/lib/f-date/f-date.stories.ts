@@ -1,16 +1,21 @@
-import { storiesOf } from '@storybook/angular'
 import { text } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FDateComponent } from './f-date.component'
 import FDateReadme from './f-date.readme.md'
 
-storiesOf('Advanced/F-Date', module)
-    .addParameters({ notes: FDateReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Advanced/F-Date',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FDateReadme },
+    factory: () => ({
         component: FDateComponent,
         props: {
             name: text('name', 'date'),
             label: text('label', 'Date'),
             autocomplete: 'off',
         },
-    }))
+    }),
+})

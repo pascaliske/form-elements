@@ -1,12 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FTimeComponent } from './f-time.component'
 import FTimeReadme from './f-time.readme.md'
 
-storiesOf('Advanced/F-Time', module)
-    .addParameters({ notes: FTimeReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Advanced/F-Time',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FTimeReadme },
+    factory: () => ({
         component: FTimeComponent,
         props: {
             name: text('name', 'time'),
@@ -15,4 +19,5 @@ storiesOf('Advanced/F-Time', module)
             seconds: boolean('seconds', false),
             autocomplete: 'off',
         },
-    }))
+    }),
+})
