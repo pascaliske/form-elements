@@ -1,11 +1,14 @@
-import { storiesOf } from '@storybook/angular'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import FRowReadme from './f-row.readme.md'
-import '../main.scss'
 
-storiesOf('Layout|F-Row', module)
-    .addParameters({ notes: FRowReadme })
-    .add('Layout 1', () => ({
+export default {
+    title: 'Layout/F-Row',
+}
+
+export const Layout1 = createStory({
+    parameters: { notes: FRowReadme },
+    factory: () => ({
         template: `
             <cmp-f-row [layout]="'1'">
                 <cmp-f-column>
@@ -13,8 +16,12 @@ storiesOf('Layout|F-Row', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
-    .add('Layout 1-1', () => ({
+    }),
+})
+
+export const Layout1_1 = createStory({
+    parameters: { notes: FRowReadme },
+    factory: () => ({
         template: `
             <cmp-f-row [layout]="'1-1'">
                 <cmp-f-column>
@@ -25,8 +32,12 @@ storiesOf('Layout|F-Row', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
-    .add('Layout 1-1-1', () => ({
+    }),
+})
+
+export const Layout1_1_1 = createStory({
+    parameters: { notes: FRowReadme },
+    factory: () => ({
         template: `
             <cmp-f-row [layout]="'1-1-1'">
                 <cmp-f-column>
@@ -40,8 +51,12 @@ storiesOf('Layout|F-Row', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
-    .add('Layout 1-2', () => ({
+    }),
+})
+
+export const Layout1_2 = createStory({
+    parameters: { notes: FRowReadme },
+    factory: () => ({
         template: `
             <cmp-f-row [layout]="'1-2'">
                 <cmp-f-column>
@@ -52,8 +67,12 @@ storiesOf('Layout|F-Row', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
-    .add('Layout 2-1', () => ({
+    }),
+})
+
+export const Layout2_1 = createStory({
+    parameters: { notes: FRowReadme },
+    factory: () => ({
         template: `
             <cmp-f-row [layout]="'2-1'">
                 <cmp-f-column>
@@ -64,4 +83,5 @@ storiesOf('Layout|F-Row', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
+    }),
+})

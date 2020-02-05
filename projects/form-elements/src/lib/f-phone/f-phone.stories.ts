@@ -1,13 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, radios, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FPhoneComponent } from './f-phone.component'
 import FPhoneReadme from './f-phone.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Phone', module)
-    .addParameters({ notes: FPhoneReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Advanced/F-Phone',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FPhoneReadme },
+    factory: () => ({
         component: FPhoneComponent,
         props: {
             name: text('name', 'name'),
@@ -22,12 +25,17 @@ storiesOf('Advanced|F-Phone', module)
             ),
             autofocus: boolean('autofocus', false),
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FPhoneReadme },
+    factory: () => ({
         component: FPhoneComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
         },
-    }))
+    }),
+})

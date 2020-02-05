@@ -13,27 +13,18 @@ import { FInputComponent } from '../f-input/f-input.component'
 import { ModuleOptions, OPTIONS } from '../options'
 
 @Component({
-    selector: 'cmp-f-date',
-    templateUrl: './f-date.component.html',
-    providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FDateComponent) }],
+    selector: 'cmp-f-time',
+    templateUrl: './f-time.component.html',
+    providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FTimeComponent) }],
 })
-export class FDateComponent extends FInputComponent implements AfterViewInit, OnDestroy {
-    public static readonly cmpName: string = 'FDateComponent'
+export class FTimeComponent extends FInputComponent implements AfterViewInit, OnDestroy {
+    public static readonly cmpName: string = 'FTimeComponent'
 
     @Input()
-    public altFormat: string = 'd. F Y'
+    public hour: boolean = false
 
     @Input()
-    public dateFormat: string = 'd. F Y'
-
-    @Input()
-    public minDate: string | Date
-
-    @Input()
-    public maxDate: string | Date
-
-    @Input()
-    public blacklist: (string | Date)[]
+    public seconds: boolean = false
 
     @ViewChild('inputRef', { static: true })
     public inputRef: ElementRef
@@ -42,11 +33,8 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
 
     private readonly defaults: flatpickr.Options.Options = {
         allowInput: true,
-        altInput: true,
-        altFormat: 'd. F Y',
-        dateFormat: 'd. F Y',
-        defaultDate: null,
-        weekNumbers: true,
+        enableTime: true,
+        noCalendar: true,
     }
 
     public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
@@ -82,11 +70,8 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         return {
             ...(this.defaults as flatpickr.Options.Options),
             ...(this.options.datepicker ? (this.options.datepicker as {}) : {}),
-            ...(this.altFormat ? { altFormat: this.altFormat } : {}),
-            ...(this.dateFormat ? { dateFormat: this.dateFormat } : {}),
-            ...(this.minDate ? { minDate: this.minDate } : {}),
-            ...(this.maxDate ? { maxDate: this.maxDate } : {}),
-            ...(this.blacklist ? { disable: this.blacklist } : {}),
+            ...(this.hour ? { time_24hr: this.hour } : {}),
+            ...(this.seconds ? { enableSeconds: this.seconds } : {}),
         }
     }
 }

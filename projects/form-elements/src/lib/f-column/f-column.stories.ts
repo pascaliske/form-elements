@@ -1,11 +1,14 @@
-import { storiesOf } from '@storybook/angular'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import FColumnReadme from './f-column.readme.md'
-import '../main.scss'
 
-storiesOf('Layout|F-Column', module)
-    .addParameters({ notes: FColumnReadme })
-    .add('Align Left', () => ({
+export default {
+    title: 'Layout/F-Column',
+}
+
+export const AlignLeft = createStory({
+    parameters: { notes: FColumnReadme },
+    factory: () => ({
         template: `
             <cmp-f-row>
                 <cmp-f-column [flex]="true" [align]="'left'">
@@ -13,8 +16,12 @@ storiesOf('Layout|F-Column', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
-    .add('Align Right', () => ({
+    }),
+})
+
+export const AlignRight = createStory({
+    parameters: { notes: FColumnReadme },
+    factory: () => ({
         template: `
             <cmp-f-row>
                 <cmp-f-column [flex]="true" [align]="'right'">
@@ -22,4 +29,5 @@ storiesOf('Layout|F-Column', module)
                 </cmp-f-column>
             </cmp-f-row>
         `,
-    }))
+    }),
+})

@@ -1,13 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FRadiobuttonComponent } from './f-radiobutton.component'
 import FRadiobuttonReadme from './f-radiobutton.readme.md'
-import '../main.scss'
 
-storiesOf('Basic|F-Radiobutton', module)
-    .addParameters({ notes: FRadiobuttonReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Basic/F-Radiobutton',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FRadiobuttonReadme },
+    factory: () => ({
         component: FRadiobuttonComponent,
         props: {
             name: text('name', 'name'),
@@ -25,8 +28,12 @@ storiesOf('Basic|F-Radiobutton', module)
                 },
             ],
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FRadiobuttonReadme },
+    factory: () => ({
         component: FRadiobuttonComponent,
         props: {
             name: text('name', 'name'),
@@ -45,4 +52,5 @@ storiesOf('Basic|F-Radiobutton', module)
             ],
             disabled: true,
         },
-    }))
+    }),
+})

@@ -1,13 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, radios, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FEmailComponent } from './f-email.component'
 import FEmailReadme from './f-email.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Email', module)
-    .addParameters({ notes: FEmailReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Advanced/F-Email',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FEmailReadme },
+    factory: () => ({
         component: FEmailComponent,
         props: {
             name: text('name', 'name'),
@@ -32,20 +35,29 @@ storiesOf('Advanced|F-Email', module)
             ),
             autofocus: boolean('autofocus', false),
         },
-    }))
-    .add('Suggestions', () => ({
+    }),
+})
+
+export const Suggestions = createStory({
+    parameters: { notes: FEmailReadme },
+    factory: () => ({
         component: FEmailComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             autocomplete: 'off',
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FEmailReadme },
+    factory: () => ({
         component: FEmailComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
         },
-    }))
+    }),
+})

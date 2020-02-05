@@ -1,5 +1,3 @@
-@import 'shared';
-
 input,
 textarea,
 select,
@@ -13,12 +11,17 @@ input,
 textarea,
 select {
     outline: 0;
+    color: inherit;
+    background-color: transparent;
 }
+
+@import 'shared';
 
 @import 'f-button/f-button.component';
 @import 'f-checkbox/f-checkbox.component';
 @import 'f-column/f-column.component';
 @import 'f-date/f-date.component';
+@import 'f-time/f-time.component';
 @import 'f-email/f-email.component';
 @import 'f-error/f-error.component';
 @import 'f-explanation/f-explanation.component';

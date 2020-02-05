@@ -1,13 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, radios, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FPasswordComponent } from './f-password.component'
 import FPasswordReadme from './f-password.readme.md'
-import '../main.scss'
 
-storiesOf('Advanced|F-Password', module)
-    .addParameters({ notes: FPasswordReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Advanced/F-Password',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FPasswordReadme },
+    factory: () => ({
         component: FPasswordComponent,
         props: {
             name: text('name', 'name'),
@@ -23,12 +26,17 @@ storiesOf('Advanced|F-Password', module)
             ),
             autofocus: boolean('autofocus', false),
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FPasswordReadme },
+    factory: () => ({
         component: FPasswordComponent,
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
         },
-    }))
+    }),
+})
