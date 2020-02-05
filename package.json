@@ -1,7 +1,7 @@
 {
   "name": "form-elements",
   "description": "Collection of form elements for Angular 6+ projects.",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "license": "MIT",
   "homepage": "https://pascaliske.github.io/form-elements",
   "author": {
@@ -44,9 +44,9 @@
     "@angular/router": "^8.2.14",
     "@fortawesome/angular-fontawesome": "^0.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
-    "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-regular-svg-icons": "^5.12.0",
-    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@pascaliske/html-helpers": "^1.5.7",
     "core-js": "^3.6.4",
     "rxjs": "^6.5.4",
