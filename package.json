@@ -27,7 +27,7 @@
     "lint": "ng lint form-elements --fix",
     "format": "prettier --write \"{src,projects}/**/*.{ts,scss,md,html}\"",
     "version": "bump --yes package.json projects/form-elements/package.json",
-    "changelog": "standard-changelog --release-count 1",
+    "changelog": "standard-changelog",
     "storybook": "start-storybook --port 9001 --config-dir .storybook --static-dir node_modules --ci",
     "docs": "build-storybook --config-dir .storybook --output-dir docs",
     "link": "yarn run build && cd dist/form-elements && yarn link",
