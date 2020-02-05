@@ -3,9 +3,10 @@ import {
     forwardRef,
     AfterViewInit,
     OnDestroy,
-    Inject,
+    Input,
     ViewChild,
     ElementRef,
+    Inject,
 } from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
@@ -19,6 +20,21 @@ import { ModuleOptions, OPTIONS } from '../options'
 export class FDateComponent extends FInputComponent implements AfterViewInit, OnDestroy {
     public static readonly cmpName: string = 'FDateComponent'
 
+    @Input()
+    public altFormat: string = 'd. F Y'
+
+    @Input()
+    public dateFormat: string = 'd. F Y'
+
+    @Input()
+    public minDate: string | Date
+
+    @Input()
+    public maxDate: string | Date
+
+    @Input()
+    public blacklist: (string | Date)[]
+
     @ViewChild('inputRef', { static: true })
     public inputRef: ElementRef
 
@@ -26,6 +42,8 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
 
     private readonly defaults: flatpickr.Options.Options = {
         allowInput: true,
+        altInput: true,
+        altFormat: 'd. F Y',
         dateFormat: 'd. F Y',
         defaultDate: null,
         weekNumbers: true,
@@ -61,13 +79,14 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private merge(): flatpickr.Options.Options {
-        if (this.options.datepicker && typeof this.options.datepicker === 'object') {
-            return {
-                ...(this.defaults as flatpickr.Options.Options),
-                ...(this.options.datepicker as flatpickr.Options.Options),
-            }
+        return {
+            ...(this.defaults as flatpickr.Options.Options),
+            ...(this.options.datepicker ? (this.options.datepicker as {}) : {}),
+            ...(this.altFormat ? { altFormat: this.altFormat } : {}),
+            ...(this.dateFormat ? { dateFormat: this.dateFormat } : {}),
+            ...(this.minDate ? { minDate: this.minDate } : {}),
+            ...(this.maxDate ? { maxDate: this.maxDate } : {}),
+            ...(this.blacklist ? { disable: this.blacklist } : {}),
         }
-
-        return this.defaults as flatpickr.Options.Options
     }
 }
