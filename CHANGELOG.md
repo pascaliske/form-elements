@@ -1,3 +1,19 @@
+# [2.4.0](https://github.com/pascaliske/form-elements/compare/v2.3.0...v2.4.0) (2020-02-05)
+
+
+### Bug Fixes
+
+* **scss:** use transparent background as default value for all inputs ([d77c67d](https://github.com/pascaliske/form-elements/commit/d77c67d7fb9bfdfdae0cc179e9dfa751ea3c86b8))
+
+
+### Features
+
+* **f-date:** accept inputs for customizing the datepicker options ([5c53b02](https://github.com/pascaliske/form-elements/commit/5c53b022e48716e1d950063953d04fea75262801))
+* **f-time:** add new time input component ([4d9fac7](https://github.com/pascaliske/form-elements/commit/4d9fac72f36c0138c1288be3b4380e9ddaa24f61))
+* **scss:** inherit color of input, textarea and select ([b0682a3](https://github.com/pascaliske/form-elements/commit/b0682a3a78504555d34907d7bb1606f471e24d41))
+
+
+
 # [2.3.0](https://github.com/pascaliske/form-elements/compare/v2.2.1...v2.3.0) (2019-07-25)
 
 
