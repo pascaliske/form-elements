@@ -1,12 +1,16 @@
-import { storiesOf } from '@storybook/angular'
 import { text, object, radios, boolean } from '@storybook/addon-knobs'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FInputComponent } from './f-input.component'
 import FInputReadme from './f-input.readme.md'
 
-storiesOf('Basic/F-Input', module)
-    .addParameters({ notes: FInputReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Basic/F-Input',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FInputReadme },
+    factory: () => ({
         component: FInputComponent,
         props: {
             name: text('name', 'name'),
@@ -31,12 +35,17 @@ storiesOf('Basic/F-Input', module)
             ),
             autofocus: boolean('autofocus', false),
         },
-    }))
-    .add('Disabled', () => ({
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FInputReadme },
+    factory: () => ({
         component: FInputComponent,
         props: {
             name: 'name',
             label: 'Label',
             disabled: true,
         },
-    }))
+    }),
+})

@@ -1,11 +1,15 @@
-import { storiesOf } from '@storybook/angular'
 import { action } from '@storybook/addon-actions'
+import { createStory } from '@pascaliske/storybook-helpers'
 
 import FFormReadme from './f-form.readme.md'
 
-storiesOf('Layout/F-Form', module)
-    .addParameters({ notes: FFormReadme })
-    .add('Basic', () => ({
+export default {
+    title: 'Layout/F-Form',
+}
+
+export const Basic = createStory({
+    parameters: { notes: FFormReadme },
+    factory: () => ({
         props: {
             submitted: action('submitted'),
         },
@@ -28,8 +32,12 @@ storiesOf('Layout/F-Form', module)
                 </cmp-f-row>
             </form>
         `,
-    }))
-    .add('Submit URL', () => ({
+    }),
+})
+
+export const SubmitURL = createStory({
+    parameters: { notes: FFormReadme },
+    factory: () => ({
         props: {
             url: '/',
             submitted: action('submitted'),
@@ -53,4 +61,5 @@ storiesOf('Layout/F-Form', module)
                 </cmp-f-row>
             </form>
         `,
-    }))
+    }),
+})
