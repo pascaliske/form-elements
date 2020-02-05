@@ -1,0 +1,26 @@
+<div [class]="classes('cmp-f-time')">
+    <div class="cmp-f-time__control">
+        <input
+            class="cmp-f-time__input"
+            type="text"
+            [id]="name"
+            [name]="name"
+            [formControl]="fc"
+            [autocomplete]="autocomplete"
+            [attr.disabled]="disabled ? '' : null"
+            (focus)="focusIn()"
+            (focusout)="focusOut()"
+            #inputRef
+        />
+        <label class="cmp-f-time__label" [for]="name">
+            {{ label }}<span class="cmp-f-time__required" *ngIf="isRequired()">*</span>
+        </label>
+        <span class="cmp-f-time__line"></span>
+    </div>
+    <cmp-f-explanation
+        class="cmp-f-time__explanations"
+        [fc]="fc"
+        [messages]="explanation"
+    ></cmp-f-explanation>
+    <cmp-f-error class="cmp-f-time__errors" [fc]="fc" [messages]="validation"></cmp-f-error>
+</div>

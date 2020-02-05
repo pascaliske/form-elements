@@ -1,0 +1,4 @@
+@include cmp-base(cmp-f-time, block) {
+    @include cmp-form-element();
+    @include cmp-form-input();
+}
