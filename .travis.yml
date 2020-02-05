@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - '11'
-  - '10'
+  - '13'
+  - '12'
 install:
   - yarn install --frozen-lockfile
 script:
@@ -13,12 +13,12 @@ deploy:
   provider: npm
   email: info@pascal-iske.de
   api_key:
-    secure: PZ7AQtol8ty7BjtgG3IhZ26cCcLoZK9tpRrofy6mWupdn3KO+88LCNAf/VYF2XVvAmpMXUb8EbjkLh1qrpumXAv/2COZ0Yi8VofgzAEKpu+Mxm7ixBYvaDR8ohEVEIvq6a9MfbqMXs2Gvx+/BX+OZ6Kwk/OTQi03qIMEdqVMB63++fae6G/eS3PjzLhhxt2oETTQBB7xeWx/1DlsnGWkehLytbBnED1kcSgBE/TZRYrRebFJihX2GDVMejGJHgiT2s6sq3YAkERDJf/LzV5c2qBsFbHn+akgycCQOKwRmWA7qGpvLEZTLlBCylS22mMh6QZXw0ZmpfCeHGui8fBxga3W7v6UwURzT4YCx5t6ebP8Zp1ANUgrt6iQvuyQpkyKkGWjBIQnFoGITPg8lKGRQjCsFQXlcvLKXJv9+q+2scTEmJJSNKyEb2vAfrMVYz20F3hxWWn1fbxNKkGm/7uHC2tlZYlaUGaoFrz4RZp5KkMTgAzqxsIZLMlG0Vd55wopouE3IP+Jz6yC55yfLJCwvTknCodRRr5jHmkj+2I3txVoYdB0/gDASUilyzPNuPZgCTTnvAwcMwy5CbwdHebcyXj/LYmep7HlrFxDTy+YapGbD5PY8Vi1UwIHJ+5DnbtSbjUnU5NyaC2v+d6L1IyTtaPkW9awXRjSg7wPaS0UH/I=
+    secure: JG27nEuljHR8yY8KmU1ag93ucTVi//w8NVdgLKLtXlnyERs06ijfICvdI6aS9BzRxVoxfrlGeDUjApIQ5sYcY7u5/ZsGJvZENaBfQR3wOmebeUb/m9cAf8/m5hr0SsEiZYssRMJSnQbn2VeqV4G0aLEvKmonwqxzAWYCgLY+YCCgAi8H1/arGh/ZI4DPwgbvPqV+w+y2GIaZ8lyLz+Q0l8dqi7S0dDUX4L9Vjwgdlnb2bAZhxGRFTuWG2FToRa6zkfdQ7v+CWxWRsJ7vBQjWFwNGUMXkcqbAwlegygO7d6JJvGO799PKPzfIUb8jGsl4qb3SedIiVNyEcmL8neTkxIMosYjhEmh11y3TPmRxqRuaToT6wRDKVbRIQptej9vWKD09URz+FO+O6CegD+VKHGgK8++Vn8kLSHR9YdXhtPXwGQyvi1nMLrUJGjaUlaKqxu2HZo8nHvggo65M6Lo0vobodCd+XzSDnZWAKE9TvbAkfqMrEKd5lDGUuhJBkTWiffe8QNbF3LTL2Eh7WoIVf7sZShZAqSO4aXZlkkJyjG6ovQ4ICfu0G9s4yjGMusxN6m+PxUzvzxrf9DKAU6C+HRD8Mghwei6W51dE6mOgjaFmt2zXI8zbx6aWy4dcfhUmAMwcDysEynYHDD3EZkU+JlZq97+nDk0ftRMHVqn4QCk=
   skip_cleanup: true
   on:
     tags: true
     branch: master
-    node: 11
+    node: 13
 notifications:
   slack:
     rooms:
