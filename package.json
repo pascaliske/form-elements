@@ -68,7 +68,7 @@
     "@storybook/addon-notes": "^5.3.13",
     "@storybook/angular": "^5.3.13",
     "@storybook/theming": "^5.3.13",
-    "@types/node": "^13.7.2",
+    "@types/node": "^13.7.3",
     "@types/webpack": "^4.41.6",
     "@types/webpack-env": "^1.15.1",
     "babel-loader": "^8.0.6",
