@@ -58,7 +58,7 @@
     "@angular/cli": "^8.3.25",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.14",
-    "@babel/core": "^7.8.4",
+    "@babel/core": "^7.8.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@pascaliske/schematics": "^0.0.8",
