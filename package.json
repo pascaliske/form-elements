@@ -69,7 +69,7 @@
     "@storybook/angular": "^5.3.17",
     "@storybook/theming": "^5.3.17",
     "@types/node": "^13.9.2",
-    "@types/webpack": "^4.41.7",
+    "@types/webpack": "^4.41.8",
     "@types/webpack-env": "^1.15.1",
     "babel-loader": "^8.1.0",
     "bump-cli": "^1.1.3",
