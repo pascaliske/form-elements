@@ -78,7 +78,7 @@
     "flatpickr": "4.6.3",
     "fuzzysearch": "^1.0.3",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
+    "lint-staged": "^10.0.9",
     "ng-packagr": "^5.7.1",
     "prettier": "^1.19.1",
     "scss-bundle": "^3.0.2",
