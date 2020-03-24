@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/form-elements",
   "description": "Collection of form elements for Angular 6+ projects.",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "license": "MIT",
   "homepage": "https://pascaliske.github.io/form-elements",
   "author": {
@@ -20,9 +20,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^7.0.0 || ^8.0.0",
-    "@angular/core": "^7.0.0 || ^8.0.0",
-    "@angular/forms": "^7.0.0 || ^8.0.0",
+    "@angular/common": "^7.0.0 || ^8.0.0 || ^9.0.0",
+    "@angular/core": "^7.0.0 || ^8.0.0 || ^9.0.0",
+    "@angular/forms": "^7.0.0 || ^8.0.0 || ^9.0.0",
     "@pascaliske/html-helpers": "^1.2.1",
     "flatpickr": "^4.6.1",
     "fuzzysearch": "^1.0.3",
