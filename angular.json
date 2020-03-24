@@ -9,7 +9,7 @@
   },
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "style": "scss"
     }
   },
   "projects": {
@@ -22,6 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/form-elements-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -52,6 +53,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -109,7 +116,8 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/form-elements/ng-package.prod.json"
+              "project": "projects/form-elements/ng-package.prod.json",
+              "tsConfig": "projects/form-elements/tsconfig.lib.prod.json"
             }
           }
         },
