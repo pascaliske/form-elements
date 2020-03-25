@@ -19,8 +19,8 @@
   "private": true,
   "scripts": {
     "start": "ng serve form-elements-demo",
-    "build": "run-s build:ng build:scss build:metadata",
-    "build:ng": "ng build --prod",
+    "build": "run-s build:library build:scss build:metadata",
+    "build:library": "ng build --prod",
     "build:scss": "scss-bundle --config scss-bundle.config.json",
     "build:metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md && cp CHANGELOG.md dist/form-elements/CHANGELOG.md",
     "lint": "ng lint form-elements --fix",
