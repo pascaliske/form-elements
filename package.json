@@ -33,7 +33,7 @@
     "unlink": "cd dist/form-elements && yarn unlink"
   },
   "dependencies": {
-    "@angular/animations": "^9.1.3",
+    "@angular/animations": "^9.1.7",
     "@angular/common": "^9.1.7",
     "@angular/compiler": "^9.1.3",
     "@angular/core": "^9.1.3",
