@@ -64,7 +64,7 @@
     "@pascaliske/schematics": "^0.0.8",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-links": "^5.3.19",
     "@storybook/addon-notes": "^5.3.18",
     "@storybook/angular": "^5.3.18",
     "@storybook/theming": "^5.3.19",
