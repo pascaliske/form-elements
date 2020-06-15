@@ -55,15 +55,21 @@ export class FInputComponent implements OnInit {
 
     public focus: boolean = false
 
-    public constructor() {}
-
     public ngOnInit(): void {
+        if (!this.fc) {
+            console.warn(`Missing FormControl for input "${this.name}".`)
+            this.disabled = true
+            return
+        }
+
         this.setValidators()
     }
 
-    public classes(namespace: string): string {
+    public classes(namespace: string, overrides?: Record<string, boolean>): string {
         if (!this.fc) {
-            return namespace
+            return modifiers(namespace, {
+                disabled: this.disabled,
+            })
         }
 
         return modifiers(namespace, {
@@ -72,6 +78,7 @@ export class FInputComponent implements OnInit {
             filled: this.fc.value && this.fc.value !== '',
             invalid: this.fc.touched && !this.fc.valid,
             required: this.isRequired(),
+            ...(overrides ? overrides : {}),
         })
     }
 

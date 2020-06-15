@@ -1,4 +1,4 @@
-import { text, boolean } from '@storybook/addon-knobs'
+import { text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
 
@@ -50,7 +50,74 @@ export const Placeholder = createStory({
             placeholder: {
                 label: 'Please select',
                 value: null,
-                selectable: boolean('placeholder selectable', false),
+            },
+            options: [
+                {
+                    label: 'Option #1',
+                    value: 'option-1',
+                },
+                {
+                    label: 'Option #2',
+                    value: 'option-2',
+                },
+                {
+                    label: 'Option #3',
+                    value: 'option-3',
+                },
+                {
+                    label: 'Option #4',
+                    value: 'option-4',
+                },
+            ],
+        },
+    }),
+})
+
+export const Prefilled = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
+        component: FSelectComponent,
+        props: {
+            name: text('name', 'name'),
+            label: text('label', 'Label'),
+            changed: action('changed'),
+            value: {
+                label: 'Option #2',
+                value: 'option-2',
+            },
+            options: [
+                {
+                    label: 'Option #1',
+                    value: 'option-1',
+                },
+                {
+                    label: 'Option #2',
+                    value: 'option-2',
+                },
+                {
+                    label: 'Option #3',
+                    value: 'option-3',
+                },
+                {
+                    label: 'Option #4',
+                    value: 'option-4',
+                },
+            ],
+        },
+    }),
+})
+
+export const Searchable = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
+        component: FSelectComponent,
+        props: {
+            name: text('name', 'name'),
+            label: text('label', 'Label'),
+            changed: action('changed'),
+            search: {
+                label: 'Search options...',
+                fields: ['label'],
             },
             options: [
                 {

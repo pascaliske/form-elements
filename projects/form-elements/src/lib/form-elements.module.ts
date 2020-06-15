@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core'
+import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms'
@@ -19,7 +19,7 @@ import { FSelectComponent } from './f-select/f-select.component'
 import { FTextAreaComponent } from './f-text-area/f-text-area.component'
 import { FErrorComponent } from './f-error/f-error.component'
 import { FExplanationComponent } from './f-explanation/f-explanation.component'
-import { ModuleOptions, OPTIONS } from './options'
+import { ModuleOptions, MODULE_OPTIONS } from './options'
 
 export const components = [
     FButtonComponent,
@@ -45,15 +45,23 @@ export const components = [
     exports: [...components],
 })
 export class FormElementsModule {
+    public constructor(@Optional() @SkipSelf() parent?: FormElementsModule) {
+        if (parent) {
+            throw new Error(
+                'FormElementsModule is already loaded. Import it in the AppModule only.',
+            )
+        }
+    }
+
     public static forRoot(
-        options?: Partial<ModuleOptions>,
+        moduleOptions?: Partial<ModuleOptions>,
     ): ModuleWithProviders<FormElementsModule> {
         return {
             ngModule: FormElementsModule,
             providers: [
                 {
-                    provide: OPTIONS,
-                    useValue: options,
+                    provide: MODULE_OPTIONS,
+                    useValue: moduleOptions,
                 },
             ],
         }

@@ -3,6 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { ReactiveFormsModule } from '@angular/forms'
 import { FormElementsModule } from '../projects/form-elements/src/lib/form-elements.module'
 import 'flatpickr/dist/flatpickr.min.css'
+import 'choices.js/public/assets/styles/choices.min.css'
 import '../projects/form-elements/src/lib/main.scss'
 
 addParameters({

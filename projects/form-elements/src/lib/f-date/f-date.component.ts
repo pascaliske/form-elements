@@ -10,7 +10,7 @@ import {
 } from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, OPTIONS } from '../options'
+import { ModuleOptions, MODULE_OPTIONS } from '../options'
 
 @Component({
     selector: 'cmp-f-date',
@@ -49,7 +49,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         weekNumbers: true,
     }
 
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
+    public constructor(@Inject(MODULE_OPTIONS) private moduleOptions: ModuleOptions) {
         super()
     }
 
@@ -63,7 +63,10 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private init() {
-        if (typeof this.options.datepicker === 'boolean' && this.options.datepicker === false) {
+        if (
+            typeof this.moduleOptions.datepicker === 'boolean' &&
+            this.moduleOptions.datepicker === false
+        ) {
             return
         }
 
@@ -81,7 +84,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     private merge(): flatpickr.Options.Options {
         return {
             ...(this.defaults as flatpickr.Options.Options),
-            ...(this.options.datepicker ? (this.options.datepicker as {}) : {}),
+            ...(this.moduleOptions.datepicker ? (this.moduleOptions.datepicker as {}) : {}),
             ...(this.altFormat ? { altFormat: this.altFormat } : {}),
             ...(this.dateFormat ? { dateFormat: this.dateFormat } : {}),
             ...(this.minDate ? { minDate: this.minDate } : {}),

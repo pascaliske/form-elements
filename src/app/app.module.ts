@@ -5,18 +5,21 @@ import { FormElementsModule } from '@pascaliske/form-elements'
 import { AppComponent } from './app.component'
 
 @NgModule({
-    bootstrap: [AppComponent],
-    declarations: [AppComponent],
     imports: [
         CommonModule,
         BrowserModule,
         FormElementsModule.forRoot({
+            select: {
+                searchEnabled: false,
+            },
             datepicker: true,
             email: {
                 suggestions: true,
             },
         }),
     ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
     providers: [],
 })
 export class AppModule {}
