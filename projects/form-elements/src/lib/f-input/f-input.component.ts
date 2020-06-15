@@ -56,6 +56,12 @@ export class FInputComponent implements OnInit {
     public focus: boolean = false
 
     public ngOnInit(): void {
+        if (!this.fc) {
+            console.warn(`Missing FormControl for input "${this.name}".`)
+            this.disabled = true
+            return
+        }
+
         this.setValidators()
     }
 
