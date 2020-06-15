@@ -1,6 +1,6 @@
 {
   "src/**/*.ts": [
-    "tslint --project src/tsconfig.app.json --fix",
+    "tslint --project tsconfig.app.json --fix",
     "prettier --write",
     "git add"
   ],
