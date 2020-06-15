@@ -5,8 +5,6 @@ import { FormElementsModule } from '@pascaliske/form-elements'
 import { AppComponent } from './app.component'
 
 @NgModule({
-    bootstrap: [AppComponent],
-    declarations: [AppComponent],
     imports: [
         CommonModule,
         BrowserModule,
@@ -20,6 +18,8 @@ import { AppComponent } from './app.component'
             },
         }),
     ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
     providers: [],
 })
 export class AppModule {}
