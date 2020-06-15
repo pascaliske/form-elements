@@ -95,7 +95,19 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
         this.destroy()
     }
 
-    public init(): void {
+    public classes(namespace: string): string {
+        return super.classes(namespace, {
+            filled: (this.fc.value && this.fc.value !== '') || !!this.placeholder,
+        })
+    }
+
+    public focusOut(): void {
+        super.focusOut()
+
+        this.inputRef?.nativeElement?.click()
+    }
+
+    private init(): void {
         if (this.instance?.initialised) {
             return
         }
@@ -126,25 +138,13 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
         }
     }
 
-    public destroy(): void {
+    private destroy(): void {
         if (!this.instance?.initialised) {
             return
         }
 
         this.alive = false
         this.instance.destroy()
-    }
-
-    public classes(namespace: string): string {
-        return super.classes(namespace, {
-            filled: (this.fc.value && this.fc.value !== '') || !!this.placeholder,
-        })
-    }
-
-    public focusOut(): void {
-        super.focusOut()
-
-        this.inputRef?.nativeElement?.click()
     }
 
     private merge(): ChoicesType.Options {
