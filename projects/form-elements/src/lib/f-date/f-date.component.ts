@@ -71,6 +71,8 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
         }
 
         this.instance = flatpickr(this.inputRef.nativeElement, this.merge())
+        this.instance.config.onOpen.push(() => (this.focus = true))
+        this.instance.config.onClose.push(() => (this.focus = false))
     }
 
     private destroy(): void {
