@@ -10,7 +10,7 @@ import {
 } from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, OPTIONS } from '../options'
+import { ModuleOptions, MODULE_OPTIONS } from '../options'
 
 @Component({
     selector: 'cmp-f-time',
@@ -37,7 +37,7 @@ export class FTimeComponent extends FInputComponent implements AfterViewInit, On
         noCalendar: true,
     }
 
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
+    public constructor(@Inject(MODULE_OPTIONS) private moduleOptions: ModuleOptions) {
         super()
     }
 
@@ -51,7 +51,10 @@ export class FTimeComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private init() {
-        if (typeof this.options.datepicker === 'boolean' && this.options.datepicker === false) {
+        if (
+            typeof this.moduleOptions.datepicker === 'boolean' &&
+            this.moduleOptions.datepicker === false
+        ) {
             return
         }
 
@@ -69,7 +72,7 @@ export class FTimeComponent extends FInputComponent implements AfterViewInit, On
     private merge(): flatpickr.Options.Options {
         return {
             ...(this.defaults as flatpickr.Options.Options),
-            ...(this.options.datepicker ? (this.options.datepicker as {}) : {}),
+            ...(this.moduleOptions.datepicker ? (this.moduleOptions.datepicker as {}) : {}),
             ...(this.hour ? { time_24hr: this.hour } : {}),
             ...(this.seconds ? { enableSeconds: this.seconds } : {}),
         }

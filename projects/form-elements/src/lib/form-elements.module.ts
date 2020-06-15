@@ -19,7 +19,7 @@ import { FSelectComponent } from './f-select/f-select.component'
 import { FTextAreaComponent } from './f-text-area/f-text-area.component'
 import { FErrorComponent } from './f-error/f-error.component'
 import { FExplanationComponent } from './f-explanation/f-explanation.component'
-import { ModuleOptions, OPTIONS } from './options'
+import { ModuleOptions, MODULE_OPTIONS } from './options'
 
 export const components = [
     FButtonComponent,
@@ -46,14 +46,14 @@ export const components = [
 })
 export class FormElementsModule {
     public static forRoot(
-        options?: Partial<ModuleOptions>,
+        moduleOptions?: Partial<ModuleOptions>,
     ): ModuleWithProviders<FormElementsModule> {
         return {
             ngModule: FormElementsModule,
             providers: [
                 {
-                    provide: OPTIONS,
-                    useValue: options,
+                    provide: MODULE_OPTIONS,
+                    useValue: moduleOptions,
                 },
             ],
         }
