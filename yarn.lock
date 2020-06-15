@@ -1483,6 +1483,11 @@
     classnames "^2.2.6"
     tslib "^1.11.1"
 
+"@pascaliske/prettier-config@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.0.2.tgz#48a5ab00cef5fb9a67a8e56e055f2bee322af4bd"
+  integrity sha512-tzC/OF5P+C6QREYIjvkB/CrEVG8cVC7MLAybH9bmGJjJfD9hz1UWfVw18OvDbU7wuGqKhQNMVIcJKQW4TiEE0w==
+
 "@pascaliske/schematics@^0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@pascaliske/schematics/-/schematics-0.0.8.tgz#e65fb315bbc9035d7b616094d0e6a520610f5530"
