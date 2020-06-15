@@ -52,20 +52,22 @@ $color-white2: rgb(222, 222, 222) !default;
         top: 0;
         left: 0;
         color: $color-primary;
+        font-size: 16px;
         opacity: 0.5;
-        transition: color 0.2s;
+        transition: all 0.2s;
         pointer-events: none;
     }
 
     &--filled &__label,
     &--focus &__label {
-        font-size: ms(-1);
         height: 15px;
         line-height: 15px;
         top: -15px;
+        font-size: 12px;
     }
 
-    &--disabled &__label {
+    &--disabled &__label,
+    &--disabled &__icon {
         color: $color-grey2;
         cursor: not-allowed;
     }
@@ -103,6 +105,11 @@ $color-white2: rgb(222, 222, 222) !default;
     &--focus &__line::after {
         opacity: 1;
         width: 100%;
+    }
+
+    &--disabled &__line::before,
+    &--disabled &__line::after {
+        background: rgba($color-grey1, 0.4);
     }
 
     &--invalid &__line::before,

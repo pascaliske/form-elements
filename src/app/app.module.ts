@@ -11,6 +11,9 @@ import { AppComponent } from './app.component'
         CommonModule,
         BrowserModule,
         FormElementsModule.forRoot({
+            select: {
+                searchEnabled: false,
+            },
             datepicker: true,
             email: {
                 suggestions: true,
