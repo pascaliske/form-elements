@@ -128,6 +128,10 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
                 distinctUntilChanged(),
             )
             .subscribe(visible => {
+                if (!visible && !this.fc.touched) {
+                    this.fc.markAsTouched()
+                }
+
                 this.focus = !!visible
             })
 
