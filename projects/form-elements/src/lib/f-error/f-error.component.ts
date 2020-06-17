@@ -18,6 +18,6 @@ export class FErrorComponent {
     public icon: IconDefinition = faExclamationCircle
 
     public hasErrorFor(validation: FValidation): boolean {
-        return this.fc.hasError(validation.type) && (this.fc.dirty || this.fc.touched)
+        return this.fc.hasError(validation.type.toLowerCase()) && (this.fc.dirty || this.fc.touched)
     }
 }
