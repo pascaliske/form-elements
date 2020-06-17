@@ -141,6 +141,42 @@ export const Searchable = createStory({
     }),
 })
 
+export const Required = createStory({
+    parameters: { notes: FSelectReadme },
+    factory: () => ({
+        component: FSelectComponent,
+        props: {
+            name: text('name', 'name'),
+            label: text('label', 'Label'),
+            changed: action('changed'),
+            validation: [
+                {
+                    type: 'required',
+                    message: 'This field is required!',
+                },
+            ],
+            options: [
+                {
+                    label: 'Option #1',
+                    value: 'option-1',
+                },
+                {
+                    label: 'Option #2',
+                    value: 'option-2',
+                },
+                {
+                    label: 'Option #3',
+                    value: 'option-3',
+                },
+                {
+                    label: 'Option #4',
+                    value: 'option-4',
+                },
+            ],
+        },
+    }),
+})
+
 export const Disabled = createStory({
     parameters: { notes: FSelectReadme },
     factory: () => ({
