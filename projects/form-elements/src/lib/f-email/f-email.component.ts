@@ -2,7 +2,8 @@ import { Component, Inject, forwardRef } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, MODULE_OPTIONS } from '../options'
+import { MODULE_OPTIONS } from '../options'
+import type { ModuleOptions } from '../options'
 
 @Component({
     selector: 'cmp-f-email',

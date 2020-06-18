@@ -10,7 +10,8 @@ import {
 } from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, MODULE_OPTIONS } from '../options'
+import { MODULE_OPTIONS } from '../options'
+import type { ModuleOptions } from '../options'
 
 @Component({
     selector: 'cmp-f-time',

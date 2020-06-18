@@ -16,7 +16,8 @@ import { Observable, fromEvent, merge } from 'rxjs'
 import { mapTo, distinctUntilChanged, takeWhile } from 'rxjs/operators'
 import Choices, { Choices as ChoicesType } from 'choices.js'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, MODULE_OPTIONS } from '../options'
+import { MODULE_OPTIONS } from '../options'
+import type { ModuleOptions } from '../options'
 
 /**
  *
