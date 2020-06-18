@@ -43,11 +43,17 @@
 
         &--dropdown {
             margin-top: 5px;
-            border: 0;
+            border-top: 0;
+            border-color: rgba($color-grey2, 0.2);
             border-radius: 0;
             overflow: visible;
             opacity: 0;
             transition: opacity 0.2s;
+        }
+
+        &--dropdown .choices__list {
+            max-height: 270px;
+            overflow: scroll;
         }
 
         &--dropdown .choices__item {
@@ -59,7 +65,7 @@
         }
 
         &--dropdown .choices__item.is-highlighted {
-            background-color: rgba($color-grey2, 0.5);
+            background-color: rgba($color-grey2, 0.2);
         }
     }
 
