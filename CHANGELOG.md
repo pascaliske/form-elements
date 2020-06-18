@@ -1,3 +1,28 @@
+# [2.5.0](https://github.com/pascaliske/form-elements/compare/v2.4.5...v2.5.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* **demo:** add ids to buttons ([f785f30](https://github.com/pascaliske/form-elements/commit/f785f30a4c38b2938229f8ae934a0dde29163681))
+* **f-date:** trigger focus change on flatpickr instance open/close events ([127514e](https://github.com/pascaliske/form-elements/commit/127514e1c27e78d86548047b4fcd6c143708f5cc))
+* **f-error:** use lower case validation type ([4538622](https://github.com/pascaliske/form-elements/commit/4538622aa5443ea768c2668e0730963813a0a26a))
+* **f-input:** allow correctly overriding field classes ([f8b3e7b](https://github.com/pascaliske/form-elements/commit/f8b3e7bbeea8dfd201b69126f9583c3fd377f9ea))
+* **f-input:** fix validation typings ([ae2cc59](https://github.com/pascaliske/form-elements/commit/ae2cc596faac97b5b2f153c57f001bdd9f1f82f7))
+* **f-input:** prevent form elements without form control instances ([78864f9](https://github.com/pascaliske/form-elements/commit/78864f9ac61260665a9a4d47d7b56b56a9a1e5ca))
+* **f-select:** fix dropdown list styles ([01af519](https://github.com/pascaliske/form-elements/commit/01af5194d00ddf8f04773eda61f43948bdecb5d0))
+* **f-select:** mark form control as touched on first dropdown close ([ac71c58](https://github.com/pascaliske/form-elements/commit/ac71c580b10091658f512ec253043c8a3695ed47))
+* **form-elements:** remove module import check ([af833c8](https://github.com/pascaliske/form-elements/commit/af833c8d990c0ca5b0e1fe8a34ccc11f9fa1716c))
+* use explicit type imports to prevent storybook warnings ([5067c8e](https://github.com/pascaliske/form-elements/commit/5067c8ea7dddbbd41118d31cc8fe673e1ee1b278))
+
+
+### Features
+
+* **f-select:** add required validation story ([bbac615](https://github.com/pascaliske/form-elements/commit/bbac615aa6848df370b882b7226d64d9b0ebc2f4))
+* **f-select:** implement choices library for advanced select fields ([f5a7e62](https://github.com/pascaliske/form-elements/commit/f5a7e626871ab250ef725b094274ef081bfda4d7))
+* **form-elements:** prevent re-importing library module ([3815bc2](https://github.com/pascaliske/form-elements/commit/3815bc265210ad8135189c58dc6eff188f5ec227))
+
+
+
 ## [2.4.5](https://github.com/pascaliske/form-elements/compare/v2.4.4...v2.4.5) (2020-03-24)
 
 
