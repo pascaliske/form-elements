@@ -1,4 +1,4 @@
-import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core'
+import { NgModule, ModuleWithProviders } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms'
@@ -45,14 +45,6 @@ export const components = [
     exports: [...components],
 })
 export class FormElementsModule {
-    public constructor(@Optional() @SkipSelf() parent?: FormElementsModule) {
-        if (parent) {
-            throw new Error(
-                'FormElementsModule is already loaded. Import it in the AppModule only.',
-            )
-        }
-    }
-
     public static forRoot(
         moduleOptions?: Partial<ModuleOptions>,
     ): ModuleWithProviders<FormElementsModule> {
