@@ -1,9 +1,17 @@
 import { text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
+import { address } from 'faker'
 
-import { FSelectComponent } from './f-select.component'
+import { FSelectComponent, FSelectOption } from './f-select.component'
 import FSelectReadme from './f-select.readme.md'
+
+const countries: FSelectOption[] = [...new Set(new Array(25).fill('').map(() => address.country()))]
+    .sort()
+    .map(country => ({
+        label: country,
+        value: country.toLowerCase().replace(/\s/g, '-').replace(/'/g, ''),
+    }))
 
 export default {
     title: 'Basic/F-Select',
@@ -15,26 +23,9 @@ export const Basic = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             changed: action('changed'),
-            options: [
-                {
-                    label: 'Option #1',
-                    value: 'option-1',
-                },
-                {
-                    label: 'Option #2',
-                    value: 'option-2',
-                },
-                {
-                    label: 'Option #3',
-                    value: 'option-3',
-                },
-                {
-                    label: 'Option #4',
-                    value: 'option-4',
-                },
-            ],
+            options: countries,
         },
     }),
 })
@@ -45,30 +36,13 @@ export const Placeholder = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             changed: action('changed'),
             placeholder: {
-                label: 'Please select',
+                label: 'Please select a country',
                 value: null,
             },
-            options: [
-                {
-                    label: 'Option #1',
-                    value: 'option-1',
-                },
-                {
-                    label: 'Option #2',
-                    value: 'option-2',
-                },
-                {
-                    label: 'Option #3',
-                    value: 'option-3',
-                },
-                {
-                    label: 'Option #4',
-                    value: 'option-4',
-                },
-            ],
+            options: countries,
         },
     }),
 })
@@ -79,30 +53,10 @@ export const Prefilled = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             changed: action('changed'),
-            value: {
-                label: 'Option #2',
-                value: 'option-2',
-            },
-            options: [
-                {
-                    label: 'Option #1',
-                    value: 'option-1',
-                },
-                {
-                    label: 'Option #2',
-                    value: 'option-2',
-                },
-                {
-                    label: 'Option #3',
-                    value: 'option-3',
-                },
-                {
-                    label: 'Option #4',
-                    value: 'option-4',
-                },
-            ],
+            value: countries[4],
+            options: countries,
         },
     }),
 })
@@ -113,30 +67,13 @@ export const Searchable = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             changed: action('changed'),
             search: {
                 label: 'Search options...',
                 fields: ['label'],
             },
-            options: [
-                {
-                    label: 'Option #1',
-                    value: 'option-1',
-                },
-                {
-                    label: 'Option #2',
-                    value: 'option-2',
-                },
-                {
-                    label: 'Option #3',
-                    value: 'option-3',
-                },
-                {
-                    label: 'Option #4',
-                    value: 'option-4',
-                },
-            ],
+            options: countries,
         },
     }),
 })
@@ -147,7 +84,7 @@ export const Required = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             changed: action('changed'),
             validation: [
                 {
@@ -155,24 +92,7 @@ export const Required = createStory({
                     message: 'This field is required!',
                 },
             ],
-            options: [
-                {
-                    label: 'Option #1',
-                    value: 'option-1',
-                },
-                {
-                    label: 'Option #2',
-                    value: 'option-2',
-                },
-                {
-                    label: 'Option #3',
-                    value: 'option-3',
-                },
-                {
-                    label: 'Option #4',
-                    value: 'option-4',
-                },
-            ],
+            options: countries,
         },
     }),
 })
@@ -183,7 +103,7 @@ export const Disabled = createStory({
         component: FSelectComponent,
         props: {
             name: text('name', 'name'),
-            label: text('label', 'Label'),
+            label: text('label', 'Country'),
             disabled: true,
         },
     }),
