@@ -9,17 +9,17 @@
             (focus)="focusIn()"
             (focusout)="focusOut()"
             (change)="changed.emit(fc.value)"
+            #inputRef
         >
             <option
                 class="cmp-f-select__placeholder"
-                [disabled]="placeholder.selectable === false"
                 [ngValue]="placeholder.value"
+                [selected]="true"
+                [disabled]="true"
                 *ngIf="placeholder"
-                >{{ placeholder.label }}</option
             >
-            <option [ngValue]="option.value" *ngFor="let option of options">{{
-                option.label
-            }}</option>
+                {{ placeholder.label }}
+            </option>
         </select>
         <label class="cmp-f-select__label" [for]="name">
             {{ label }}<span class="cmp-f-select__required" *ngIf="isRequired()">*</span>

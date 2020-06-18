@@ -2,7 +2,8 @@ import { Component, Inject, forwardRef } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
-import { ModuleOptions, OPTIONS } from '../options'
+import { MODULE_OPTIONS } from '../options'
+import type { ModuleOptions } from '../options'
 
 @Component({
     selector: 'cmp-f-email',
@@ -40,12 +41,12 @@ export class FEmailComponent extends FInputComponent {
         'yahoo.de',
     ]
 
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
+    public constructor(@Inject(MODULE_OPTIONS) private moduleOptions: ModuleOptions) {
         super()
     }
 
     public suggest(): void {
-        if (!this.options.email || !this.options.email.suggestions) {
+        if (!this.moduleOptions.email || !this.moduleOptions.email.suggestions) {
             return
         }
 
@@ -59,7 +60,7 @@ export class FEmailComponent extends FInputComponent {
     }
 
     public use(suggestion: string): void {
-        if (!this.options.email.suggestions) {
+        if (!this.moduleOptions.email.suggestions) {
             return
         }
 
@@ -75,7 +76,7 @@ export class FEmailComponent extends FInputComponent {
     }
 
     private fetchSuggestions(): string[] {
-        const suggestions = this.options.email.suggestions
+        const suggestions = this.moduleOptions.email.suggestions
         if (Array.isArray(suggestions) && suggestions.length > 0) {
             return suggestions
         }

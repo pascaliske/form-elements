@@ -1,7 +1,7 @@
 /*
  * Public API Surface
  */
-export { ModuleOptions, OPTIONS } from './lib/options'
+export { ModuleOptions, MODULE_OPTIONS } from './lib/options'
 export { FormElementsModule } from './lib/form-elements.module'
 export * from './lib/f-button/f-button.component'
 export * from './lib/f-checkbox/f-checkbox.component'

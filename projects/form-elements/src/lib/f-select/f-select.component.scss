@@ -4,6 +4,7 @@
 
     &__icon {
         height: 100%;
+        line-height: 38px;
         position: absolute;
         top: 0;
         right: 10px;
@@ -11,11 +12,78 @@
         opacity: 0.4;
     }
 
-    &__input:active ~ &__icon {
-        color: red;
-    }
-
     &__placeholder {
         color: rgba($color-grey1, 0.8);
+    }
+
+    .choices {
+        margin-bottom: 0;
+        font-size: inherit;
+
+        &::after {
+            display: none;
+            content: '';
+        }
+    }
+
+    .choices[data-type*='select-one'] .choices__inner {
+        max-height: 35px;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        background-color: inherit;
+        border: 0;
+        border-radius: 0;
+        font-size: inherit;
+    }
+
+    .choices[data-type*='select-one'] .choices__list {
+        padding: 0;
+        overflow: hidden;
+
+        &--dropdown {
+            margin-top: 5px;
+            border-top: 0;
+            border-color: rgba($color-grey2, 0.2);
+            border-radius: 0;
+            overflow: visible;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        &--dropdown .choices__list {
+            max-height: 270px;
+            overflow: scroll;
+        }
+
+        &--dropdown .choices__item {
+            padding: 3px 10px;
+
+            &:nth-child(even) {
+                background-color: rgba($color-white2, 0.2);
+            }
+        }
+
+        &--dropdown .choices__item.is-highlighted {
+            background-color: rgba($color-grey2, 0.2);
+        }
+    }
+
+    .choices[data-type*='select-one'] .choices__input {
+        margin-top: -42px;
+        padding: 10px 0;
+        border: 0;
+        opacity: 0;
+        font-size: inherit;
+        transition: opacity 0.2s;
+    }
+
+    .choices[data-type*='select-one'].is-open ~ &__icon {
+        transform: rotate(180deg);
+    }
+
+    .choices[data-type*='select-one'].is-open .choices__list,
+    .choices[data-type*='select-one'].is-open .choices__input {
+        opacity: 1;
     }
 }

@@ -35,10 +35,11 @@ Then import the styles in your global scss styles:
 @import '~@pascaliske/form-elements/styles';
 ```
 
-> **Note:** If you want to use the `cmp-f-date` component you also need to add the `flatpickr` styles:
+> **Note:** If you want to use the `cmp-f-select`, `cmp-f-date` component you also need to add their 3rd-party styles:
 >
 > ```scss
-> @import '~flatpickr/dist/flatpickr.min.css';
+> @import '~choices.js/public/assets/styles/choices.min.css'; // cmp-f-select
+> @import '~flatpickr/dist/flatpickr.min.css'; // cmp-f-date
 > ```
 
 Now you can use the components in your template:

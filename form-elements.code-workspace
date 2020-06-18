@@ -19,23 +19,19 @@
         "search.exclude": {
             "**/docs": true
         },
+        "[html]": {
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true
+        },
         "[yaml]": {
-            "editor.formatOnSave": false,
-            "editor.formatOnType": false
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true
         },
         "[json]": {
-            "editor.formatOnSave": false,
-            "editor.formatOnType": false
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true
         },
         "[jsonc]": {
-            "editor.formatOnSave": false,
-            "editor.formatOnType": false
-        },
-        "[html]": {
-            "editor.formatOnSave": false,
-            "editor.formatOnType": false
-        },
-        "[scss]": {
             "editor.formatOnSave": false,
             "editor.formatOnType": false
         }

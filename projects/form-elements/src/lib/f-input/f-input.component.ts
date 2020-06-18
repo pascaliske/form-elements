@@ -2,22 +2,11 @@ import { Component, OnInit, Input } from '@angular/core'
 import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
 
-/**
- *
- */
-export interface FValidation {
-    type:
-        | 'min'
-        | 'max'
-        | 'required'
-        | 'requiredTrue'
-        | 'email'
-        | 'minLength'
-        | 'maxLength'
-        | 'pattern'
-    value?: string | number
-    message: string
-}
+type FValidator = typeof Validators
+export type FType = keyof Omit<FValidator, 'prototype' | 'compose' | 'composeAsync'>
+export type FValidation<T extends FType = FType> = ReturnType<FValidator[T]> extends ValidatorFn
+    ? { type: T; message: string }
+    : { type: T; message: string; value?: Exclude<Parameters<FValidator[T]>[0], AbstractControl> }
 
 /**
  * F-Input
@@ -53,25 +42,32 @@ export class FInputComponent implements OnInit {
     @Input()
     public disabled: boolean = false
 
-    public focus: boolean = false
-
-    public constructor() {}
+    protected focus: boolean = false
 
     public ngOnInit(): void {
+        if (!this.fc) {
+            console.warn(`Missing FormControl for input "${this.name}".`)
+            this.disabled = true
+            return
+        }
+
         this.setValidators()
     }
 
-    public classes(namespace: string): string {
+    public classes(namespace: string, overrides?: Record<string, boolean>): string {
         if (!this.fc) {
-            return namespace
+            return modifiers(namespace, {
+                disabled: this.disabled,
+            })
         }
 
         return modifiers(namespace, {
             disabled: this.disabled,
             focus: this.focus,
             filled: this.fc.value && this.fc.value !== '',
-            invalid: this.fc.touched && !this.fc.valid,
+            invalid: this.fc.touched && this.fc.invalid,
             required: this.isRequired(),
+            ...(overrides ?? {}),
         })
     }
 
@@ -90,11 +86,11 @@ export class FInputComponent implements OnInit {
     private setValidators(): void {
         const validators: ValidatorFn[] = []
 
-        this.validation.forEach(({ type, value }) => {
-            if (Validators[type] && typeof Validators[type] === 'function') {
+        for (const { type, value } of this.validation) {
+            if (typeof Validators?.[type] === 'function') {
                 validators.push(value ? (Validators[type] as any)(value) : Validators[type])
             }
-        })
+        }
 
         this.fc.setValidators(validators)
     }
