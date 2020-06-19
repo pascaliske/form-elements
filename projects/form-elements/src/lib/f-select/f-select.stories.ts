@@ -24,8 +24,8 @@ export const Basic = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            changed: action('changed'),
             options: countries,
+            changed: action('changed'),
         },
     }),
 })
@@ -37,12 +37,12 @@ export const Placeholder = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            changed: action('changed'),
             placeholder: {
                 label: 'Please select a country',
                 value: null,
             },
             options: countries,
+            changed: action('changed'),
         },
     }),
 })
@@ -54,9 +54,9 @@ export const Prefilled = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            changed: action('changed'),
             value: countries[4],
             options: countries,
+            changed: action('changed'),
         },
     }),
 })
@@ -68,12 +68,12 @@ export const Searchable = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            changed: action('changed'),
             search: {
                 label: 'Search options...',
                 fields: ['label'],
             },
             options: countries,
+            changed: action('changed'),
         },
     }),
 })
@@ -85,7 +85,6 @@ export const Required = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            changed: action('changed'),
             validation: [
                 {
                     type: 'required',
@@ -93,6 +92,7 @@ export const Required = createStory({
                 },
             ],
             options: countries,
+            changed: action('changed'),
         },
     }),
 })
@@ -105,6 +105,7 @@ export const Disabled = createStory({
             name: text('name', 'name'),
             label: text('label', 'Country'),
             disabled: true,
+            changed: action('changed'),
         },
     }),
 })

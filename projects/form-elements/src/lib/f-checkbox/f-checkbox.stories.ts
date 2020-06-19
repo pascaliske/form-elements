@@ -1,4 +1,5 @@
 import { text } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FCheckboxComponent } from './f-checkbox.component'
@@ -15,6 +16,7 @@ export const Basic = createStory({
         props: {
             name: text('name', 'checkbox'),
             label: text('label', 'Checkbox'),
+            changed: action('changed'),
         },
     }),
 })
@@ -27,6 +29,7 @@ export const Disabled = createStory({
             name: text('name', 'checkbox'),
             label: text('label', 'Checkbox'),
             disabled: true,
+            changed: action('changed'),
         },
     }),
 })

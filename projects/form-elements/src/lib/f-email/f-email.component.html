@@ -15,8 +15,7 @@
             #inputField
         />
         <label class="cmp-f-email__label" [for]="name">
-            <span>{{ label }}</span>
-            <span class="cmp-f-email__required" *ngIf="isRequired()">*</span>
+            {{ label }}<span class="cmp-f-email__required" *ngIf="isRequired()">*</span>
         </label>
         <span class="cmp-f-email__line"></span>
         <div class="cmp-f-email__suggestions" *ngIf="suggestions$ | async as items">

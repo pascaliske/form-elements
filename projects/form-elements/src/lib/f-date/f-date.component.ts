@@ -60,6 +60,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     public ngOnDestroy(): void {
+        super.ngOnDestroy()
         this.destroy()
     }
 

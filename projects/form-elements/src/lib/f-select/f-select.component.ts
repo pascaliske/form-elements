@@ -4,8 +4,6 @@ import {
     AfterViewInit,
     OnDestroy,
     Input,
-    Output,
-    EventEmitter,
     ViewChild,
     ElementRef,
     Inject,
@@ -63,17 +61,12 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
     @Input()
     public search: FSelectSearch
 
-    @Output()
-    public changed: EventEmitter<void> = new EventEmitter()
-
     @ViewChild('inputRef', { static: true })
     public inputRef: ElementRef
 
     public icon: IconDefinition = faChevronDown
 
     private instance: Choices
-
-    private alive: boolean = true
 
     private readonly defaults: Partial<ChoicesType.Options> = {
         silent: false,
@@ -93,6 +86,7 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
     }
 
     public ngOnDestroy(): void {
+        super.ngOnDestroy()
         this.destroy()
     }
 
@@ -148,7 +142,6 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
             return
         }
 
-        this.alive = false
         this.instance.destroy()
     }
 
