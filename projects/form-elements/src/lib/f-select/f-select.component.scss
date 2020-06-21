@@ -3,13 +3,16 @@
     @include cmp-form-input();
 
     &__icon {
-        height: 100%;
-        line-height: 38px;
+        width: 35px;
+        height: 35px;
         position: absolute;
         top: 0;
-        right: 10px;
+        right: 0;
+        line-height: 38px;
+        text-align: center;
         color: rgba($color-grey1, 0.8);
         opacity: 0.4;
+        cursor: pointer;
     }
 
     &__placeholder {
