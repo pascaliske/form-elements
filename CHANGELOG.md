@@ -1,3 +1,21 @@
+## [2.5.2](https://github.com/pascaliske/form-elements/compare/v2.5.1...v2.5.2) (2020-06-21)
+
+
+### Bug Fixes
+
+* **f-email:** optimize email domain suggestions ([538b1aa](https://github.com/pascaliske/form-elements/commit/538b1aaa9e1bdfa215427783048c0e2e89c23477))
+* **f-password:** disable visibility toggle on input disable ([76ce597](https://github.com/pascaliske/form-elements/commit/76ce597f85f10b4e8641e883fde70a3d8b30eb4f))
+* **scss:** disallow user selection if input is disabled ([b8fc283](https://github.com/pascaliske/form-elements/commit/b8fc2835b0149350ef5eaa779231fb3fa07fc7f5))
+* **scss:** properly align input line ([0916d62](https://github.com/pascaliske/form-elements/commit/0916d6284381e8961e6d16646e5a46f5ac38ddf5))
+
+
+### Features
+
+* **f-date,f-time:** add disabled stories ([9115cea](https://github.com/pascaliske/form-elements/commit/9115ceace9bbb4f26ae77d4bfe35f8be7e55c614))
+* add changed output events for all form fields ([182a7e6](https://github.com/pascaliske/form-elements/commit/182a7e6b520103b1b82f5f6e1ab0ce1519779db3))
+
+
+
 ## [2.5.1](https://github.com/pascaliske/form-elements/compare/v2.5.0...v2.5.1) (2020-06-18)
 
 
