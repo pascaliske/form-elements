@@ -19,6 +19,10 @@ export class FPasswordComponent extends FInputComponent {
     public visible = false
 
     public toggle(): void {
+        if (this.disabled) {
+            return
+        }
+
         if (this.visible) {
             this.type = 'password'
             this.icon = faEye
