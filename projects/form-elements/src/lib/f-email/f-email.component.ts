@@ -1,4 +1,5 @@
 import { Component, Inject, forwardRef } from '@angular/core'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { BehaviorSubject } from 'rxjs'
 import fuzzysearch from 'fuzzysearch'
 import { FInputComponent } from '../f-input/f-input.component'
@@ -14,6 +15,8 @@ export class FEmailComponent extends FInputComponent {
     public static readonly cmpName: string = 'FEmailComponent'
 
     public suggestions$: BehaviorSubject<string[]> = new BehaviorSubject([])
+
+    public icons = { faTimes }
 
     private providers: string[] = [
         'aol.com',
@@ -50,13 +53,11 @@ export class FEmailComponent extends FInputComponent {
             return
         }
 
-        const value = this.fc.value.match(/(.*)@(.*)/)
-        if (!value || value.length <= 2 || value[1].length === 0 || value[2].length === 0) {
-            this.suggestions$.next([])
-            return
-        }
+        const [, user, domain] = this.fc?.value?.match(/(.+)@(.+)/) ?? []
 
-        this.suggestions$.next(this.fetchSuggestions().filter(item => fuzzysearch(value[2], item)))
+        this.suggestions$.next(
+            user?.length > 0 && domain?.length > 0 ? this.fetchSuggestions(domain) : [],
+        )
     }
 
     public use(suggestion: string): void {
@@ -64,23 +65,25 @@ export class FEmailComponent extends FInputComponent {
             return
         }
 
-        const parts = this.fc.value.split('@')
-        const input = parts.slice(0, parts.length - 1).join('@')
+        const parts: string[] = this.fc?.value?.split('@') ?? []
+        const input: string = parts.slice(0, parts?.length - 1).join('@')
 
-        this.fc.setValue(`${input}@${suggestion}`)
-        this.suggestions$.next([])
+        this.fc.setValue([input, suggestion].join('@'))
+        this.close()
     }
 
     public close(): void {
         this.suggestions$.next([])
     }
 
-    private fetchSuggestions(): string[] {
-        const suggestions = this.moduleOptions.email.suggestions
+    private fetchSuggestions(search: string = ''): string[] {
+        const suggestions = this.moduleOptions?.email?.suggestions ?? false
+        const filter = (items: string[]) => items?.filter(item => fuzzysearch(search, item))
+
         if (Array.isArray(suggestions) && suggestions.length > 0) {
-            return suggestions
+            return filter(suggestions)
         }
 
-        return this.providers
+        return filter(this.providers)
     }
 }
