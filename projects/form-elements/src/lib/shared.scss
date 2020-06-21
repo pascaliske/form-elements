@@ -68,6 +68,7 @@ $color-white2: rgb(222, 222, 222) !default;
 
     &--disabled &__label,
     &--disabled &__icon {
+        user-select: none;
         color: $color-grey2;
         cursor: not-allowed;
     }
