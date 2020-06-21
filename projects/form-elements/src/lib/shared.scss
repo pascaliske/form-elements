@@ -68,6 +68,7 @@ $color-white2: rgb(222, 222, 222) !default;
 
     &--disabled &__label,
     &--disabled &__icon {
+        user-select: none;
         color: $color-grey2;
         cursor: not-allowed;
     }
@@ -83,7 +84,7 @@ $color-white2: rgb(222, 222, 222) !default;
         &::after {
             height: 4px;
             position: absolute;
-            bottom: -5px;
+            bottom: -4px;
             left: 0;
             display: block;
             opacity: 0.2;
@@ -127,6 +128,7 @@ $color-white2: rgb(222, 222, 222) !default;
         line-height: 35px;
         margin-top: 20px;
         position: relative;
+        z-index: 999;
     }
 
     &__input {

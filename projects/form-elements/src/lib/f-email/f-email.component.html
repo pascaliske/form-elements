@@ -15,13 +15,16 @@
             #inputField
         />
         <label class="cmp-f-email__label" [for]="name">
-            <span>{{ label }}</span>
-            <span class="cmp-f-email__required" *ngIf="isRequired()">*</span>
+            {{ label }}<span class="cmp-f-email__required" *ngIf="isRequired()">*</span>
         </label>
         <span class="cmp-f-email__line"></span>
-        <div class="cmp-f-email__suggestions" *ngIf="suggestions$ | async as items">
-            <ng-template [ngIf]="items.length > 0">
-                <div class="cmp-f-email__suggestion-close" (click)="close()">X</div>
+        <ng-container *ngIf="suggestions$ | async as items">
+            <div class="cmp-f-email__suggestions" *ngIf="items.length > 0">
+                <fa-icon
+                    class="cmp-f-email__suggestion-close"
+                    [icon]="icons.faTimes"
+                    (click)="close()"
+                ></fa-icon>
                 <div class="cmp-f-email__suggestion-list">
                     <div
                         class="cmp-f-email__suggestion-item"
@@ -31,8 +34,8 @@
                         {{ item }}
                     </div>
                 </div>
-            </ng-template>
-        </div>
+            </div>
+        </ng-container>
     </div>
     <cmp-f-explanation
         class="cmp-f-phone__explanations"

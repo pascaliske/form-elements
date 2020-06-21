@@ -1,11 +1,23 @@
 @include cmp-base(cmp-f-radiobutton, block) {
     @include cmp-form-element();
+    @include cmp-form-label();
+
+    &__label {
+        margin-bottom: 10px;
+        position: relative;
+        display: block;
+        pointer-events: initial;
+    }
 
     &__control {
         height: 35px;
         line-height: 35px;
-        margin-top: 20px;
         position: relative;
+        display: flex;
+
+        &:not(:first-of-type) {
+            margin-top: 15px;
+        }
     }
 
     &__input {
@@ -28,22 +40,51 @@
         transition-delay: 0.1s;
     }
 
-    &__label {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding-left: 50px;
+    &__control-label {
+        margin-left: 10px;
         opacity: 0.5;
+        font-size: 16px;
+        color: $color-primary;
     }
 
-    &__control--checked &__symbol {
+    &__input:checked + &__symbol {
         opacity: 1;
         background-color: $color-primary;
     }
 
-    &__control--checked &__circle {
+    &__input:checked ~ &__symbol > &__circle {
         r: 9;
+    }
+
+    &--inline &__controls {
+        display: flex;
+    }
+
+    &--inline &__control {
+        margin-top: 0;
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+    }
+
+    &--disabled &__control-label {
+        color: $color-grey2;
+        user-select: none;
+        cursor: not-allowed;
+    }
+
+    &--disabled &__symbol {
+        border-color: $color-white2;
+        opacity: 1;
+    }
+
+    &--disabled &__input:checked + &__symbol {
+        border-color: $color-white2;
+        background-color: $color-white2;
+    }
+
+    &--invalid &__control-label {
+        color: $color-red;
     }
 }

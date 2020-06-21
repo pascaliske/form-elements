@@ -48,6 +48,7 @@ export class FTimeComponent extends FInputComponent implements AfterViewInit, On
     }
 
     public ngOnDestroy(): void {
+        super.ngOnDestroy()
         this.destroy()
     }
 

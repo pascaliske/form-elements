@@ -1,4 +1,5 @@
 import { text, radios, boolean } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FPhoneComponent } from './f-phone.component'
@@ -24,6 +25,7 @@ export const Basic = createStory({
                 'off',
             ),
             autofocus: boolean('autofocus', false),
+            changed: action('changed'),
         },
     }),
 })
@@ -36,6 +38,7 @@ export const Disabled = createStory({
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
+            changed: action('changed'),
         },
     }),
 })

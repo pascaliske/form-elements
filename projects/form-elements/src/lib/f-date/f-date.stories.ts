@@ -1,4 +1,5 @@
 import { text } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FDateComponent } from './f-date.component'
@@ -16,6 +17,20 @@ export const Basic = createStory({
             name: text('name', 'date'),
             label: text('label', 'Date'),
             autocomplete: 'off',
+            changed: action('changed'),
+        },
+    }),
+})
+
+export const Disabled = createStory({
+    parameters: { notes: FDateReadme },
+    factory: () => ({
+        component: FDateComponent,
+        props: {
+            name: text('name', 'date'),
+            label: text('label', 'Date'),
+            disabled: true,
+            changed: action('changed'),
         },
     }),
 })

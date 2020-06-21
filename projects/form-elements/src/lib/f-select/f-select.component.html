@@ -25,7 +25,7 @@
             {{ label }}<span class="cmp-f-select__required" *ngIf="isRequired()">*</span>
         </label>
         <span class="cmp-f-select__line"></span>
-        <span class="cmp-f-select__icon">
+        <span class="cmp-f-select__icon" (click)="inputRef.click()">
             <fa-icon [icon]="icon"></fa-icon>
         </span>
     </div>

@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core'
+import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core'
 import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
+import { takeWhile } from 'rxjs/operators'
 
 type FValidator = typeof Validators
 export type FType = keyof Omit<FValidator, 'prototype' | 'compose' | 'composeAsync'>
@@ -15,7 +16,7 @@ export type FValidation<T extends FType = FType> = ReturnType<FValidator[T]> ext
     selector: 'cmp-f-input',
     templateUrl: './f-input.component.html',
 })
-export class FInputComponent implements OnInit {
+export class FInputComponent implements OnInit, OnDestroy {
     public static readonly cmpName: string = 'FInputComponent'
 
     @Input()
@@ -42,7 +43,12 @@ export class FInputComponent implements OnInit {
     @Input()
     public disabled: boolean = false
 
+    @Output()
+    public changed: EventEmitter<void> = new EventEmitter()
+
     protected focus: boolean = false
+
+    protected alive: boolean = true
 
     public ngOnInit(): void {
         if (!this.fc) {
@@ -51,7 +57,14 @@ export class FInputComponent implements OnInit {
             return
         }
 
-        this.setValidators()
+        this.fc.setValidators(this.getValidators())
+        this.fc.valueChanges.pipe(takeWhile(() => this.alive)).subscribe(value => {
+            this.changed.next(value)
+        })
+    }
+
+    public ngOnDestroy(): void {
+        this.alive = false
     }
 
     public classes(namespace: string, overrides?: Record<string, boolean>): string {
@@ -83,7 +96,7 @@ export class FInputComponent implements OnInit {
         this.focus = false
     }
 
-    private setValidators(): void {
+    private getValidators(): ValidatorFn[] {
         const validators: ValidatorFn[] = []
 
         for (const { type, value } of this.validation) {
@@ -92,6 +105,6 @@ export class FInputComponent implements OnInit {
             }
         }
 
-        this.fc.setValidators(validators)
+        return validators
     }
 }
