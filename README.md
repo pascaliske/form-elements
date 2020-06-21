@@ -35,7 +35,7 @@ Then import the styles in your global scss styles:
 @import '~@pascaliske/form-elements/styles';
 ```
 
-> **Note:** If you want to use the `cmp-f-select`, `cmp-f-date` component you also need to add their 3rd-party styles:
+> **Note:** If you want to use the `cmp-f-select`, `cmp-f-date` od `cmp-f-time` components you also need to add their 3rd-party library styles:
 >
 > ```scss
 > @import '~choices.js/public/assets/styles/choices.min.css'; // cmp-f-select
