@@ -1,4 +1,5 @@
-import { text } from '@storybook/addon-knobs'
+import { text, boolean } from '@storybook/addon-knobs'
+import { action } from '@storybook/addon-actions'
 import { createStory } from '@pascaliske/storybook-helpers'
 
 import { FRadiobuttonComponent } from './f-radiobutton.component'
@@ -15,18 +16,71 @@ export const Basic = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
+            inline: boolean('inline', false),
             options: [
                 {
                     label: 'Foo',
                     value: 'foo',
-                    checked: true,
                 },
                 {
                     label: 'Bar',
                     value: 'bar',
-                    checked: false,
                 },
             ],
+            changed: action('changed'),
+        },
+    }),
+})
+
+export const Prefilled = createStory({
+    parameters: { notes: FRadiobuttonReadme },
+    factory: () => ({
+        component: FRadiobuttonComponent,
+        props: {
+            name: text('name', 'name'),
+            label: text('label', 'Label'),
+            inline: boolean('inline', false),
+            options: [
+                {
+                    label: 'Foo',
+                    value: 'foo',
+                },
+                {
+                    label: 'Bar',
+                    value: 'bar',
+                    checked: true,
+                },
+            ],
+            changed: action('changed'),
+        },
+    }),
+})
+
+export const Required = createStory({
+    parameters: { notes: FRadiobuttonReadme },
+    factory: () => ({
+        component: FRadiobuttonComponent,
+        props: {
+            name: text('name', 'name'),
+            label: text('label', 'Label'),
+            inline: boolean('inline', false),
+            validation: [
+                {
+                    type: 'required',
+                    message: 'This field is required!',
+                },
+            ],
+            options: [
+                {
+                    label: 'Foo',
+                    value: 'foo',
+                },
+                {
+                    label: 'Bar',
+                    value: 'bar',
+                },
+            ],
+            changed: action('changed'),
         },
     }),
 })
@@ -38,19 +92,19 @@ export const Disabled = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Label'),
+            inline: boolean('inline', false),
+            disabled: true,
             options: [
                 {
                     label: 'Foo',
                     value: 'foo',
-                    checked: true,
                 },
                 {
                     label: 'Bar',
                     value: 'bar',
-                    checked: false,
                 },
             ],
-            disabled: true,
+            changed: action('changed'),
         },
     }),
 })
