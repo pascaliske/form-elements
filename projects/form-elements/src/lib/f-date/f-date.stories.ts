@@ -21,3 +21,16 @@ export const Basic = createStory({
         },
     }),
 })
+
+export const Disabled = createStory({
+    parameters: { notes: FDateReadme },
+    factory: () => ({
+        component: FDateComponent,
+        props: {
+            name: text('name', 'date'),
+            label: text('label', 'Date'),
+            disabled: true,
+            changed: action('changed'),
+        },
+    }),
+})
