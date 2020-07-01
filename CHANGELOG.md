@@ -1,3 +1,17 @@
+# [2.6.0](https://github.com/pascaliske/form-elements/compare/v2.5.2...v2.6.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* **f-select:** update choices options on input change ([c7929e7](https://github.com/pascaliske/form-elements/commit/c7929e7b852e531be016f871a8d846a1e20f1b40))
+
+
+### BREAKING CHANGES
+
+* **f-select:** This library requires lodash-es as peer dependency as of now!
+
+
+
 ## [2.5.2](https://github.com/pascaliske/form-elements/compare/v2.5.1...v2.5.2) (2020-06-21)
 
 
