@@ -11,7 +11,8 @@
       "@fortawesome/free-solid-svg-icons": "free-solid-svg-icons",
       "@pascaliske/html-helpers": "htmlHelpers",
       "choices.js": "Choices",
-      "flatpickr": "flatpickr"
+      "flatpickr": "flatpickr",
+      "lodash-es/isEqual": "_.isEqual"
     }
   }
 }
