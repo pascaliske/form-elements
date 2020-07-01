@@ -2,16 +2,19 @@ import {
     Component,
     forwardRef,
     AfterViewInit,
+    OnChanges,
     OnDestroy,
     Input,
     ViewChild,
     ElementRef,
     Inject,
+    SimpleChanges,
 } from '@angular/core'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { Observable, fromEvent, merge } from 'rxjs'
 import { mapTo, distinctUntilChanged, takeWhile } from 'rxjs/operators'
+import isEqual from 'lodash-es/isEqual'
 import Choices, { Choices as ChoicesType } from 'choices.js'
 import { FInputComponent } from '../f-input/f-input.component'
 import { MODULE_OPTIONS } from '../options'
@@ -46,7 +49,8 @@ export interface FSelectSearch {
     templateUrl: './f-select.component.html',
     providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FSelectComponent) }],
 })
-export class FSelectComponent extends FInputComponent implements AfterViewInit, OnDestroy {
+export class FSelectComponent extends FInputComponent
+    implements AfterViewInit, OnChanges, OnDestroy {
     public static readonly cmpName: string = 'FSelectComponent'
 
     @Input()
@@ -83,6 +87,12 @@ export class FSelectComponent extends FInputComponent implements AfterViewInit, 
 
     public ngAfterViewInit(): void {
         this.init()
+    }
+
+    public ngOnChanges({ options }: SimpleChanges = {}) {
+        if (this.instance?.initialised && !isEqual(options?.currentValue, options?.previousValue)) {
+            this.instance.setChoices(this.getOptions(), 'value', 'label', true)
+        }
     }
 
     public ngOnDestroy(): void {
