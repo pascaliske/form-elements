@@ -1,3 +1,12 @@
+# [2.7.0](https://github.com/pascaliske/form-elements/compare/v2.6.0...v2.7.0) (2020-07-25)
+
+
+### Features
+
+* upgrade angular to v10 ([e95c02b](https://github.com/pascaliske/form-elements/commit/e95c02b9d0dd6e24e243ea5a047855628902a8aa))
+
+
+
 # [2.6.0](https://github.com/pascaliske/form-elements/compare/v2.5.2...v2.6.0) (2020-07-01)
 
 
