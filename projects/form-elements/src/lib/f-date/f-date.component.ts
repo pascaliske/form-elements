@@ -65,16 +65,13 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     }
 
     private init() {
-        if (
-            typeof this.moduleOptions.datepicker === 'boolean' &&
-            this.moduleOptions.datepicker === false
-        ) {
+        if (this.disabled || this.moduleOptions?.datepicker === false) {
             return
         }
 
-        this.instance = flatpickr(this.inputRef.nativeElement, this.merge())
-        this.instance.config.onOpen.push(() => (this.focus = true))
-        this.instance.config.onClose.push(() => (this.focus = false))
+        this.instance = flatpickr(this.inputRef?.nativeElement, this.merge())
+        this.instance?.config?.onOpen?.push(() => (this.focus = true))
+        this.instance?.config?.onClose?.push(() => (this.focus = false))
     }
 
     private destroy(): void {
@@ -88,7 +85,7 @@ export class FDateComponent extends FInputComponent implements AfterViewInit, On
     private merge(): flatpickr.Options.Options {
         return {
             ...(this.defaults as flatpickr.Options.Options),
-            ...(this.moduleOptions.datepicker ? (this.moduleOptions.datepicker as {}) : {}),
+            ...(this.moduleOptions?.datepicker ? (this.moduleOptions?.datepicker as {}) : {}),
             ...(this.altFormat ? { altFormat: this.altFormat } : {}),
             ...(this.dateFormat ? { dateFormat: this.dateFormat } : {}),
             ...(this.minDate ? { minDate: this.minDate } : {}),
