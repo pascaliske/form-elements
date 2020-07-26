@@ -1,3 +1,12 @@
+## [2.7.1](https://github.com/pascaliske/form-elements/compare/v2.7.0...v2.7.1) (2020-07-26)
+
+
+### Bug Fixes
+
+* **f-date:** prevent initialization of datepicker if field is disabled ([2c2131e](https://github.com/pascaliske/form-elements/commit/2c2131e56a6bae9893b96eaa45923509a877b04e))
+
+
+
 # [2.7.0](https://github.com/pascaliske/form-elements/compare/v2.6.0...v2.7.0) (2020-07-25)
 
 
