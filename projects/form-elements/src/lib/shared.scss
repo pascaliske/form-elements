@@ -103,7 +103,8 @@ $color-white2: rgb(222, 222, 222) !default;
         }
     }
 
-    &--focus &__line::after {
+    &--focus &__line::after,
+    &:focus-within &__line::after {
         opacity: 1;
         width: 100%;
     }

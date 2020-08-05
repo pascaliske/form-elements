@@ -85,7 +85,7 @@ export class FInputComponent implements OnInit, OnDestroy {
     }
 
     public isRequired(): boolean {
-        return !!this.validation.find(({ type }) => type === 'required' || type === 'requiredTrue')
+        return !!this.validation.find(({ type }) => type.includes('required'))
     }
 
     public focusIn(): void {
