@@ -7,7 +7,7 @@ import { FCheckboxComponent } from './f-checkbox.component'
 import FCheckboxReadme from './f-checkbox.readme.md'
 
 export default {
-    title: 'Basic/F-Checkbox',
+    title: '01-Basic/F-Checkbox',
 }
 
 export const Basic = createStory({

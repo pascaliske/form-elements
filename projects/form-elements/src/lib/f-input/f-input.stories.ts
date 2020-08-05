@@ -6,7 +6,7 @@ import { FInputComponent } from './f-input.component'
 import FInputReadme from './f-input.readme.md'
 
 export default {
-    title: 'Basic/F-Input',
+    title: '01-Basic/F-Input',
 }
 
 export const Basic = createStory({

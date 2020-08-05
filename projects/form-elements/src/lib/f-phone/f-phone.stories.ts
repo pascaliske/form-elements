@@ -6,7 +6,7 @@ import { FPhoneComponent } from './f-phone.component'
 import FPhoneReadme from './f-phone.readme.md'
 
 export default {
-    title: 'Advanced/F-Phone',
+    title: '02-Advanced/F-Phone',
 }
 
 export const Basic = createStory({

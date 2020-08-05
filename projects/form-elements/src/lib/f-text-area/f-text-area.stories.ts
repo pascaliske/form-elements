@@ -6,7 +6,7 @@ import { FTextAreaComponent } from './f-text-area.component'
 import FTextAreaReadme from './f-text-area.readme.md'
 
 export default {
-    title: 'Basic/F-TextArea',
+    title: '01-Basic/F-TextArea',
 }
 
 export const Basic = createStory({
