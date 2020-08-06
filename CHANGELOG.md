@@ -1,3 +1,12 @@
+## [2.7.4](https://github.com/pascaliske/form-elements/compare/v2.7.3...v2.7.4) (2020-08-06)
+
+
+### Bug Fixes
+
+* **f-checkbox:** add missing display block ([c8cbfe2](https://github.com/pascaliske/form-elements/commit/c8cbfe277fa08fe54f864b29f75ad492f99122cd))
+
+
+
 ## [2.7.3](https://github.com/pascaliske/form-elements/compare/v2.7.2...v2.7.3) (2020-08-06)
 
 
