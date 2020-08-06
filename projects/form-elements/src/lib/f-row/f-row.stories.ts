@@ -3,7 +3,7 @@ import { createStory } from '@pascaliske/storybook-helpers'
 import FRowReadme from './f-row.readme.md'
 
 export default {
-    title: 'Layout/F-Row',
+    title: '03-Layout/F-Row',
 }
 
 export const Layout1 = createStory({

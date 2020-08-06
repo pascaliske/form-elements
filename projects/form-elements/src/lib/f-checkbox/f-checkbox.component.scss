@@ -2,8 +2,8 @@
     @include cmp-form-element();
 
     &__control {
-        height: 35px;
-        line-height: 35px;
+        min-height: 35px;
+        line-height: 28px;
         margin-top: 20px;
         position: relative;
     }
@@ -15,10 +15,11 @@
     &__symbol {
         width: 35px;
         height: 35px;
+        position: absolute;
         background-color: transparent;
         border: 3px $color-primary solid;
         opacity: 0.5;
-        transition: background-color 0.4s, opacity 0.4s;
+        transition: border-color 0.4s, background-color 0.4s, opacity 0.4s;
     }
 
     &__check {
@@ -29,15 +30,13 @@
     }
 
     &__label {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding-left: 50px;
+        max-width: calc(100% - 50px);
+        position: relative;
+        top: 4px;
+        left: 50px;
         color: $color-primary;
         opacity: 0.5;
-        transition: color 0.2s;
+        transition: color 0.3s;
     }
 
     &--filled &__symbol {
@@ -52,6 +51,11 @@
     &--disabled &__label {
         color: $color-grey2;
         cursor: not-allowed;
+    }
+
+    &--invalid &__symbol {
+        border-color: $color-red;
+        // opacity: 0.4;
     }
 
     &--invalid &__label {

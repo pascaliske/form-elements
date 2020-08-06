@@ -14,7 +14,7 @@ const countries: FSelectOption[] = [...new Set(new Array(25).fill('').map(() => 
     }))
 
 export default {
-    title: 'Basic/F-Select',
+    title: '01-Basic/F-Select',
 }
 
 export const Basic = createStory({

@@ -3,7 +3,7 @@ import { createStory } from '@pascaliske/storybook-helpers'
 import FColumnReadme from './f-column.readme.md'
 
 export default {
-    title: 'Layout/F-Column',
+    title: '03-Layout/F-Column',
 }
 
 export const AlignLeft = createStory({

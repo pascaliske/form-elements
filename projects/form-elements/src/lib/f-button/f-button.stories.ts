@@ -16,7 +16,7 @@ const icons = {
 }
 
 export default {
-    title: 'Basic/F-Button',
+    title: '01-Basic/F-Button',
 }
 
 export const Primary = createStory({

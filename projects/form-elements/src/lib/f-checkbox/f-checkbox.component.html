@@ -1,5 +1,5 @@
 <div [class]="classes('cmp-f-checkbox')">
-    <div class="cmp-f-checkbox__control">
+    <div class="cmp-f-checkbox__control" (click)="input?.click()">
         <input
             class="cmp-f-checkbox__input"
             type="checkbox"
@@ -11,6 +11,7 @@
             (focus)="focusIn()"
             (focusout)="focusOut()"
             [checked]="fc.value === true"
+            #input
         />
         <svg
             class="cmp-f-checkbox__symbol"
