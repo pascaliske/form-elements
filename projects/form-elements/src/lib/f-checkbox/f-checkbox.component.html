@@ -1,5 +1,5 @@
 <div [class]="classes('cmp-f-checkbox')">
-    <div class="cmp-f-checkbox__control" (click)="input?.click()">
+    <div class="cmp-f-checkbox__control">
         <input
             class="cmp-f-checkbox__input"
             type="checkbox"
@@ -19,6 +19,7 @@
             height="35"
             viewBox="-10 -10 55 55"
             xmlns="http://www.w3.org/2000/svg"
+            (click)="input?.click()"
         >
             <svg:path
                 class="cmp-f-checkbox__check"
