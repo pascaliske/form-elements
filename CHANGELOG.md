@@ -1,3 +1,12 @@
+## [2.7.3](https://github.com/pascaliske/form-elements/compare/v2.7.2...v2.7.3) (2020-08-06)
+
+
+### Bug Fixes
+
+* **f-checkbox:** fix multi-line label styles ([85d877b](https://github.com/pascaliske/form-elements/commit/85d877b8b2907b21df8902d03295278598bf94c4))
+
+
+
 ## [2.7.2](https://github.com/pascaliske/form-elements/compare/v2.7.1...v2.7.2) (2020-08-06)
 
 
