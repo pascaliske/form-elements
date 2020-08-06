@@ -1,3 +1,12 @@
+## [2.7.5](https://github.com/pascaliske/form-elements/compare/v2.7.4...v2.7.5) (2020-08-06)
+
+
+### Bug Fixes
+
+* **f-checkbox:** fix checkbox click action ([7994e0b](https://github.com/pascaliske/form-elements/commit/7994e0b19ad90253672e76a6741b073f32933848))
+
+
+
 ## [2.7.4](https://github.com/pascaliske/form-elements/compare/v2.7.3...v2.7.4) (2020-08-06)
 
 
