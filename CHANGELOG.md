@@ -1,3 +1,12 @@
+## [2.7.2](https://github.com/pascaliske/form-elements/compare/v2.7.1...v2.7.2) (2020-08-06)
+
+
+### Features
+
+* **f-checkbox:** allow multi-line labels and fix invalid symbol color ([88457e4](https://github.com/pascaliske/form-elements/commit/88457e477aa668c2bf1f4dcc3ec505f93f5de330))
+
+
+
 ## [2.7.1](https://github.com/pascaliske/form-elements/compare/v2.7.0...v2.7.1) (2020-07-26)
 
 
