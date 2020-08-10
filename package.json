@@ -82,7 +82,7 @@
     "choices.js": "^9.0.1",
     "codelyzer": "^6.0.0",
     "faker": "^4.1.0",
-    "flatpickr": "4.6.5",
+    "flatpickr": "4.6.6",
     "fuzzysearch": "^1.0.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
