@@ -8,6 +8,21 @@ $color-red: rgb(255, 0, 0) !default;
 $color-white1: rgb(255, 255, 255) !default;
 $color-white2: rgb(222, 222, 222) !default;
 
+@mixin use-breakpoint($name) {
+    $breakpoints: (
+        desktop: 1280px,
+        tablet: 1024px,
+        mini-tablet: 768px,
+        phablet: 320px,
+    );
+
+    @if map-has-key($breakpoints, $name) {
+        @media (min-width: map-get($breakpoints, $name)) {
+            @content;
+        }
+    }
+}
+
 /**
  * Mixins
  */
