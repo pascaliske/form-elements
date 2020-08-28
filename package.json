@@ -65,7 +65,7 @@
     "@pascaliske/prettier-config": "^1.1.0",
     "@pascaliske/schematics": "^0.0.8",
     "@pascaliske/storybook-helpers": "^1.1.0",
-    "@storybook/addon-actions": "^5.3.20",
+    "@storybook/addon-actions": "^5.3.21",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addon-notes": "^5.3.21",
