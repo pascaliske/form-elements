@@ -68,7 +68,7 @@
     "@storybook/addon-actions": "^5.3.20",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
-    "@storybook/addon-notes": "^5.3.20",
+    "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^5.3.19",
     "@storybook/theming": "^5.3.19",
     "@types/faker": "^4.1.12",
