@@ -84,7 +84,7 @@
     "faker": "^5.1.0",
     "flatpickr": "4.6.6",
     "fuzzysearch": "^1.0.3",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
     "lodash-es": "^4.17.15",
     "ng-packagr": "^10.1.0",
