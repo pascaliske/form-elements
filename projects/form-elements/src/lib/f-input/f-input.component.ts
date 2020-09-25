@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core'
 import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
-import { takeWhile } from 'rxjs/operators'
+import { takeWhile, distinctUntilChanged } from 'rxjs/operators'
 
 type FValidator = typeof Validators
 export type FType = keyof Omit<FValidator, 'prototype' | 'compose' | 'composeAsync'>
@@ -44,7 +44,7 @@ export class FInputComponent implements OnInit, OnDestroy {
     public disabled: boolean = false
 
     @Output()
-    public changed: EventEmitter<void> = new EventEmitter()
+    public changed: EventEmitter<any> = new EventEmitter()
 
     protected focus: boolean = false
 
@@ -58,9 +58,14 @@ export class FInputComponent implements OnInit, OnDestroy {
         }
 
         this.fc.setValidators(this.getValidators())
-        this.fc.valueChanges.pipe(takeWhile(() => this.alive)).subscribe(value => {
-            this.changed.next(value)
-        })
+        this.fc.valueChanges
+            .pipe(
+                takeWhile(() => this.alive),
+                distinctUntilChanged(),
+            )
+            .subscribe(value => {
+                this.changed.next(value)
+            })
     }
 
     public ngOnDestroy(): void {
