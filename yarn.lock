@@ -2606,7 +2606,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
 
-"@storybook/theming@5.3.21", "@storybook/theming@^5.3.19":
+"@storybook/theming@5.3.21":
   version "5.3.21"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.3.21.tgz#ae2dc101aa57c3be4df1724ae729e11bad118e0b"
   integrity sha512-FZbxjizqdO9lV5LUixPio/7+6UdPiswCzTJn8Hcot9uwwgfnrViRdN7xyjmSYRqv9nHP3OlYbtdeCAgZ4aPq8g==
@@ -2624,7 +2624,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
 
-"@storybook/theming@6.0.22":
+"@storybook/theming@6.0.22", "@storybook/theming@^6.0.22":
   version "6.0.22"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.0.22.tgz#c50877d19c9807cc35655d78f8b5c866b861b853"
   integrity sha512-aR11z70vq0G+F61PIJHW1Kt1lmA2vYxGWF1TL6rsECXNt4fN+X9ig082G0Uhag0mV/FJZdKhhpv360paJFYF2g==
@@ -10181,14 +10181,7 @@ pnp-webpack-plugin@1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-polished@^3.3.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-3.5.1.tgz#657b6faf4c2308f3e0b1951196803a5e5d67b122"
-  integrity sha512-GVbvskpBiDV5TknurGL6OyFfLHsCknxbU8w5iMppT8rW0tLEoQHrIRfrPNPqGXNj3HGhkjRvhmg59Fy7HSnCAw==
-  dependencies:
-    "@babel/runtime" "^7.8.7"
-
-polished@^3.4.4:
+polished@^3.3.1, polished@^3.4.4:
   version "3.6.7"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.6.7.tgz#44cbd0047f3187d83db0c479ef0c7d5583af5fb6"
   integrity sha512-b4OViUOihwV0icb9PHmWbR+vPqaSzSAEbgLskvb7ANPATVXGiYv/TQFHQo65S53WU9i5EQ1I03YDOJW7K0bmYg==
