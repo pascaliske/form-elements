@@ -49,7 +49,8 @@ export interface FSelectSearch {
     templateUrl: './f-select.component.html',
     providers: [{ provide: FInputComponent, useExisting: forwardRef(() => FSelectComponent) }],
 })
-export class FSelectComponent extends FInputComponent
+export class FSelectComponent
+    extends FInputComponent
     implements AfterViewInit, OnChanges, OnDestroy {
     public static readonly cmpName: string = 'FSelectComponent'
 
@@ -60,7 +61,7 @@ export class FSelectComponent extends FInputComponent
     public options: FSelectOption[] = []
 
     @Input()
-    public value: FSelectOption
+    public value: FSelectOption['value']
 
     @Input()
     public search: FSelectSearch
@@ -141,9 +142,9 @@ export class FSelectComponent extends FInputComponent
             })
 
         // prefill choices and form control
-        if (this.value?.value) {
-            this.fc.setValue(this.value?.value)
-            this.instance.setChoiceByValue(this.value.value)
+        if (this.value) {
+            this.fc.setValue(this.value, { onlySelf: true, emitEvent: false })
+            this.instance.setChoiceByValue(this.value)
         }
     }
 
