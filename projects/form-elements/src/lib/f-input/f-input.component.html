@@ -10,7 +10,7 @@
             [autofocus]="autofocus"
             [attr.disabled]="disabled ? '' : null"
             (focus)="focusIn()"
-            (focusout)="focusOut()"
+            (blur)="focusOut()"
         />
         <label class="cmp-f-input__label" [for]="name">
             {{ label }}<span class="cmp-f-input__required" *ngIf="isRequired()">*</span>
