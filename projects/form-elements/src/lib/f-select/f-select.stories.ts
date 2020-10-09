@@ -54,7 +54,7 @@ export const Prefilled = createStory({
         props: {
             name: text('name', 'name'),
             label: text('label', 'Country'),
-            value: countries[4],
+            value: countries[4].value,
             options: countries,
             changed: action('changed'),
         },
@@ -105,7 +105,6 @@ export const Disabled = createStory({
             name: text('name', 'name'),
             label: text('label', 'Country'),
             disabled: true,
-            changed: action('changed'),
         },
     }),
 })

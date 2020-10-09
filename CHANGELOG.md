@@ -1,3 +1,13 @@
+## [2.8.1](https://github.com/pascaliske/form-elements/compare/v2.8.0...v2.8.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* **f-input:** allow preselecting option by value only ([87e2d6a](https://github.com/pascaliske/form-elements/commit/87e2d6a96b3d2dcc402ca9f427dc96872f3f82a8))
+* fix layering issue of select box ([008c5c8](https://github.com/pascaliske/form-elements/commit/008c5c8316187959383c19c1f75ddf532cc489d7))
+
+
+
 # [2.8.0](https://github.com/pascaliske/form-elements/compare/v2.7.5...v2.8.0) (2020-10-09)
 
 

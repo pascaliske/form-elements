@@ -2,6 +2,10 @@
     @include cmp-form-element();
     @include cmp-form-input();
 
+    &__control {
+        z-index: 998;
+    }
+
     &__icon {
         width: 35px;
         height: 35px;
@@ -45,7 +49,7 @@
         overflow: hidden;
 
         &--dropdown {
-            margin-top: 5px;
+            margin-top: 4px;
             border-top: 0;
             border-color: rgba($color-grey2, 0.2);
             border-radius: 0;
@@ -56,6 +60,7 @@
 
         &--dropdown .choices__list {
             max-height: 270px;
+            margin-top: 5px;
             overflow: scroll;
         }
 
@@ -73,7 +78,7 @@
     }
 
     .choices[data-type*='select-one'] .choices__input {
-        margin-top: -42px;
+        margin-top: -43px;
         padding: 10px 0;
         border: 0;
         opacity: 0;
