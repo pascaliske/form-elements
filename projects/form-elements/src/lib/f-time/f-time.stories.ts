@@ -20,6 +20,8 @@ export const Basic = createStory({
             seconds: boolean('seconds', false),
             autocomplete: 'off',
             changed: action('changed'),
+            focused: action('focused'),
+            blurred: action('blurred'),
         },
     }),
 })
@@ -32,7 +34,6 @@ export const Disabled = createStory({
             name: text('name', 'time'),
             label: text('label', 'Time'),
             disabled: true,
-            changed: action('changed'),
         },
     }),
 })

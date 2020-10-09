@@ -46,6 +46,12 @@ export class FInputComponent implements OnInit, OnDestroy {
     @Output()
     public changed: EventEmitter<any> = new EventEmitter()
 
+    @Output()
+    public focused: EventEmitter<void> = new EventEmitter()
+
+    @Output()
+    public blurred: EventEmitter<void> = new EventEmitter()
+
     protected focus: boolean = false
 
     protected alive: boolean = true
@@ -94,10 +100,12 @@ export class FInputComponent implements OnInit, OnDestroy {
     }
 
     public focusIn(): void {
+        this.focused.next()
         this.focus = true
     }
 
     public focusOut(): void {
+        this.blurred.next()
         this.focus = false
     }
 
