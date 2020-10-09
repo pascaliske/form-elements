@@ -36,6 +36,8 @@ export const Basic = createStory({
             ),
             autofocus: boolean('autofocus', false),
             changed: action('changed'),
+            focused: action('focused'),
+            blurred: action('blurred'),
         },
     }),
 })
@@ -48,7 +50,6 @@ export const Disabled = createStory({
             name: 'name',
             label: 'Label',
             disabled: true,
-            changed: action('changed'),
         },
     }),
 })

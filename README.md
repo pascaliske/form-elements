@@ -39,7 +39,7 @@ Then import the styles in your global scss styles:
 >
 > ```scss
 > @import '~choices.js/public/assets/styles/choices.min.css'; // cmp-f-select
-> @import '~flatpickr/dist/flatpickr.min.css'; // cmp-f-date
+> @import '~flatpickr/dist/flatpickr.min.css'; // cmp-f-date, cmp-f-time
 > ```
 
 Now you can use the components in your template:
@@ -56,4 +56,4 @@ Now you can use the components in your template:
 
 ## License
 
-MIT © [Pascal Iske](https://pascal-iske.de)
+MIT © [Pascal Iske](https://pascaliske.dev)

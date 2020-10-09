@@ -8,6 +8,21 @@ $color-red: rgb(255, 0, 0) !default;
 $color-white1: rgb(255, 255, 255) !default;
 $color-white2: rgb(222, 222, 222) !default;
 
+@mixin use-breakpoint($name) {
+    $breakpoints: (
+        desktop: 1280px,
+        tablet: 1024px,
+        mini-tablet: 768px,
+        phablet: 320px,
+    );
+
+    @if map-has-key($breakpoints, $name) {
+        @media (min-width: map-get($breakpoints, $name)) {
+            @content;
+        }
+    }
+}
+
 /**
  * Mixins
  */
@@ -26,13 +41,14 @@ $color-white2: rgb(222, 222, 222) !default;
     margin-bottom: 20px;
     position: relative;
 
-    &--disabled {
+    &--disabled,
+    &--disabled &__input {
+        user-select: none;
         cursor: not-allowed;
     }
 
     &--disabled &__input {
         color: $color-grey2;
-        cursor: not-allowed;
     }
 
     &--invalid &__input {
@@ -103,8 +119,8 @@ $color-white2: rgb(222, 222, 222) !default;
         }
     }
 
-    &--focus &__line::after,
-    &:focus-within &__line::after {
+    &--focus:not(&--disabled) &__line::after,
+    &:not(&--disabled):focus-within &__line::after {
         opacity: 1;
         width: 100%;
     }
@@ -129,7 +145,7 @@ $color-white2: rgb(222, 222, 222) !default;
         line-height: 35px;
         margin-top: 20px;
         position: relative;
-        z-index: 999;
+        z-index: 998;
     }
 
     &__input {

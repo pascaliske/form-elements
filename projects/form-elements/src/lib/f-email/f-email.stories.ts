@@ -36,6 +36,8 @@ export const Basic = createStory({
             ),
             autofocus: boolean('autofocus', false),
             changed: action('changed'),
+            focused: action('focused'),
+            blurred: action('blurred'),
         },
     }),
 })
@@ -49,6 +51,8 @@ export const Suggestions = createStory({
             label: text('label', 'Label'),
             autocomplete: 'off',
             changed: action('changed'),
+            focused: action('focused'),
+            blurred: action('blurred'),
         },
     }),
 })
@@ -61,7 +65,6 @@ export const Disabled = createStory({
             name: text('name', 'name'),
             label: text('label', 'Label'),
             disabled: true,
-            changed: action('changed'),
         },
     }),
 })
