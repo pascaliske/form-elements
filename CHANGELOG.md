@@ -1,3 +1,21 @@
+# [2.8.0](https://github.com/pascaliske/form-elements/compare/v2.7.5...v2.8.0) (2020-10-09)
+
+
+### Bug Fixes
+
+* **f-input:** only emit unchanged value changes once ([28fad7c](https://github.com/pascaliske/form-elements/commit/28fad7ce4f2bbeddb838204e7ed1de302c8616db))
+* **f-input:** use non-bubbling blur event for loosing focus ([64e9f58](https://github.com/pascaliske/form-elements/commit/64e9f58f81de68321199a8509701f11f38cc1c27))
+* **f-row:** use full width for fields on smaller viewports ([39846d5](https://github.com/pascaliske/form-elements/commit/39846d59d789d964e23b75b0f62eaffe167b0c0b))
+* **scss:** do not use highest layer for form controls ([058011b](https://github.com/pascaliske/form-elements/commit/058011b72d93bd4674c1a574c4facb73468efc8b))
+* **scss:** fully disallow user interaction when disabled ([1868862](https://github.com/pascaliske/form-elements/commit/186886205a746e6b75a3fccab46c05a76b61953d))
+
+
+### Features
+
+* emit focus events as outputs of input fields ([876c0a5](https://github.com/pascaliske/form-elements/commit/876c0a55c576f641293a5b8380ae3f07776c2148))
+
+
+
 ## [2.7.5](https://github.com/pascaliske/form-elements/compare/v2.7.4...v2.7.5) (2020-08-06)
 
 
