@@ -66,7 +66,7 @@
     "@pascaliske/schematics": "^0.0.8",
     "@pascaliske/storybook-helpers": "^1.1.0",
     "@storybook/addon-actions": "^6.1.1",
-    "@storybook/addon-knobs": "^6.1.0",
+    "@storybook/addon-knobs": "^6.1.1",
     "@storybook/addon-links": "^6.1.1",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^6.1.1",
