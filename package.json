@@ -86,7 +86,7 @@
     "fuzzysearch": "^1.0.3",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
-    "lodash-es": "^4.17.20",
+    "lodash-es": "^4.17.21",
     "ng-packagr": "^10.1.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
