@@ -81,7 +81,7 @@
     "chalk": "^4.1.0",
     "choices.js": "^9.0.1",
     "codelyzer": "^6.0.1",
-    "faker": "^5.5.0",
+    "faker": "^5.5.1",
     "flatpickr": "4.6.9",
     "fuzzysearch": "^1.0.3",
     "husky": "^5.2.0",
