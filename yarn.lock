@@ -3359,7 +3359,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
 
-"@storybook/theming@6.2.0", "@storybook/theming@^6.2.0":
+"@storybook/theming@6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.2.0.tgz#03b892de0d2478add91ecc7c56d47ce0d42059fc"
   integrity sha512-BAIfPdUahWLhwwebeYcxziCTQMg/bEgKTO1Rp2MqFVvvHR+bx74cjte4oXiyH1+RVBMmwoKERsvYVrj06XEPAA==
@@ -3377,7 +3377,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.2.1":
+"@storybook/theming@6.2.1", "@storybook/theming@^6.2.1":
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.2.1.tgz#ad0ebc0a22560b775eca691b5e72c9db235eaf07"
   integrity sha512-4sX3Qy6mgYlWpJcJx3AmMfzXhj/o/lVpux9MdhNDRFkDU958k7NhoSdny3ahg59C9t7yQ4chakZynKLgnVkFTA==
