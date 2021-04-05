@@ -2606,18 +2606,18 @@
     util-deprecate "^1.0.2"
     uuid-browser "^3.1.0"
 
-"@storybook/addon-knobs@^6.2.2":
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-6.2.2.tgz#dd3d9a3cf63e531c93bfc9e4fd77dc911a4aace0"
-  integrity sha512-vQ9o+BiY1W/CeZq3l8I4ZrjQ3226R1ziFiuaOUQPDnmZ/y3bSquLyruMVrHbrdqp5jGfcckMt6gUtIKsKldjag==
+"@storybook/addon-knobs@^6.2.3":
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-6.2.3.tgz#e3fbc2f47054ad9d4b5e0bfa14943a331fa348a3"
+  integrity sha512-sGFnDeqooCTkJ3lybmScIGCPwu+cQAN62+Po0KUmvjjxh2F28nV8WOhpOOXha9W/t8mc/J10IIqJoBeLeoWh/Q==
   dependencies:
-    "@storybook/addons" "6.2.2"
-    "@storybook/api" "6.2.2"
-    "@storybook/channels" "6.2.2"
-    "@storybook/client-api" "6.2.2"
-    "@storybook/components" "6.2.2"
-    "@storybook/core-events" "6.2.2"
-    "@storybook/theming" "6.2.2"
+    "@storybook/addons" "6.2.3"
+    "@storybook/api" "6.2.3"
+    "@storybook/channels" "6.2.3"
+    "@storybook/client-api" "6.2.3"
+    "@storybook/components" "6.2.3"
+    "@storybook/core-events" "6.2.3"
+    "@storybook/theming" "6.2.3"
     copy-to-clipboard "^3.3.1"
     core-js "^3.8.2"
     escape-html "^1.0.3"
