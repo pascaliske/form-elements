@@ -1,6 +1,6 @@
 # [`@pascaliske/form-elements`](https://pascaliske.github.io/form-elements)
 
-[![Build Status](https://travis-ci.com/pascaliske/form-elements.svg?branch=master)](https://travis-ci.com/pascaliske/form-elements) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/form-elements)](https://dependabot.com)
+[![Build Status](https://img.shields.io/github/workflow/status/pascaliske/form-elements/Build%20package/master?label=build&style=flat-square)](https://github.com/pascaliske/form-elements/actions) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=pascaliske/form-elements)](https://dependabot.com)
 
 ## Installation
 
