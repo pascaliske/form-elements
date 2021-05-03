@@ -1,3 +1,7 @@
+# [3.0.0](https://github.com/pascaliske/form-elements/compare/v2.8.1...v3.0.0) (2021-05-03)
+
+
+
 ## [2.8.1](https://github.com/pascaliske/form-elements/compare/v2.8.0...v2.8.1) (2020-10-09)
 
 
