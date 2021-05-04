@@ -2091,12 +2091,12 @@
     "@angular-devkit/schematics" "^8.0.6"
     "@schematics/angular" "^8.0.6"
 
-"@pascaliske/storybook-helpers@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@pascaliske/storybook-helpers/-/storybook-helpers-1.1.0.tgz#83b687f06718b0003701c4273234bee2846967fb"
-  integrity sha512-ilSveOAoB4sUEGMwxBNERxuTW00jEpt74DkysaDCsHmUrNwWquExQjtplvLNnEW9cz98t/VtgiCayNcCHxFXCQ==
+"@pascaliske/storybook-helpers@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@pascaliske/storybook-helpers/-/storybook-helpers-1.1.1.tgz#745290053ec596fb8d5e434495e7e42b5defda66"
+  integrity sha512-mA0HMXvOTPYLnYeKIeIx697MQS/DLyIqrx/O/u9NlT8yhZt2Q+/cO+wtSkXWFqmX4APiDDWzb2qS/pH+pb6Xhw==
   dependencies:
-    tslib "^2.0.0"
+    tslib "^2.2.0"
 
 "@popperjs/core@^2.5.4":
   version "2.5.4"
