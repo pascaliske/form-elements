@@ -89,7 +89,7 @@
     "lodash-es": "^4.17.21",
     "ng-packagr": "^11.2.4",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "scss-bundle": "^3.1.2",
     "standard-changelog": "^2.0.27",
     "style-loader": "^2.0.0",
