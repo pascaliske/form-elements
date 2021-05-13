@@ -61,7 +61,7 @@
     "@angular/language-service": "^11.2.13",
     "@babel/core": "^7.14.0",
     "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.4",
     "@pascaliske/prettier-config": "^1.1.1",
     "@pascaliske/schematics": "^0.0.11",
     "@pascaliske/storybook-helpers": "^1.1.1",
