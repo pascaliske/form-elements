@@ -59,7 +59,7 @@
     "@angular/cli": "^11.2.12",
     "@angular/compiler-cli": "^11.2.12",
     "@angular/language-service": "^11.2.13",
-    "@babel/core": "^7.14.2",
+    "@babel/core": "^7.14.3",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@pascaliske/prettier-config": "^1.1.1",
