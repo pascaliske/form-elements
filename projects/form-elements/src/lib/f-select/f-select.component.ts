@@ -6,10 +6,10 @@ import {
     OnDestroy,
     Input,
     ViewChild,
-    ElementRef,
     Inject,
     SimpleChanges,
 } from '@angular/core'
+import type { ElementRef } from '@angular/core'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { Observable, fromEvent, merge } from 'rxjs'
@@ -51,7 +51,8 @@ export interface FSelectSearch {
 })
 export class FSelectComponent
     extends FInputComponent
-    implements AfterViewInit, OnChanges, OnDestroy {
+    implements AfterViewInit, OnChanges, OnDestroy
+{
     public static readonly cmpName: string = 'FSelectComponent'
 
     @Input()

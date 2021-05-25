@@ -5,12 +5,13 @@ import {
     Output,
     EventEmitter,
     ContentChildren,
-    QueryList,
     HostListener,
     HostBinding,
 } from '@angular/core'
+import type { QueryList } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
-import { FormGroup, AbstractControl } from '@angular/forms'
+import { FormGroup } from '@angular/forms'
+import type { AbstractControl } from '@angular/forms'
 import { modifiers, join } from '@pascaliske/html-helpers'
 import { FInputComponent } from '../f-input/f-input.component'
 

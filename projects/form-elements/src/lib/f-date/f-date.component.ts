@@ -5,9 +5,9 @@ import {
     OnDestroy,
     Input,
     ViewChild,
-    ElementRef,
     Inject,
 } from '@angular/core'
+import type { ElementRef } from '@angular/core'
 import flatpickr from 'flatpickr'
 import { FInputComponent } from '../f-input/f-input.component'
 import { MODULE_OPTIONS } from '../options'

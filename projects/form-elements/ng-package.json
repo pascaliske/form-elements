@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/form-elements",
   "deleteDestPath": false,
-  "whitelistedNonPeerDependencies": [],
+  "allowedNonPeerDependencies": [],
   "lib": {
     "entryFile": "src/exports.ts",
     "umdModuleIds": {
@@ -12,6 +12,7 @@
       "@pascaliske/html-helpers": "htmlHelpers",
       "choices.js": "Choices",
       "flatpickr": "flatpickr",
+      "fuzzysearch": "fuzzysearch",
       "lodash-es/isEqual": "_.isEqual"
     }
   }
