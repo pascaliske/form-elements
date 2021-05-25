@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core'
-import { AbstractControl } from '@angular/forms'
+import type { AbstractControl } from '@angular/forms'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 

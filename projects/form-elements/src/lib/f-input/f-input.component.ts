@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core'
-import { AbstractControl, FormControl, ValidatorFn, Validators } from '@angular/forms'
+import { FormControl, ValidatorFn, Validators } from '@angular/forms'
+import type { AbstractControl } from '@angular/forms'
 import { modifiers } from '@pascaliske/html-helpers'
 import { takeWhile, distinctUntilChanged } from 'rxjs/operators'
 
