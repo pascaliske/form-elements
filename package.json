@@ -72,7 +72,7 @@
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^6.2.9",
     "@storybook/theming": "^6.2.7",
-    "@types/faker": "^5.5.5",
+    "@types/faker": "^5.5.7",
     "@types/lodash-es": "^4.17.4",
     "@types/node": "^15.6.1",
     "@types/webpack": "^5.28.0",
