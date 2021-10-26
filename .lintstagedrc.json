@@ -1,0 +1,8 @@
+{
+  "src/**/*.ts": ["tslint --project tsconfig.app.json --fix", "prettier --write"],
+  "projects/**/*.ts": [
+    "tslint --project projects/form-elements/tsconfig.lib.json --fix",
+    "prettier --write"
+  ],
+  "{src,projects}/**/*.{scss,md,html}": ["prettier --write"]
+}
