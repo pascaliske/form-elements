@@ -265,10 +265,10 @@
   dependencies:
     tslib "^2.2.0"
 
-"@angular/language-service@^13.0.2":
-  version "13.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-13.0.2.tgz#edc2ff3f7fdaa679c69d98728924539480119694"
-  integrity sha512-Q0pvN1cwrUz1qjTis0jsuaZ/NmByKvlLaecDfluOsf4y8AoL509A1Ih5bsN+RNR74EdYj9AmBpBx37Mf7SygWQ==
+"@angular/language-service@^13.0.3":
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-13.0.3.tgz#decc106c08884b795f0e29627d1287a5f091a249"
+  integrity sha512-A2PmZU52j01CCyNGIZwURKv32yQYFE2yrYycGMlM8e3rPVqZUisCBzelIBwZAyt4hOv34KScbIN/NotDyHG9tg==
 
 "@angular/platform-browser-dynamic@^12.2.11":
   version "12.2.11"
@@ -3328,14 +3328,6 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.4.3":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.3.tgz#1db1eab500f85c095239d581769c8e04e84994fe"
-  integrity sha512-/KmfJlihg2ldm9ml2sNIPOCdSIgF+TsRCET5W8vmwRUu/QUcs6mJMKlEWmmmlyATBp5DKQR+fABe2DccGuOWEQ==
-  dependencies:
-    core-js "^3.8.2"
-    global "^4.4.0"
-
 "@storybook/components@5.3.21":
   version "5.3.21"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.21.tgz#17ee371a2455c6e807c3d3135a9266e63ad7651a"
@@ -3746,25 +3738,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.4.3":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.3.tgz#97db57dde4cb1dfa1cc07181b8b1ece3557696ea"
-  integrity sha512-kXoDN8H6jfHLBawYB65E11yU7iRzej1HRG33CpY6ViPllV0IfIesUWXbrVQyJmTB2IQaoJpzwJN0Bt2KPaTOhw==
-  dependencies:
-    "@emotion/core" "^10.1.1"
-    "@emotion/is-prop-valid" "^0.8.6"
-    "@emotion/styled" "^10.0.27"
-    "@storybook/client-logger" "6.4.3"
-    core-js "^3.8.2"
-    deep-object-diff "^1.1.0"
-    emotion-theming "^10.0.27"
-    global "^4.4.0"
-    memoizerific "^1.11.3"
-    polished "^4.0.5"
-    resolve-from "^5.0.0"
-    ts-dedent "^2.0.0"
-
-"@storybook/theming@^6.4.3":
+"@storybook/theming@6.4.3", "@storybook/theming@^6.4.3":
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.3.tgz#97db57dde4cb1dfa1cc07181b8b1ece3557696ea"
   integrity sha512-kXoDN8H6jfHLBawYB65E11yU7iRzej1HRG33CpY6ViPllV0IfIesUWXbrVQyJmTB2IQaoJpzwJN0Bt2KPaTOhw==
