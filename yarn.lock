@@ -3320,18 +3320,18 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.2.tgz#dbe268fa286b830bdd01e37b7bf748cc0c35f8d0"
-  integrity sha512-3bkTpvoi3BmrQlp53FN9xqYVfQwgcVTb+cGAgFbF+M3lprnIau4k2RjuCz5f3zyL4KgULj/SK4HTJk8iqjevkw==
-  dependencies:
-    core-js "^3.8.2"
-    global "^4.4.0"
-
 "@storybook/client-logger@6.4.3":
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.3.tgz#1db1eab500f85c095239d581769c8e04e84994fe"
   integrity sha512-/KmfJlihg2ldm9ml2sNIPOCdSIgF+TsRCET5W8vmwRUu/QUcs6mJMKlEWmmmlyATBp5DKQR+fABe2DccGuOWEQ==
+  dependencies:
+    core-js "^3.8.2"
+    global "^4.4.0"
+
+"@storybook/client-logger@6.4.4":
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.4.tgz#212b70f42552e69abf884b538f027bca5f532d1c"
+  integrity sha512-UcMhhTaky7oXA/rUbyi4mBgx74a+hoENBhFk1twmiaAvZEysMT1c+dxT1H5vuASu6z3G+4PILzOqcoQpfV0jGQ==
   dependencies:
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3764,15 +3764,15 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.2.tgz#4c70054f17f8209b46049bac98012a2fcb002d50"
-  integrity sha512-eAa83xLeRC23uTpmVXkPJXdSosyWqC30RRKxHTWHftrdBd3jp2Jze/dDzYb5+vL345QDAZh5NmH48l+LtH5M3A==
+"@storybook/theming@^6.4.4":
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.4.tgz#5ba5b33d703eb6a7a5088ae7ee9f49460c13318c"
+  integrity sha512-CcxwsQOosdA0OzAJjl1q6X74OT8y6vGvZmjEGhRr68cw3+u+soaXmatweJ3qb3LYuxHRYIBFnCHGnqIf2R5Rlg==
   dependencies:
     "@emotion/core" "^10.1.1"
     "@emotion/is-prop-valid" "^0.8.6"
     "@emotion/styled" "^10.0.27"
-    "@storybook/client-logger" "6.4.2"
+    "@storybook/client-logger" "6.4.4"
     core-js "^3.8.2"
     deep-object-diff "^1.1.0"
     emotion-theming "^10.0.27"
