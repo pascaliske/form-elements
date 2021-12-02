@@ -18,12 +18,12 @@
     "@angular-devkit/core" "12.2.11"
     rxjs "6.6.7"
 
-"@angular-devkit/architect@0.1300.0":
-  version "0.1300.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.0.tgz#074f2505f6e67a9ed5ddbc90013bb3203f2c7ef8"
-  integrity sha512-bLbCrsp2SIMgdNWESJEXodAZ1R0SIDbrnGB3euFwKt8srJinayECEBczAVhRBstOOlLJKVRCQMX4ho4SqeWqLw==
+"@angular-devkit/architect@0.1300.4":
+  version "0.1300.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1300.4.tgz#2b3a0606138a4f1259bb146e378a835f667fd82c"
+  integrity sha512-COW2W6rI9D69QEXGc/MyTbJY9gT+u8yMTpONpIjopd+KoSK/q2wGr0RleUf7XSCunZCs0SRI7z3Pw1EAdQCP7Q==
   dependencies:
-    "@angular-devkit/core" "13.0.0"
+    "@angular-devkit/core" "13.0.4"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@~12.2.11":
@@ -143,10 +143,10 @@
     rxjs "6.6.7"
     source-map "0.7.3"
 
-"@angular-devkit/core@13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.0.tgz#7560902ec06a40f574e09d223354360f3d8db453"
-  integrity sha512-dWybyCroiil+1cmX/tGmx1lHRaCU9lsCL/fubTTe+GFp32hGQGtFgdm8uuVx0GUi83wgRJQDYj58za82llqHrw==
+"@angular-devkit/core@13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-13.0.4.tgz#98b7e2d34afc117cafcbba1cd71f00e3c7089289"
+  integrity sha512-AzgLvERLC6qzY5aZWUpkz5nx+pZChrq3DSt6azMPALwzzoABrwiO6XqzRnj17mXtANXLH2oe9FuHr9jzgFbF1g==
   dependencies:
     ajv "8.6.3"
     ajv-formats "2.1.1"
@@ -164,12 +164,12 @@
     ora "5.0.0"
     rxjs "6.6.2"
 
-"@angular-devkit/schematics@13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-13.0.0.tgz#2fbcd44d042f412863bf51ed9149df03fe1a1628"
-  integrity sha512-0bOU7cIPgTmnfrl0IPv5y5cROOv32HDiG7JVTx75MTXOTWDt6dvfrNoy2CephU0hD0sss/Ju8X9x56nNzz6MEg==
+"@angular-devkit/schematics@13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-13.0.4.tgz#9455e695ae25b642d9a93179938149cd52ccdbb1"
+  integrity sha512-3LsmpfAEOxwPyachrktCHtGUYBzQCCzD0++CUjhK8W99v8/IAplkm4dgovFb1RiRkUm44l+HIS7387AbvEIf5A==
   dependencies:
-    "@angular-devkit/core" "13.0.0"
+    "@angular-devkit/core" "13.0.4"
     jsonc-parser "3.0.0"
     magic-string "0.25.7"
     ora "5.4.1"
@@ -182,15 +182,15 @@
   dependencies:
     tslib "^2.2.0"
 
-"@angular/cli@^13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-13.0.0.tgz#f73a7614205044f4332c3dc65a39aad07341b339"
-  integrity sha512-qnWH/uKOOlIGAbudQ7zDEL5EyoRyP0yG6RDLnPeZBh+6g9PBrRWFeWUFidrfAZpqa/Z7iy8y/sF3uZ38YC+ILg==
+"@angular/cli@^13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-13.0.4.tgz#28932cb8e2c9e1eb4a65db459be851932f51eecd"
+  integrity sha512-0QMJXFNn57LVg7ZwZFPO90g6aZHDnoe5yCB7fo3nskOhDw1AW/rnbbaNVMVX/SvP30hOOTLsfVJ1Y3I6eKDgRA==
   dependencies:
-    "@angular-devkit/architect" "0.1300.0"
-    "@angular-devkit/core" "13.0.0"
-    "@angular-devkit/schematics" "13.0.0"
-    "@schematics/angular" "13.0.0"
+    "@angular-devkit/architect" "0.1300.4"
+    "@angular-devkit/core" "13.0.4"
+    "@angular-devkit/schematics" "13.0.4"
+    "@schematics/angular" "13.0.4"
     "@yarnpkg/lockfile" "1.1.0"
     ansi-colors "4.1.1"
     debug "4.3.2"
@@ -2856,13 +2856,13 @@
     minimist "^1.2.5"
     semver "^7.3.5"
 
-"@schematics/angular@13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-13.0.0.tgz#430da6b345314228655531dedf76fb468825e371"
-  integrity sha512-2Dk/N0cHQEFjOd2DwmEOoav88RCxFNKtVNImW9zcZQ+siZa7aEID7dtFeySY+NKuQmlu+icQ2+zdDKJLo8h42g==
+"@schematics/angular@13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-13.0.4.tgz#e7efd26bf24abc359c902c4576451f988cc8582a"
+  integrity sha512-P9F5c8ApLbEyfNO4TZNsTyAdrtOjwIhrM/P+eEC4/x6nklWlEFE6TGMYTNjiK/RRhkbX1tBs8gcdJLYxtEqPSg==
   dependencies:
-    "@angular-devkit/core" "13.0.0"
-    "@angular-devkit/schematics" "13.0.0"
+    "@angular-devkit/core" "13.0.4"
+    "@angular-devkit/schematics" "13.0.4"
     jsonc-parser "3.0.0"
 
 "@schematics/angular@^10.2.0":
@@ -3328,14 +3328,6 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/client-logger@6.4.3":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.4.3.tgz#1db1eab500f85c095239d581769c8e04e84994fe"
-  integrity sha512-/KmfJlihg2ldm9ml2sNIPOCdSIgF+TsRCET5W8vmwRUu/QUcs6mJMKlEWmmmlyATBp5DKQR+fABe2DccGuOWEQ==
-  dependencies:
-    core-js "^3.8.2"
-    global "^4.4.0"
-
 "@storybook/components@5.3.21":
   version "5.3.21"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.21.tgz#17ee371a2455c6e807c3d3135a9266e63ad7651a"
@@ -3746,25 +3738,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.4.3":
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.3.tgz#97db57dde4cb1dfa1cc07181b8b1ece3557696ea"
-  integrity sha512-kXoDN8H6jfHLBawYB65E11yU7iRzej1HRG33CpY6ViPllV0IfIesUWXbrVQyJmTB2IQaoJpzwJN0Bt2KPaTOhw==
-  dependencies:
-    "@emotion/core" "^10.1.1"
-    "@emotion/is-prop-valid" "^0.8.6"
-    "@emotion/styled" "^10.0.27"
-    "@storybook/client-logger" "6.4.3"
-    core-js "^3.8.2"
-    deep-object-diff "^1.1.0"
-    emotion-theming "^10.0.27"
-    global "^4.4.0"
-    memoizerific "^1.11.3"
-    polished "^4.0.5"
-    resolve-from "^5.0.0"
-    ts-dedent "^2.0.0"
-
-"@storybook/theming@^6.4.3":
+"@storybook/theming@6.4.3", "@storybook/theming@^6.4.3":
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.3.tgz#97db57dde4cb1dfa1cc07181b8b1ece3557696ea"
   integrity sha512-kXoDN8H6jfHLBawYB65E11yU7iRzej1HRG33CpY6ViPllV0IfIesUWXbrVQyJmTB2IQaoJpzwJN0Bt2KPaTOhw==
