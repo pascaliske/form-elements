@@ -86,18 +86,6 @@
               "browserTarget": "form-elements-demo:build:production"
             }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "fix": true,
-            "tsConfig": [
-              "tsconfig.app.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -118,18 +106,6 @@
               "project": "projects/form-elements/ng-package.prod.json",
               "tsConfig": "projects/form-elements/tsconfig.lib.prod.json"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "fix": true,
-            "tsConfig": [
-              "projects/form-elements/tsconfig.lib.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
