@@ -41,7 +41,6 @@ export const components = [
 @NgModule({
     imports: [CommonModule, HttpClientModule, ReactiveFormsModule, FontAwesomeModule],
     declarations: [...components, FErrorComponent, FExplanationComponent],
-    entryComponents: [...components],
     exports: [...components],
 })
 export class FormElementsModule {
