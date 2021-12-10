@@ -3,16 +3,6 @@
   "dest": "../../dist/form-elements",
   "allowedNonPeerDependencies": [],
   "lib": {
-    "entryFile": "src/exports.ts",
-    "umdModuleIds": {
-      "@fortawesome/angular-fontawesome": "fortawesome.angular-fontawesome",
-      "@fortawesome/free-regular-svg-icons": "free-regular-svg-icons",
-      "@fortawesome/free-solid-svg-icons": "free-solid-svg-icons",
-      "@pascaliske/html-helpers": "htmlHelpers",
-      "choices.js": "Choices",
-      "flatpickr": "flatpickr",
-      "fuzzysearch": "fuzzysearch",
-      "lodash-es/isEqual": "_.isEqual"
-    }
+    "entryFile": "src/exports.ts"
   }
 }
