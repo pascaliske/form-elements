@@ -24,7 +24,7 @@
     "build:library": "ng build --configuration production",
     "build:scss": "scss-bundle --config scss-bundle.config.json",
     "build:metadata": "cp README.md dist/form-elements/README.md && cp LICENSE.md dist/form-elements/LICENSE.md && cp CHANGELOG.md dist/form-elements/CHANGELOG.md",
-    "lint": "ng lint form-elements --fix",
+    "lint": "ng lint",
     "format": "prettier --write \"{src,projects}/**/*.{ts,scss,md,html}\"",
     "version": "bump --yes package.json projects/form-elements/package.json",
     "changelog": "standard-changelog",
