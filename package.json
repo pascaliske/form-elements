@@ -79,7 +79,7 @@
     "@types/webpack-env": "^1.16.3",
     "babel-loader": "^8.2.3",
     "chalk": "^5.0.0",
-    "choices.js": "^9.0.1",
+    "choices.js": "^9.1.0",
     "codelyzer": "^6.0.2",
     "faker": "^5.5.3",
     "flatpickr": "4.6.9",
