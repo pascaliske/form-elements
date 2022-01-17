@@ -71,7 +71,7 @@
     "@storybook/addon-links": "^6.4.12",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^6.4.12",
-    "@storybook/theming": "^6.4.12",
+    "@storybook/theming": "^6.4.13",
     "@types/faker": "^5.5.9",
     "@types/lodash-es": "^4.17.5",
     "@types/node": "^17.0.8",
