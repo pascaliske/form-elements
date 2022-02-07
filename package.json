@@ -62,7 +62,7 @@
     "@babel/core": "^7.17.0",
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
-    "@pascaliske/prettier-config": "^1.1.3",
+    "@pascaliske/prettier-config": "^1.1.4",
     "@pascaliske/schematics": "^0.0.12",
     "@pascaliske/storybook-helpers": "^1.1.2",
     "@rstacruz/bump-cli": "^2.0.1",
