@@ -50,13 +50,13 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@pascaliske/html-helpers": "^1.5.11",
     "core-js": "^3.21.0",
-    "rxjs": "^6.6.7",
+    "rxjs": "^7.5.4",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.2",
-    "@angular/cli": "^13.2.2",
+    "@angular/cli": "^13.2.3",
     "@angular/compiler-cli": "^13.1.0",
     "@angular/language-service": "^13.2.1",
     "@babel/core": "^7.17.2",
