@@ -6,7 +6,7 @@ import { FEmailComponent } from './f-email.component'
 import FEmailReadme from './f-email.readme.md'
 
 export default {
-    title: '02-Advanced/F-Email',
+    title: 'Advanced/F-Email',
 }
 
 export const Basic = createStory({

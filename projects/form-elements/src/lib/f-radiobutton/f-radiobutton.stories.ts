@@ -6,7 +6,7 @@ import { FRadiobuttonComponent } from './f-radiobutton.component'
 import FRadiobuttonReadme from './f-radiobutton.readme.md'
 
 export default {
-    title: '01-Basic/F-Radiobutton',
+    title: 'Basic/F-Radiobutton',
 }
 
 export const Basic = createStory({

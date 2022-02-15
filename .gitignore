@@ -4,7 +4,10 @@
 /dist
 /tmp
 /out-tsc
+/storybook-static
+/graph
 /.angular
+/documentation.json
 
 # dependencies
 /node_modules

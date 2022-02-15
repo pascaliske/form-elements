@@ -6,7 +6,7 @@ import { FPasswordComponent } from './f-password.component'
 import FPasswordReadme from './f-password.readme.md'
 
 export default {
-    title: '02-Advanced/F-Password',
+    title: 'Advanced/F-Password',
 }
 
 export const Basic = createStory({

@@ -6,7 +6,7 @@ import { FDateComponent } from './f-date.component'
 import FDateReadme from './f-date.readme.md'
 
 export default {
-    title: '02-Advanced/F-Date',
+    title: 'Advanced/F-Date',
 }
 
 export const Basic = createStory({

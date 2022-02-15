@@ -6,7 +6,7 @@ import { FTimeComponent } from './f-time.component'
 import FTimeReadme from './f-time.readme.md'
 
 export default {
-    title: '02-Advanced/F-Time',
+    title: 'Advanced/F-Time',
 }
 
 export const Basic = createStory({

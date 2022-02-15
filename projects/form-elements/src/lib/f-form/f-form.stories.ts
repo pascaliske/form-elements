@@ -4,7 +4,7 @@ import { createStory } from '@pascaliske/storybook-helpers'
 import FFormReadme from './f-form.readme.md'
 
 export default {
-    title: '03-Layout/F-Form',
+    title: 'Layout/F-Form',
 }
 
 export const Basic = createStory({

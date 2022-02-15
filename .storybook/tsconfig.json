@@ -1,6 +1,12 @@
 {
   "extends": "../tsconfig.app.json",
   "compilerOptions": {
+    "module": "CommonJS",
     "resolveJsonModule": true
-  }
+  },
+  "include": [
+    "./preview.ts",
+    "./typings.d.ts",
+    "../projects/**/*.stories.ts"
+  ]
 }

@@ -102,6 +102,32 @@
               "tsConfig": "projects/form-elements/tsconfig.lib.prod.json"
             }
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "form-elements:build",
+            "compodocArgs": ["-e json", "-t"],
+            "port": 9001,
+            "configDir": ".storybook",
+            "styles": [
+              "flatpickr/dist/flatpickr.min.css",
+              "choices.js/public/assets/styles/choices.min.css",
+              "./projects/form-elements/src/lib/main.scss"
+            ]
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "form-elements:build",
+            "compodocArgs": ["-e json", "-t"],
+            "styles": [
+              "flatpickr/dist/flatpickr.min.css",
+              "choices.js/public/assets/styles/choices.min.css",
+              "./projects/form-elements/src/lib/main.scss"
+            ]
+          }
         }
       }
     }
