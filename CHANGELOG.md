@@ -1,3 +1,25 @@
+# [4.0.0](https://github.com/pascaliske/form-elements/compare/v3.0.1...v4.0.0) (2022-02-15)
+
+
+### Bug Fixes
+
+* **entrypoint:** add missing export for f-form component ([314014a](https://github.com/pascaliske/form-elements/commit/314014aa4038f3a67669492720e92b656711b3f1))
+* **f-error:** use type-only import for validation type ([adf37c0](https://github.com/pascaliske/form-elements/commit/adf37c022ccc80ce1cfdf009f2a3d1ee52c7b1ef))
+
+
+### Features
+
+* enable partial compilation mode using ivy ([2ea771e](https://github.com/pascaliske/form-elements/commit/2ea771e76d9a7a6b0a66116fe7ad54c48a5abbc4))
+* upgrade storybook to latest version ([990a129](https://github.com/pascaliske/form-elements/commit/990a129bbc96ee206f5c9d451829cbd4131122de))
+
+
+### BREAKING CHANGES
+
+* This library is now distributed using partial compilation mode for Angular Ivy.
+See here for more information: https://github.com/angular/angular/issues/38366
+
+
+
 ## [3.0.1](https://github.com/pascaliske/form-elements/compare/v3.0.0...v3.0.1) (2021-05-25)
 
 

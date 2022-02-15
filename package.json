@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/form-elements",
   "description": "Collection of form elements for Angular 6+ projects.",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "license": "MIT",
   "homepage": "https://pascaliske.github.io/form-elements",
   "author": {
