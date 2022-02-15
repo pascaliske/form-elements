@@ -27,7 +27,7 @@ export class FInputComponent implements OnInit, OnDestroy {
     public label: string
 
     @Input()
-    public fc: AbstractControl = new FormControl()
+    public fc: FormControl = new FormControl()
 
     @Input()
     public validation: FValidation[] = []

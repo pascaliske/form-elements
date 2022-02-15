@@ -40,15 +40,10 @@
                 "output": "/assets"
               }
             ],
-            "styles": [
-              "dist/form-elements/styles.scss",
-              "src/scss/styles.scss"
-            ],
+            "styles": ["dist/form-elements/styles.scss", "src/scss/styles.scss"],
             "scripts": [],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "dist/form-elements/"
-              ]
+              "includePaths": ["dist/form-elements/"]
             }
           },
           "configurations": {

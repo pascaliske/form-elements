@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
-import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import type { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 /**
  * F-Button
@@ -23,7 +23,7 @@ export class FButtonComponent {
     public label: string
 
     @Input()
-    public icon: IconDefinition
+    public icon: IconProp
 
     @Input()
     public theme: string = 'primary'
