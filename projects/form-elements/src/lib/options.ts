@@ -1,9 +1,9 @@
 import { InjectionToken } from '@angular/core'
-import { Choices } from 'choices.js'
+import { Options } from 'choices.js'
 import flatpickr from 'flatpickr'
 
 export interface ModuleOptions {
-    select: Partial<Choices.Options>
+    select: Partial<Options>
     datepicker: flatpickr.Options.Options | boolean
     email: {
         suggestions: string[] | boolean

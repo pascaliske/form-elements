@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { AbstractControl, FormGroup, FormControl } from '@angular/forms'
+import { FormGroup, FormControl } from '@angular/forms'
 import { FSelectOption, FValidation } from '@pascaliske/form-elements'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,7 +10,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 export class AppComponent implements OnInit {
     public fg: FormGroup = new FormGroup({})
 
-    public fc: AbstractControl = new FormControl()
+    public fc: FormControl = new FormControl()
 
     public options: FSelectOption[] = [
         {

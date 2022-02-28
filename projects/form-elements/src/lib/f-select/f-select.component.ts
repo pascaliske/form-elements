@@ -15,7 +15,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { Observable, fromEvent, merge } from 'rxjs'
 import { mapTo, distinctUntilChanged, takeWhile } from 'rxjs/operators'
 import isEqual from 'lodash-es/isEqual'
-import Choices, { Choices as ChoicesType } from 'choices.js'
+import Choices, { Options, Choice } from 'choices.js'
 import { FInputComponent } from '../f-input/f-input.component'
 import { MODULE_OPTIONS } from '../options'
 import type { ModuleOptions } from '../options'
@@ -74,7 +74,7 @@ export class FSelectComponent
 
     private instance: Choices
 
-    private readonly defaults: Partial<ChoicesType.Options> = {
+    private readonly defaults: Partial<Options> = {
         silent: false,
         addItems: true,
         removeItems: false,
@@ -157,20 +157,20 @@ export class FSelectComponent
         this.instance.destroy()
     }
 
-    private merge(): ChoicesType.Options {
+    private merge(): Options {
         return {
-            ...(this.defaults as ChoicesType.Options),
+            ...(this.defaults as Options),
             ...(this.moduleOptions?.select ?? {}),
             ...this.getPlaceholderOptions(),
             ...this.getSearchOptions(),
         }
     }
 
-    private getOptions(): ChoicesType.Choice[] {
+    private getOptions(): Choice[] {
         return this.options?.map(option => ({ ...option, selected: false, active: false })) ?? []
     }
 
-    private getPlaceholderOptions(): Partial<ChoicesType.Options> {
+    private getPlaceholderOptions(): Partial<Options> {
         if (!this.placeholder) {
             return { placeholder: true, placeholderValue: '' }
         }
@@ -181,7 +181,7 @@ export class FSelectComponent
         }
     }
 
-    private getSearchOptions(): Partial<ChoicesType.Options> {
+    private getSearchOptions(): Partial<Options> {
         if (!this.search) {
             return { searchEnabled: false }
         }
