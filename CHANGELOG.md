@@ -1,3 +1,17 @@
+# [5.0.0](https://github.com/pascaliske/form-elements/compare/v4.0.0...v5.0.0) (2022-02-28)
+
+
+### Features
+
+* upgrade to choices v10 ([dfa0aee](https://github.com/pascaliske/form-elements/commit/dfa0aee0a88f572435238ba5be9b1b70988e9b6c))
+
+
+### BREAKING CHANGES
+
+* This requires an upgrade to choices.js@^10.0.0.
+
+
+
 # [4.0.0](https://github.com/pascaliske/form-elements/compare/v3.0.1...v4.0.0) (2022-02-15)
 
 
