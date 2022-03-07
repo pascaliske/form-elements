@@ -8080,10 +8080,10 @@ findit2@^2.2.3:
   resolved "https://registry.yarnpkg.com/findit2/-/findit2-2.2.3.tgz#58a466697df8a6205cdfdbf395536b8bd777a5f6"
   integrity sha1-WKRmaX34piBc39vzlVNri9d3pfY=
 
-flatpickr@4.6.9:
-  version "4.6.9"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.9.tgz#9a13383e8a6814bda5d232eae3fcdccb97dc1499"
-  integrity sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==
+flatpickr@4.6.10:
+  version "4.6.10"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.10.tgz#6f581fdf8ebba83766457c7ddae36cc4ec983811"
+  integrity sha512-Z1rNbMAg7WmKPBVj0cOjO/4Ab5H3Of5MMohgVvJpFiEAcWFUcaGgN5yzizKGUUN1j6zXYeYASI2XxqrhbiRoig==
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
