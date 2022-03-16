@@ -1,6 +1,6 @@
 import { Component, forwardRef } from '@angular/core'
 import { modifiers } from '@pascaliske/html-helpers'
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import type { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons'
 import { FInputComponent } from '../f-input/f-input.component'
 
@@ -14,7 +14,7 @@ export class FPasswordComponent extends FInputComponent {
 
     public type: 'text' | 'password' = 'password'
 
-    public icon: IconDefinition = faEye
+    public icon: IconProp = faEye
 
     public visible = false
 
