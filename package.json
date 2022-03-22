@@ -47,7 +47,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
-    "@fortawesome/free-solid-svg-icons": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@pascaliske/html-helpers": "^1.5.12",
     "core-js": "^3.21.1",
     "rxjs": "^7.5.5",
