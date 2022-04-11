@@ -74,7 +74,7 @@
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^6.4.20",
     "@storybook/builder-webpack5": "^6.4.20",
-    "@storybook/manager-webpack5": "^6.4.20",
+    "@storybook/manager-webpack5": "^6.4.21",
     "@storybook/theming": "^6.4.20",
     "@types/faker": "5.5.9",
     "@types/lodash-es": "^4.17.6",
