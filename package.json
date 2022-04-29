@@ -59,7 +59,7 @@
     "@angular/cli": "^13.3.1",
     "@angular/compiler-cli": "^13.3.0",
     "@angular/language-service": "^13.3.5",
-    "@babel/core": "^7.17.9",
+    "@babel/core": "^7.17.10",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@compodoc/compodoc": "^1.1.19",
