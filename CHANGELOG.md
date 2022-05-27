@@ -1,3 +1,12 @@
+## [5.0.1](https://github.com/pascaliske/form-elements/compare/v5.0.0...v5.0.1) (2022-05-27)
+
+
+### Bug Fixes
+
+* **f-password:** use new icon prop type from font awesome ([d87484e](https://github.com/pascaliske/form-elements/commit/d87484eae42475c5a1fd88a64d38c98dfa08f040))
+
+
+
 # [5.0.0](https://github.com/pascaliske/form-elements/compare/v4.0.0...v5.0.0) (2022-02-28)
 
 
