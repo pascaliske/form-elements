@@ -2785,6 +2785,17 @@
     global "^4.4.0"
     telejson "^6.0.8"
 
+"@storybook/channel-websocket@6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/channel-websocket/-/channel-websocket-6.5.7.tgz#69e274319a995d1bd01b3783586cdefcb56277dc"
+  integrity sha512-C+l6t3ZgHzU8gL8GJ8c4GMttJglGJIwq1LtJJKnGzx2kJCD0HRMMqc/qFS2K2EwP99hLwwGIlCpom3UZ1aEanA==
+  dependencies:
+    "@storybook/channels" "6.5.7"
+    "@storybook/client-logger" "6.5.7"
+    core-js "^3.8.2"
+    global "^4.4.0"
+    telejson "^6.0.8"
+
 "@storybook/channels@5.3.21":
   version "5.3.21"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-5.3.21.tgz#53ba622b171d68b3b102983a62aa05149a49497b"
@@ -2957,6 +2968,32 @@
     "@storybook/preview-web" "6.5.6"
     "@storybook/store" "6.5.6"
     "@storybook/ui" "6.5.6"
+    airbnb-js-shims "^2.2.1"
+    ansi-to-html "^0.6.11"
+    core-js "^3.8.2"
+    global "^4.4.0"
+    lodash "^4.17.21"
+    qs "^6.10.0"
+    regenerator-runtime "^0.13.7"
+    ts-dedent "^2.0.0"
+    unfetch "^4.2.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/core-client@6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/core-client/-/core-client-6.5.7.tgz#556a38330c89adfacf5151cda0b5c32e24499737"
+  integrity sha512-GL7m33tpEyornhfnTddbvDuLkA9EMe1zKv9oZGsUYo78cWRTiEibYyHegIi9/ThplRXvpFR/5uHY4Zx5Z5rxJg==
+  dependencies:
+    "@storybook/addons" "6.5.7"
+    "@storybook/channel-postmessage" "6.5.7"
+    "@storybook/channel-websocket" "6.5.7"
+    "@storybook/client-api" "6.5.7"
+    "@storybook/client-logger" "6.5.7"
+    "@storybook/core-events" "6.5.7"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
+    "@storybook/preview-web" "6.5.7"
+    "@storybook/store" "6.5.7"
+    "@storybook/ui" "6.5.7"
     airbnb-js-shims "^2.2.1"
     ansi-to-html "^0.6.11"
     core-js "^3.8.2"
@@ -3261,20 +3298,20 @@
     webpack-dev-middleware "^3.7.3"
     webpack-virtual-modules "^0.2.2"
 
-"@storybook/manager-webpack5@^6.5.6":
-  version "6.5.6"
-  resolved "https://registry.yarnpkg.com/@storybook/manager-webpack5/-/manager-webpack5-6.5.6.tgz#7357d97f91e60810ea866f099aa1b82b5afc0f73"
-  integrity sha512-U5OIMs1PNjZZRjOvV2Bo05+1dzvV30o4Lw5sgeyH9Qr08p79nHT4iFSaVF2W01zGja6XlneqFB9hBqBHoocJWQ==
+"@storybook/manager-webpack5@^6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/manager-webpack5/-/manager-webpack5-6.5.7.tgz#a7446c86d96bb4b91e5dc554d21da8102795a11f"
+  integrity sha512-4TZKe71noCRui8sUxSuSqO6zMnCxCLn7dE1dOlCr/UvyZbCaGWACO5olUDQrT+n1glZL8i9L998JGQroksucNw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-template-literals" "^7.12.1"
     "@babel/preset-react" "^7.12.10"
-    "@storybook/addons" "6.5.6"
-    "@storybook/core-client" "6.5.6"
-    "@storybook/core-common" "6.5.6"
-    "@storybook/node-logger" "6.5.6"
-    "@storybook/theming" "6.5.6"
-    "@storybook/ui" "6.5.6"
+    "@storybook/addons" "6.5.7"
+    "@storybook/core-client" "6.5.7"
+    "@storybook/core-common" "6.5.7"
+    "@storybook/node-logger" "6.5.7"
+    "@storybook/theming" "6.5.7"
+    "@storybook/ui" "6.5.7"
     "@types/node" "^14.0.10 || ^16.0.0"
     babel-loader "^8.0.0"
     case-sensitive-paths-webpack-plugin "^2.3.0"
@@ -3556,6 +3593,24 @@
     "@storybook/router" "6.5.6"
     "@storybook/semver" "^7.3.2"
     "@storybook/theming" "6.5.6"
+    core-js "^3.8.2"
+    regenerator-runtime "^0.13.7"
+    resolve-from "^5.0.0"
+
+"@storybook/ui@6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-6.5.7.tgz#d4814c88bd1ca4781891611c2c1fbb23e221d95a"
+  integrity sha512-NOg44bc/w7FweuM2fa99PxsgI9qoG2p5vhTQ4MOI/7QnOUDn+EenlapsRos+/Sk2XTaB2QmM43boUkravMSouA==
+  dependencies:
+    "@storybook/addons" "6.5.7"
+    "@storybook/api" "6.5.7"
+    "@storybook/channels" "6.5.7"
+    "@storybook/client-logger" "6.5.7"
+    "@storybook/components" "6.5.7"
+    "@storybook/core-events" "6.5.7"
+    "@storybook/router" "6.5.7"
+    "@storybook/semver" "^7.3.2"
+    "@storybook/theming" "6.5.7"
     core-js "^3.8.2"
     regenerator-runtime "^0.13.7"
     resolve-from "^5.0.0"
