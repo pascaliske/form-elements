@@ -70,7 +70,7 @@
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-docs": "^6.5.9",
     "@storybook/addon-knobs": "^6.4.0",
-    "@storybook/addon-links": "^6.5.8",
+    "@storybook/addon-links": "^6.5.9",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/angular": "^6.5.8",
     "@storybook/builder-webpack5": "^6.5.9",
