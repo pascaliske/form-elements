@@ -81,7 +81,7 @@
     "@types/node": "^18.11.7",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.18.0",
-    "babel-loader": "^9.0.0",
+    "babel-loader": "^9.0.1",
     "chalk": "^5.1.2",
     "choices.js": "^10.1.0",
     "codelyzer": "^6.0.2",
